@@ -1,0 +1,39 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+html {
+  @apply scroll-smooth
+}
+
+.scroll-text {
+  animation: scrollText 27s linear infinite;
+  animation-delay: 1000ms;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-68%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media ( min-width: 768px) {
+  .hidden-parent {
+    visibility: hidden;
+  }
+
+}
+
+.visible-child {
+  visibility: visible !important;
+}
+
+.element:hover + .text-animation {
+  animation: slideIn 0.5s forwards;
+}

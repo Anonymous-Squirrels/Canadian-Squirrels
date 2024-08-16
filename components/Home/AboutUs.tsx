@@ -1,0 +1,82 @@
+import React from "react";
+import Button from "../ui/Button";
+import Image from "next/image";
+import AboutUsIcon from "@/components/Home/AboutUsIcon";
+import {ArrowRight} from "@/constants/Icons";
+import Link from "next/link";
+
+function AboutUs() {
+  return (
+    <div id={"about-us"} className=" bg-black text-white">
+      <div className="flex px-7 md:p-14 md:pt-10">
+        <span className="uppercase text-5xl md:text-8xl font-bold mx-auto  bg-gradient-to-r from-[#A998FF] via-[#7B61FF] to-[#5237D8] inline-block text-transparent bg-clip-text">
+          About Us
+        </span>
+      </div>
+
+      <div className="flex flex-col items-center justify-between">
+        <div className="flex flex-col items-center justify-between gap-y-10">
+          <div className="text-center text-xl md:text-2xl px-8 md:px-0 font-bold max-w-[900px] italic">
+            We are a team of{" "}
+            <span className="text-[#9C3DFC] italic">
+            storytellers, creative wizards and tech geeks
+          </span>{" "}
+            who help you convey your story better.
+            <br/>
+            <br/>
+            <div className="text-base md:text-lg px-5 font-normal">
+              We are a Brand Strategy and Content Marketing company with over{" "}
+              <span className="text-[#BE96FF]">50+ names in our clientele.</span>{" "}
+              We specialize in brand communications and transforming your
+              companies into brands that people will remember.
+              Our team is here to{" "}
+              <span className="text-[#BE96FF]">
+              take your branding and game to the next level.
+            </span>
+            </div>
+          </div>
+
+          <div className="grid place-items-center ">
+            <Link href={"/about"}>
+              <Button
+                variant="secondary"
+                className="text-white flex items-center gap-3 group"
+              >
+                Know More
+                <ArrowRight className="group-active:rotate-45 md:group-hover:rotate-45 transition-all duration-300"/>
+              </Button>
+            </Link>
+          </div>
+        </div>
+
+        {/*<div className="grid place-items-center my-5">
+          <Button
+            variant="secondary"
+            className="group flex items-center text-white gap-4 px-8"
+          >
+            <span className="text-lg">Know More</span>{" "}
+            <ArrowRight className="group-active:rotate-45 md:group-hover:rotate-45 transition-all duration-300"/>
+          </Button>
+        </div>
+
+        <div className="text-4xl md:text-6xl font-bold my-5 text-center">
+          Anonymous <br/>
+          Squirrels
+        </div>*/}
+
+        <div className="flex items-center justify-between w-full md:mt-14">
+          <Image
+            src="/assets/about_us_image.png"
+            alt="gradient"
+            width={1500}
+            height={350}
+            className="w-full h-28 md:h-[350px]"
+          />
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
+export default AboutUs;
