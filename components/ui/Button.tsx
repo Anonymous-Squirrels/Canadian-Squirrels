@@ -16,14 +16,14 @@ function Button({
   let btnStyle;
   switch (variant) {
     case "primary":
-      btnStyle = "bg-sq-violet text-white";
+      btnStyle = "bg-sq-violet text-white px-28 p-3";
       break;
     case "secondary":
       btnStyle =
-        "bg-transparent border-2 border-sq-violet text-sq-violet active:bg-sq-violet active:border-white md:hover:bg-sq-violet md:hover:border-white";
+        "bg-transparent border-2 border-sq-violet p-2 md:p-4 text-sq-violet active:bg-sq-violet active:border-white md:hover:bg-sq-violet md:hover:border-white";
       break;
     case "light":
-      btnStyle = "bg-white text-black";
+      btnStyle = "bg-white p-2 md:p-4 text-black";
       break;
   }
   return (
@@ -31,7 +31,7 @@ function Button({
       onClick={onClick}
       type="submit"
       disabled={isSubmitting}
-      className={`transition-all duration-300 p-2 md:p-4 rounded-full ${btnStyle} ${className} `}
+      className={`transition-all duration-300  rounded-full ${btnStyle} ${className} `}
     >
       {children}
     </button>

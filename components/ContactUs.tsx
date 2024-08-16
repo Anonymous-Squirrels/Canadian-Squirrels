@@ -10,6 +10,7 @@ import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { sendMail } from "@/actions/resend";
 import { toast } from "sonner";
+import Image from "next/image";
 
 function ContactUs() {
   const {
@@ -57,14 +58,28 @@ function ContactUs() {
   return (
     <div
       id="contact"
-      className="bg-contact-us bg-center bg-cover h-fit flex flex-col items-center text-white py-7 md:py-14 md:px-36"
+      className="relative bg-black bg-center bg-cover h-fit flex flex-col items-center text-white py-7 md:py-14 md:px-36"
     >
+               <Image
+                src="/assets/contact-us-shadow.png"
+                alt="logo"
+                width={2000}
+                height={500}
+                className="absolute -bottom-[15%] -left-[60%] z-10 h-[500px] w-[2000px]"
+              />
+               <Image
+                src="/assets/contact-us-shadow.png"
+                alt="logo"
+                width={2000}
+                height={500}
+                className="absolute -top-[25%] -right-[60%] z-30 h-[600px] w-[2000px]"
+              />
       <GlassMorphism
         variant={"light"}
-        className="invisible md:visible w-full rounded-2xl"
+        className="invisible md:visible w-full rounded-2xl z-40 border border-gray-700"
       >
         <div className="flex flex-col items-center justify-between md:justify-around gap-y-6 md:gap-y-0 w-full visible md:mt-6">
-          <div className="md:w-full px-4 md:px-0 flex flex-col md:flex-row items-center justify-center gap-x-4">
+          <div className="md:w-full px-4 md:px-0 flex flex-col md:flex-row items-center gap-x-4">
             <GlassMorphism
               variant="light"
               className="rounded-full p-0 text-white w-fit h-fit self-start md:self-auto"
@@ -73,12 +88,11 @@ function ContactUs() {
             </GlassMorphism>
 
             <div className=" w-full md:w-fit mt-5 md:mt-0 md:px-4">
-              <span className="text-2xl md:text-4xl font-bold block my-3 leading-normal">
-                Let&apos;s jump on a discovery call
+              <span className="text-2xl md:text-4xl font-bold block leading-normal">
+              Get a free consultancy from our expert right now!
               </span>
-              <span className="text-sm font-light leading-8">
-                With lots of unique elements, you can promote and grow your
-                business to the sky. Really!
+              <span className="text-lg font-light tracking-wider drop-shadow-2xl leading-8">
+              With lots of unique elements, you can promote and grow your business to the sky. Really!
               </span>
             </div>
           </div>
@@ -89,7 +103,7 @@ function ContactUs() {
           >
             <form
               onSubmit={handleSubmit1(onSubmit)}
-              className="grid grid-cols-1 gap-x-8 "
+              className="grid grid-cols-1 gap-x-8 border-4"
             >
               <div className="h-fit w-full">
                 <Input
@@ -325,15 +339,18 @@ function ContactUs() {
                 )}
               </div>
 
-              <Button
+                <div className="flex items-center justify-center col-span-2">
+                <Button
                 variant="primary"
                 isSubmitting={isSubmitting2}
-                className={`font-semibold w-full rounded-md mt-8 md:col-span-2 hover:opacity-90 ${
+                className={`font-semibold text-lg rounded-md mt-8 px-9 hover:opacity-90 bg-[#734DC5] ${
                   isSubmitting2 && "opacity-90"
                 }`}
               >
                 {isSubmitting2 ? "Submitting..." : "Get Free Consultancy"}
               </Button>
+                </div>
+              
             </form>
           </div>
         </div>

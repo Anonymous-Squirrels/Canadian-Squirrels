@@ -6,6 +6,10 @@ html {
   @apply scroll-smooth
 }
 
+body{
+  overflow-x: hidden;
+}
+
 .scroll-text {
   animation: scrollText 27s linear infinite;
   animation-delay: 1000ms;
