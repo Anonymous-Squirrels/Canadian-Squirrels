@@ -37,6 +37,9 @@ const config: Config = {
         'dotted-bounce': 'bounce 20s infinite alternate',
         'slideIn': 'slideIn 0.5s forwards',
       },
+      boxShadow: {
+        "custom1": '0 20px 100px -15px rgb(123 97 255 / 0.3)'
+      }
     },
   },
   plugins: [addVariablesForColors,

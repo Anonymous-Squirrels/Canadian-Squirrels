@@ -22,9 +22,7 @@ function Page() {
       </div>
       <OurValues/>
       <div className="w-full relative overflow-hidden">
-        <div className="absolute -left-40  md:left-52 -translate-x-1/2 md:-top-40 z-10 ">
-          <Blob variant="violet"/>
-        </div>
+        
         <ThreeStepProcess/>
         <JoinTeam/>
       </div>

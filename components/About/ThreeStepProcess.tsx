@@ -1,6 +1,8 @@
 import {Sparkle} from "@/constants/Icons";
 import React from "react";
-import Accordion from "@/components/About/accordian_component/Accordion";
+import ProcessCard from "./ProcessCard";
+import { OUR_PROCESS } from "@/constants/ProcessData";
+import Image from "next/image";
 
 function ThreeStepProcess() {
 
@@ -11,10 +13,22 @@ function ThreeStepProcess() {
         <span>OUR 3-STEP PROCESS</span>
       </div>
 
-      <div
-        className="flex flex-col md:flex-row items-center justify-evenly md:justify-center gap-0 md:gap-16 h-fit w-full mt-12">
-          <Accordion/>
+      <div className="flex w-full 2xl:w-[100%] 3xl:w-[90%] flex-wrap gap-3 md:gap-1 2xl:gap-[30px] sm:pl-10 lg:pl-12 xl:w-[90%] 2xl:pl-[70px] pb-8 justify-center mx-auto">
+  {OUR_PROCESS.map((process, index) => {
+    return (
+      <div key={index} className="flex justify-center">
+        <ProcessCard
+          isHome={true}
+          key={index}
+          logo={<Image src={process.imgSrc} alt="support" width={500} height={500}></Image>}
+          heading={process.name}
+          about={process.about}
+        ></ProcessCard>
       </div>
+    );
+  })}
+</div>
+
     </div>
   );
 }
