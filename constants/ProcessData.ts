@@ -2,7 +2,7 @@ export const OUR_PROCESS = [
     {
       name: "Execution",
       about:
-        "We refine your brand vision through research and creative development. Our team crafts comprehensive brand materials, including logos, style guides, and marketing assets, to elevate your brand image.",
+        "We refine your brand vision through research and creative development. Our team crafts comprehensive brand materials, including logos, style guides, and marketing assets, to elevate your brand image. We are here to take your branding to the next level.",
       imgSrc: "/logo/Execution.png",
     },
     {

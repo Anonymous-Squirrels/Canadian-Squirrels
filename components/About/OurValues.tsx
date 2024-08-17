@@ -1,74 +1,51 @@
 import { Sparkle } from "@/constants/Icons";
 import Image from "next/image";
 import React from "react";
+import OurValuesCard from "./OurValuesCard";
+import { BsFillRocketTakeoffFill } from "react-icons/bs";
+import { FaEye } from "react-icons/fa";
+import { TbTargetArrow } from "react-icons/tb";
 
 function OurValues() {
   return (
-    <div className="min-h-screen bg-white py-12 md:py-16 overflow-hidden">
-      <div className="flex w-full items-center justify-center text-3xl py-9">
+    <div className="bg-black text-white py-12 overflow-hidden">
+      <div className=" w-full text-3xl py-9">
         <div className="w-fit flex items-center gap-x-3.5 justify-center md:absolute md:left-24">
-          <Sparkle /> <span className="uppercase font-bold">OUR VALUES</span>
+          <Sparkle /> <span className="uppercase text-2xl md:text-2xl">OUR VALUES</span>
         </div>
+
+        <div className="flex flex-col md:flex-row md:flex-wrap gap-[40px] xl:gap-[30px] 2xl:gap-[50px] mt-[50px] md:mt-[100px] mx-auto justify-center">
+  <div className="flex justify-center">
+    <OurValuesCard
+      icon={<FaEye className="text-[30px] md:text-[40px]"></FaEye>}
+      label="Vision"
+      Classname=""
+      content="MLSA envisions a world where everyone has access to the benefits of technology. We believe that technology has the potential to be an effective tool for education.We are committed to educating everyone about various tech stacks, thus keeping them updated."
+    />
+  </div>
+  <div className="flex justify-center">
+    <OurValuesCard
+      icon={<TbTargetArrow className=" text-[30px] md:text-[40px]"></TbTargetArrow>}
+      label="Goal"
+      Classname=""
+      content="Connecting people with technology and assisting them in using it to enhance their lives are the two main objectives of MLSA. In order to achieve this, we organize events, work on projects, and educate everyone on various tech stacks."
+    />
+  </div>
+  <div className="flex justify-center">
+    <OurValuesCard
+      icon={
+        <BsFillRocketTakeoffFill className="text-[30px] md:text-[40px]"></BsFillRocketTakeoffFill>
+      }
+      label="Mission"
+      Classname=""
+      content={` The mission of MLSA is "Tech for All".We empower individuals to embrace the digital world with confidence through engaging events, innovative projects, and meaningful connections. We are dedicated to bridging the technological divides, ensuring that no one is left behind.`}
+    />
+  </div>
+</div>
+
       </div>
 
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-between px-7 md:p-24 gap-y-8">
-        <div className="w-full md:w-fit rounded-lg grid place-items-center">
-          <div className="w-full md:w-fit flex flex-col items-center justify-around gap-y-5 rounded-lg shadow-xl p-6 md:mr-20">
-            <span className="uppercase self-start md:self-auto font-bold">Trust</span>
-            <span className="text-sm leading-7 w-full md:w-3/4">
-              Cultivating Enduring Relationships Through Unwavering Integrity
-              and Reliability.
-            </span>
-          </div>
-          <div className="w-fit md:relative right-9">
-            <Image
-              src="/assets/handshake.png"
-              width={500}
-              height={500}
-              alt="handshake"
-              className="w-fit"
-            />
-          </div>
-        </div>
-
-        <div className="w-full md:w-fit flex flex-col items-start justify-around rounded-lg shadow-xl p-6 md:mr-20">
-          <span className="uppercase font-bold">Loyalty</span>
-          <br />
-          <span className="text-sm leading-7 w-full md:w-3/4">
-            Fostering Deep, Long-Lasting Partnerships Built on Commitment and
-            Dedication.
-          </span>
-          <div className="grid place-items-center">
-            <Image
-              src="/assets/loyalty.png"
-              width={400}
-              height={400}
-              alt="handshake"
-              className="my-8 md:w-full w-[80%]"
-            />
-          </div>
-        </div>
-
-        <div className="w-full md:w-fit rounded-lg">
-          <div className="w-full md:w-fit flex flex-col items-start justify-around rounded-lg shadow-xl p-6">
-            <span className="uppercase font-bold">Transparency</span>
-            <br />
-            <span className="text-sm leading-7 w-full md:w-3/4">
-              Promoting Open, Honest Communication to Ensure Clarity and Mutual
-              Success.
-            </span>
-          </div>
-          <div className="w-full -translate-y-10">
-            <Image
-              src="/assets/transparency.png"
-              width={400}
-              height={400}
-              alt="handshake"
-              className="md:w-full w-[80%] md:translate-x-24 translate-x-32"
-            />
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 }

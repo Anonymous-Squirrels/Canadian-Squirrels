@@ -13,7 +13,7 @@ const ProcessCard = ({ isHome, logo, heading, about }: Props) => {
     <>
       <div
         className={`${isHome ? "4xl:h-[319px] 4xl:max-w-[475px] " : " h-[120%] shadow-blue"
-          } relative duration-[4] transition hover:shadow-custom1 group rounded-[8px] 2xl:rounded-[12px] pb-1 pt-[10.93px] pr-[6.53px] md:pr-[17px] bg-[#111]  border-[#FFC4C4] border gradient-border   hover:shadow-blue  2xl:min-h-[280px] 2xl:max-w-[370px] w-[93%]  md:max-w-[300px] xl:max-w-[300px] md:mt-[60px] 2xl:mt-[122px] sm:mt-[44px] mt-[38px] `}
+          } relative cursor-default duration-[4] transition hover:shadow-custom1 group rounded-[8px] 2xl:rounded-[12px] pb-1 pt-[10.93px] pr-[6.53px] md:pr-[17px] bg-[#111]  border-[#FFC4C4] border gradient-border   hover:shadow-blue  2xl:min-h-[280px] 2xl:max-w-[370px] w-[93%]  md:max-w-[300px] xl:max-w-[300px] md:mt-[60px] 2xl:mt-[122px] sm:mt-[44px] mt-[38px] `}
       >
         <div
           className={`${logoTyp === "number"
