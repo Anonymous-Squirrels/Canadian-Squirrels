@@ -2,9 +2,9 @@ import { Sparkle } from "@/constants/Icons";
 import Image from "next/image";
 import React from "react";
 import OurValuesCard from "./OurValuesCard";
-import { BsFillRocketTakeoffFill } from "react-icons/bs";
-import { FaEye } from "react-icons/fa";
-import { TbTargetArrow } from "react-icons/tb";
+import { FaStar } from "react-icons/fa";
+import { IoPeople } from "react-icons/io5";
+import { FaHandshake } from "react-icons/fa";
 
 function OurValues() {
   return (
@@ -17,28 +17,28 @@ function OurValues() {
         <div className="flex flex-col md:flex-row md:flex-wrap gap-[40px] xl:gap-[30px] 2xl:gap-[50px] mt-[50px] md:mt-[100px] mx-auto justify-center">
   <div className="flex justify-center">
     <OurValuesCard
-      icon={<FaEye className="text-[30px] md:text-[40px]"></FaEye>}
-      label="Vision"
+      icon={<IoPeople className="text-[30px] md:text-[40px]"></IoPeople>}
+      label="Transparency"
       Classname=""
-      content="MLSA envisions a world where everyone has access to the benefits of technology. We believe that technology has the potential to be an effective tool for education.We are committed to educating everyone about various tech stacks, thus keeping them updated."
+      content="Open communication and clarity are essential to our business philosophy. We believe in maintaining transparency in all our dealings, from project updates to financial reporting. Our clients always know where their project stands."
     />
   </div>
   <div className="flex justify-center">
     <OurValuesCard
-      icon={<TbTargetArrow className=" text-[30px] md:text-[40px]"></TbTargetArrow>}
-      label="Goal"
+      icon={<FaHandshake className=" text-[30px] md:text-[40px]"></FaHandshake>}
+      label="Trust"
       Classname=""
-      content="Connecting people with technology and assisting them in using it to enhance their lives are the two main objectives of MLSA. In order to achieve this, we organize events, work on projects, and educate everyone on various tech stacks."
+      content="Trust is the cornerstone of every successful team. We believe in building relationships with our clients, founded on honesty, reliability, and integrity. Our team is committed to delivering on our promises and exceeding expectations."
     />
   </div>
   <div className="flex justify-center">
     <OurValuesCard
       icon={
-        <BsFillRocketTakeoffFill className="text-[30px] md:text-[40px]"></BsFillRocketTakeoffFill>
+        <FaStar className="text-[30px] md:text-[40px]"></FaStar>
       }
-      label="Mission"
+      label="Loyalty"
       Classname=""
-      content={` The mission of MLSA is "Tech for All".We empower individuals to embrace the digital world with confidence through engaging events, innovative projects, and meaningful connections. We are dedicated to bridging the technological divides, ensuring that no one is left behind.`}
+      content={"We are dedicated to building long-lasting partnerships with our clients. Our loyalty lies in their success, and we are committed to supporting their growth and achieving their business goals. Our team is invested in the success of every client."}
     />
   </div>
 </div>

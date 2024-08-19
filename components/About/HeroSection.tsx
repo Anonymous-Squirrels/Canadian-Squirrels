@@ -22,9 +22,9 @@ function HeroSection() {
           Anonymous Squirrels
         </span>
       </div>
-      <Link href={"#about-us"} className="absolute bottom-10 z-20 ">
+      <div className="absolute bottom-10 z-20 ">
         <DownArrow className="animate-bounce h-11 w-11 md:w-14 md:h-14"/>
-      </Link>
+      </div>
     </div>
   );
 }
