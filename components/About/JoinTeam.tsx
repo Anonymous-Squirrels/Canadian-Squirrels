@@ -15,7 +15,7 @@ function JoinTeam() {
           of squirrels.
         </span>
       </div>
-      <Link href="/#contact" className="z-20">
+      <Link href="/contact" className="z-20">
         <Button
           variant="primary"
           className="mt-4 px-6 rounded-lg bg-[#444BD3] hover:border-[#444BD3] hover:bg-transparent hover:text-black border-transparent border "

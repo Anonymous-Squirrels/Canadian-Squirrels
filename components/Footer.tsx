@@ -95,7 +95,7 @@ function Footer() {
             </li>
 
             <li className="hover:text-white transition-colors duration-300 cursor-pointer">
-              <Link href={"/#contact"}>
+              <Link href={"/contact"}>
               Contact Us
               </Link>
             </li>

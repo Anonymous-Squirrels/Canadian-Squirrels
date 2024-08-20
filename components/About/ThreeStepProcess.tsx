@@ -12,6 +12,7 @@ function ThreeStepProcess() {
         <Sparkle/>
         <span>OUR 3-STEP PROCESS</span>
       </div>
+      
 
       <div className="flex w-full 2xl:w-[100%] 3xl:w-[90%] flex-wrap gap-3 md:gap-1 2xl:gap-[30px] sm:pl-10 lg:pl-12 xl:w-[90%] 2xl:pl-[70px] pb-8 justify-center mx-auto">
   {OUR_PROCESS.map((process, index) => {

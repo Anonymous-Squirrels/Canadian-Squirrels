@@ -22,9 +22,9 @@ const WebDevelopment = () => {
             MERN Stack Development
           </div>
           <div className='text-[#969696] text-center'>
-            We craft scalable, high-performance solutions using MongoDB, Express, React, and Node.js 
-            to meet your business needs. We craft scalable, high-performance solutions using MongoDB, 
-            Express, React, and Node.js to meet your business needs.
+          We craft scalable, high-performance solutions using MongoDB, Express, React, and Node.js to meet your 
+          business needs. We focus on creating easy-to-use, effective tools that help your business grow and 
+          succeed.
           </div>
         </div>
         <div className='absolute -top-16 left-0 hidden md:flex justify-evenly gap-x-5 w-[710px]'>

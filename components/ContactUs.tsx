@@ -58,7 +58,7 @@ function ContactUs() {
   return (
     <div
   id="contact"
-  className="relative bg-black bg-center bg-cover h-fit flex flex-col items-center text-white py-7 md:py-14 md:px-36"
+  className="relative bg-black bg-center bg-cover h-fit flex flex-col items-center text-white py-2 md:py-14 md:px-36"
 >
   <Image
     src="/assets/contact-us-shadow.png"
@@ -88,10 +88,10 @@ function ContactUs() {
             </GlassMorphism>
 
             <div className=" w-full md:w-fit mt-5 md:mt-0 md:px-4">
-              <span className="text-2xl md:text-4xl font-bold block leading-normal">
+              <span className="text-2xl md:text-4xl font-bold block md:leading-normal">
               Get a free consultancy from our expert right now!
               </span>
-              <span className="text-lg font-light tracking-wider drop-shadow-2xl leading-8">
+              <span className="text-sm md:text-lg font-light md:tracking-wider drop-shadow-2xl md:leading-8">
               With lots of unique elements, you can promote and grow your business to the sky. Really!
               </span>
             </div>

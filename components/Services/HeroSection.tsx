@@ -23,7 +23,7 @@ function HeroSection() {
           </div>
 
           <div className="grid place-items-center ">
-            <Link href={"/#contact"}>
+            <Link href={"/contact"}>
               <Button
                 variant="secondary"
                 className="text-white flex items-center gap-3 group"

@@ -22,7 +22,7 @@ function NavBar() {
               !isOpen ? "flex items-center" : ""
             }`}
           >
-            <div className="flex items-center justify-between w-full relative">
+            <div className="flex items-center justify-between w-full relative p-1">
               <Link href="/" className="flex items-center gap-3 group">
                 <div className="h-fit w-fit hidden md:flex element z-20 -ml-5 px-5 py-4">
                   <Logo className="h-9 md:h-fit"/>

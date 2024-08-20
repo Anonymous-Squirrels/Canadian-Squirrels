@@ -16,7 +16,7 @@ function Button({
   let btnStyle;
   switch (variant) {
     case "primary":
-      btnStyle = "bg-sq-violet text-white px-28 p-3";
+      btnStyle = "bg-sq-violet text-white  p-3";
       break;
     case "secondary":
       btnStyle =
