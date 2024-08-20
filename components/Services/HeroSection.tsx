@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function HeroSection() {
   return (
-    <div className="h-[85vh] md:h-[85vh] relative w-full bg-black text-white flex flex-col items-center">
+    <div className="h-[85vh] md:h-[100vh] relative w-full bg-black text-white flex flex-col items-center">
       <div className="relative top-1/2 w-full h-fit">
         <div className={`${styles.blob} md:w-[639px] w-[360px]`}></div>
         <div

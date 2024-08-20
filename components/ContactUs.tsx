@@ -57,23 +57,23 @@ function ContactUs() {
 
   return (
     <div
-      id="contact"
-      className="relative bg-black bg-center bg-cover h-fit flex flex-col items-center text-white py-7 md:py-14 md:px-36"
-    >
-               <Image
-                src="/assets/contact-us-shadow.png"
-                alt="logo"
-                width={2000}
-                height={500}
-                className="absolute -bottom-[15%] -left-[60%] z-10 h-[500px] w-[2000px]"
-              />
-               <Image
-                src="/assets/contact-us-shadow.png"
-                alt="logo"
-                width={2000}
-                height={500}
-                className="absolute -top-[25%] -right-[60%] z-30 h-[600px] w-[2000px]"
-              />
+  id="contact"
+  className="relative bg-black bg-center bg-cover h-fit flex flex-col items-center text-white py-7 md:py-14 md:px-36"
+>
+  <Image
+    src="/assets/contact-us-shadow.png"
+    alt="logo"
+    width={2000}
+    height={500}
+    className="absolute -bottom-[15%] -left-[60%] z-10 h-[500px] w-[2000px]"
+  />
+  {/* <Image
+    src="/assets/contact-us-shadow.png"
+    alt="logo"
+    width={2000}
+    height={500}
+    className="absolute -top-[25%] -right-[60%] z-30 h-[600px] w-[2000px]"
+  /> */}
       <GlassMorphism
         variant={"light"}
         className="invisible md:visible w-full rounded-2xl z-40 border border-gray-700"
@@ -99,11 +99,11 @@ function ContactUs() {
 
           <GlassMorphism
             variant="light"
-            className="border rounded-xl text-white w-full md:w-full p-4 md:hidden"
+            className=" rounded-xl text-white w-full md:w-full p-4 md:hidden"
           >
             <form
               onSubmit={handleSubmit1(onSubmit)}
-              className="grid grid-cols-1 gap-x-8 border-4"
+              className="grid grid-cols-1 gap-x-8"
             >
               <div className="h-fit w-full">
                 <Input

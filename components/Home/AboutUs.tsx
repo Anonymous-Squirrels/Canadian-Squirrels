@@ -1,14 +1,13 @@
 import React from "react";
 import Button from "../ui/Button";
 import Image from "next/image";
-import AboutUsIcon from "@/components/Home/AboutUsIcon";
 import {ArrowRight} from "@/constants/Icons";
 import Link from "next/link";
 
 function AboutUs() {
   return (
     <div id={"about-us"} className=" bg-black text-white">
-      <div className="flex px-7 md:p-14 md:pt-10">
+      <div className="flex pt-7 px-7 p-7 md:p-14 md:pt-10">
         <span className="uppercase text-5xl md:text-8xl font-bold mx-auto  bg-gradient-to-r from-[#A998FF] via-[#7B61FF] to-[#5237D8] inline-block text-transparent bg-clip-text">
           About Us
         </span>
@@ -49,22 +48,7 @@ function AboutUs() {
           </div>
         </div>
 
-        {/*<div className="grid place-items-center my-5">
-          <Button
-            variant="secondary"
-            className="group flex items-center text-white gap-4 px-8"
-          >
-            <span className="text-lg">Know More</span>{" "}
-            <ArrowRight className="group-active:rotate-45 md:group-hover:rotate-45 transition-all duration-300"/>
-          </Button>
-        </div>
-
-        <div className="text-4xl md:text-6xl font-bold my-5 text-center">
-          Anonymous <br/>
-          Squirrels
-        </div>*/}
-
-        <div className="flex items-center justify-between w-full md:mt-14">
+        <div className="flex items-center justify-between w-full mt-7 md:mt-14">
           <Image
             src="/assets/about_us_image.png"
             alt="gradient"

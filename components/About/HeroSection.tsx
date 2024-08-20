@@ -5,7 +5,7 @@ import Link from "next/link";
 function HeroSection() {
   return (
     <div
-      className="bg-black h-screen md:h-[85vh] w-full grid place-items-center text-white relative px-10 overflow-hidden">
+      className="bg-black h-screen md:h-[100vh] w-full grid place-items-center text-white relative px-10 overflow-hidden">
       <TextLogo className="absolute -left-16 md:left-0 h-96 w-96 top-24 md:top-0"/>
       <div className="absolute md:hidden -left-64 -translate-x-1/2 overflow-hidden -top-[430px]">
         <Blob variant="violet"/>

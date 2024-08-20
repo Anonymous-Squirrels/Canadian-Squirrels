@@ -3,6 +3,7 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import {Toaster} from "sonner";
+import FlareCursor from "@/components/Cursor/FlareCursor";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -42,6 +43,7 @@ export default function RootLayout({
     </head>
     <body className={`${inter.className} scrollbar-hide`}>
     <Toaster/>
+    <FlareCursor />
     <NavBar/>
     <>{children}</>
     <Footer/>

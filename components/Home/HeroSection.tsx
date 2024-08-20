@@ -1,4 +1,3 @@
-import Button from "@/components/ui/Button";
 import GlassMorphism from "@/components/ui/GlassMorphism";
 import {Trustee} from "@/constants/Home";
 import {
@@ -16,6 +15,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="relative h-fit bg-black pb-7 md:pb-10 w-full overflow-hidden pt-16 md:pt-0">
+      <div className="h-[15vh]"></div>
       <div className="absolute hidden md:block md:left-60 -translate-x-1/2 -top-96 md:-top-72 z-10">
         <Blob variant="violet"/>
       </div>
@@ -40,16 +40,15 @@ export default function Home() {
             Elevate your content marketing with a powerful brand strategy.
           </div>
           <Link className={"w-fit h-fit"} href={"/#about-us"}>
-            <Button
-              className="md:p-3 rounded-md md:rounded-lg whitespace-nowrap w-40 md:w-40 bg-[#5237D8] active:opacity-8 md:hover:opacity-85"
-              variant="primary"
+            <button
+              className="p-3 text-white rounded-md md:rounded-lg whitespace-nowrap bg-[#5237D8] active:opacity-8 hover:opacity-85"
             >{/*<p className="w-full h-fit overflow-clip  text-sm md:text-xl ">
             <span className="scroll-text inline-block">
               Get a Free Consultation Get a Free Consultation Get a Free Consultation
             </span>
           </p>*/}
               <p className={"text-xl"}>Explore more</p>
-            </Button>
+            </button>
           </Link>
         </div>
 

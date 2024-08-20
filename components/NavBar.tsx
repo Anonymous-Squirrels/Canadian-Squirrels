@@ -13,14 +13,13 @@ function NavBar() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <div className="h-20 md:h-fit bg-black z-50 relative flex items-center justify-center pt-8 md:pt-0 ">
-      <div className="w-full px-4 md:p-4 fixed md:static">
+    <div className="h-20 md:h-fit fixed top-0 left-0 right-0 z-50 flex items-center justify-center pt-8 md:pt-0">
+      <div className="w-full px-4 md:p-4">
         <div className={`w-full h-fit ${isOpen && "mt-60"} md:mt-0`}>
-          <GlassMorphism
-            variant="light"
-            className={`text-white rounded-lg md:px-8 min-h-16 md:h-20 w-full backdrop-blur-xl bg-opacity-[0.09]
+          <div
+            className={`text-white rounded-lg md:px-8 min-h-16 md:h-20 w-full  bg-[#282828]
             ${
-              !isOpen ? "flex items-center" : "bg-opacity-30 backdrop-blur-xl"
+              !isOpen ? "flex items-center" : ""
             }`}
           >
             <div className="flex items-center justify-between w-full relative">
@@ -80,7 +79,7 @@ function NavBar() {
                 ))}
               </div>
             )}
-          </GlassMorphism>
+          </div>
         </div>
       </div>
     </div>
