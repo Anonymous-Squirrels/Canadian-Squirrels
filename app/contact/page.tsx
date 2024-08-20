@@ -10,7 +10,7 @@ const FullScreenImages = () => {
           <p className='font-semibold'>CONTACT US</p>
           <div className='flex items-center gap-3 md:mt-4 ml-2'>
             <div className='w-5 md:w-20 h-[2px] bg-white'></div>
-            <div className='text-xl md:text-4xl'>LET'S TALK</div>
+            <div className='text-xl md:text-4xl'>LET&apos;S TALK</div>
             <div className='w-5 md:w-10 h-[2px] bg-white'></div>
           </div>
         </div>
