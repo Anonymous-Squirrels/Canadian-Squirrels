@@ -24,9 +24,9 @@ const ContactBackground = () => {
       <div className="relative grid grid-cols-1 md:grid-cols-3 h-full">
         {/* Image 1 */}
         <div className="relative col-span-1 md:col-span-1">
-          <Image
-            src="/assets/city1.png"
-            alt="Image 1"
+        <Image
+            src="/assets/vmkolkata.jpg"
+            alt="Image 3"
             layout="fill"
             objectFit="cover"
             className="w-full h-full"
@@ -35,8 +35,8 @@ const ContactBackground = () => {
         {/* Image 2 */}
         <div className="relative col-span-1 md:col-span-1 hidden md:block">
           <Image
-            src="/assets/city1.png"
-            alt="Image 2"
+            src="/assets/canada.jpg"
+            alt="Image 1"
             layout="fill"
             objectFit="cover"
             className="w-full h-full"
@@ -45,8 +45,8 @@ const ContactBackground = () => {
         {/* Image 3 */}
         <div className="relative col-span-1 md:col-span-1 hidden md:block">
           <Image
-            src="/assets/city1.png"
-            alt="Image 3"
+            src="/assets/hussain.jpg"
+            alt="Image 2"
             layout="fill"
             objectFit="cover"
             className="w-full h-full"
