@@ -11,12 +11,11 @@ function Page() {
   return (
     <div>
       <HeroSection />
-      <UIDesign />
-      <WebDevlopment />
       <Marketing />
       <Branding />
+      <UIDesign />
+      <WebDevlopment />
       <Engage />
-      <ContactUs />
     </div>
   );
 }

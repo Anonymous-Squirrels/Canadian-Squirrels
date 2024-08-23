@@ -12,7 +12,7 @@ export function BentoBox() {
           <GlassMorphism
             key={i}
             variant={"light"}
-            className="h-72 md:h-[400px] overflow-hidden rounded-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] space-y-4 w-full place-items-center"
+            className=" md:min-h-[400px] h-full overflow-hidden rounded-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] space-y-4 w-full place-items-center"
           >
             <div className="text-sm transition duration-200 w-full flex flex-col items-center">
               <p className="text-center text-xl font-bold block mb-5">
@@ -24,7 +24,7 @@ export function BentoBox() {
               </p>
             </div>
 
-            <div className="grid place-items-center items-center w-full h-fit">
+            <div className="grid place-items-center items-center w-full">
               {item.content}
             </div>
           </GlassMorphism>
@@ -37,7 +37,7 @@ export function BentoBox() {
     <GlassMorphism
       key={i}
       variant={"light"}
-      className={`h-72 md:h-[400px] overflow-hidden rounded-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] space-y-4 w-full place-items-center 
+      className={` md:min-h-[400px] h-full overflow-hidden rounded-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] space-y-4 w-full place-items-center 
         ${i === 0 ? "md:col-span-1" : ""}
         ${i === 1 ? "md:col-span-2" : ""}`}
     >
@@ -49,7 +49,7 @@ export function BentoBox() {
           {item.description}
         </p>
       </div>
-      <div className="grid place-items-center items-center w-full h-fit">
+      <div className="grid place-items-center items-center w-full">
         {item.content}
       </div>
     </GlassMorphism>

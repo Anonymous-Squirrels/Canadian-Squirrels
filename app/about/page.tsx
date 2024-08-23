@@ -5,6 +5,7 @@ import OurValues from "@/components/About/OurValues";
 import ThreeStepProcess from "@/components/About/ThreeStepProcess";
 import React from "react";
 import {Blob} from "@/constants/Icons";
+import ContactBackground from "@/components/Contact/ContactBackground";
 
 function Page() {
   return (
@@ -23,8 +24,8 @@ function Page() {
       </div>
       <OurValues/>
       <div className="w-full relative overflow-hidden">
-        
         <ThreeStepProcess/>
+        <ContactBackground/>
         <JoinTeam/>
       </div>
     </div>

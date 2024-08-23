@@ -13,7 +13,7 @@ export const BentoItems = [
         src="/assets/boostingbusiness.png"
         width={400}
         height={400}
-        className="rounded-xl object-contain"
+        className="rounded-xl object-cover h-full"
         alt="boostingbusiness"
       />
     ),
@@ -38,7 +38,7 @@ export const BentoItems = [
             width={400}
             height={400}
             alt="works"
-            className="md:h-full object-contain"
+            className="rounded-xl object-cover h-full"
           />
         </div>
       </div>
@@ -62,10 +62,10 @@ export const BentoItems = [
         <div className="flex w-full h-full">
           <Image
             src="/assets/someofwork.png"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             alt="works"
-            className="md:h-full object-contain"
+            className="rounded-xl object-cover h-full"
           />
         </div>
       </div>
@@ -77,27 +77,28 @@ export const BentoItems = [
     description:
       "Our Company provides a lot of services ranging from Brand strategies to SEO Optimization to Web Content Management",
     content: (
-      <div>
-        <div className="flex md:mt-6">
-          <Image
-            src="/assets/Servicesgroup.png"
-            width={400}
-            height={400}
-            alt="service"
-            className="h-20 md:h-fit object-contain mx-auto w-full"
-          />
-        </div>
-        <div className="mx-auto flex justify-center">
-        <Link href="/services" className="mt-10">
-          <Button
-            variant="light"
-            className="rounded-full md:my-32 px-6 md:mt-16 md:px-10 font-medium z-20"
-          >
-            View our services
-          </Button>
-        </Link>
-        </div>
-      </div>
+      <div className="max-w-[700px] w-full">
+  <div className="flex md:mt-6 w-full">
+    <Image
+      src="/assets/Servicesgroup.png"
+      width={600}
+      height={400}
+      alt="service"
+      className="mx-auto"
+    />
+  </div>
+  <div className="mx-auto flex justify-center">
+    <Link href="/services" className="mt-10">
+      <Button
+        variant="light"
+        className="rounded-full md:my-32 px-6 md:mt-16 md:px-10 font-medium z-20"
+      >
+        View our services
+      </Button>
+    </Link>
+  </div>
+</div>
+
     ),
   },
 ];

@@ -10,7 +10,7 @@ function HeroSection({
   setSection: React.Dispatch<React.SetStateAction<string>>;
 }) {
   return (
-    <div className="h-[40vh] md:h-[100vh] bg-black text-white grid place-items-center relative overflow-hidden">
+    <div className="h-[50vh] md:h-[100vh] bg-black text-white grid place-items-center relative overflow-hidden">
 
       <span className="text-3xl md:text-7xl text-center font-semibold w-3/4 md:w-2/5 r-2">
         Here&apos;s is some work we are{" "}

@@ -25,7 +25,7 @@ function Item({
             <Image
               src={image}
               alt={name}
-              className="object-cover h-full w-full"
+              className="object-cover h-full w-full rounded-full"
               width={56}
               height={56}
             />

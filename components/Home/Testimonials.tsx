@@ -26,7 +26,7 @@ function Testimonials() {
       <div className="text-center grid place-items-center">
         <Button
         variant="secondary"
-          className="flex items-center gap-3 border-[#B897FF] border-[1px] text-white"
+          className="flex items-center gap-3 border-[#B897FF] border-[2px] text-white"
         >
           <Message /> Testimonials
         </Button>
@@ -36,7 +36,7 @@ function Testimonials() {
         </div>
         <div className="text-sm md:text-xl md:font-bold w-11/12 mb-5">
         Thank you for your trust in Anonymous Squirrels! We are grateful for your feedback and are 
-        committed to providing the best [products/services offered]. Read what our clients have to say 
+        committed to providing the best services. Read what our clients have to say 
         about their experience with us.
         </div>
       </div>

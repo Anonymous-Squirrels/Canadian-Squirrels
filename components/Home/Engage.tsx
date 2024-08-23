@@ -87,7 +87,7 @@ export default function Engage() {
         <p className="hover-this text-[230px] font-bold self-start flex items-center justify-around gap-3">
           <span className={"span-text"}>
             ENGAGE
-            <span className="bg-black h-7 w-7 inline-block" />
+            <span className="bg-black inline-block" />
           </span>
         </p>
         <p className="hover-this text-8xl font-medium self-end">
