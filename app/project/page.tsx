@@ -22,7 +22,6 @@ function Page() {
         {/*<Main section={section}/>*/}
         <MarqueeSlide/>
       </div>
-
       <Like/>
     </div>
   );

@@ -58,7 +58,7 @@ function ContactUs() {
   return (
     <div
   id="contact"
-  className="relative bg-black bg-center bg-cover h-fit flex flex-col items-center text-white py-2 md:py-14 md:px-36"
+  className="relative bg-black bg-center bg-cover h-fit flex flex-col items-center text-white pb-2 md:pb-14 pt-20 md:pt-32 md:px-36"
 >
   <Image
     src="/assets/contact-us-shadow.png"
@@ -82,7 +82,7 @@ function ContactUs() {
           <div className="md:w-full px-4 md:px-0 flex flex-col md:flex-row items-center gap-x-4">
             <GlassMorphism
               variant="light"
-              className="rounded-full p-0 text-white w-fit h-fit self-start md:self-auto"
+              className="rounded-full p-0 text-white w-fit h-fit self-start md:self-auto hidden md:flex"
             >
               <Message2 className="w-14 h-14 md:w-20 md:h-20" />
             </GlassMorphism>
@@ -109,7 +109,7 @@ function ContactUs() {
                 <Input
                   text="Name (Required)"
                   type="text"
-                  placeholder="i.e. Rahul Sharma"
+                  placeholder="i.e. John Brown"
                   classNameDiv="bg-white rounded-lg p-0"
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
@@ -127,7 +127,7 @@ function ContactUs() {
                 <Input
                   text="Email (Required)"
                   type="email"
-                  placeholder="i.e. rahulsharma@mail.com"
+                  placeholder="i.e. Johnbrown@mail.com"
                   classNameDiv="bg-white rounded-lg p-0"
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
@@ -145,7 +145,7 @@ function ContactUs() {
                 <Input
                   text="Phone"
                   type="text"
-                  placeholder="i.e. 123-456-7890"
+                  placeholder="i.e. +1(524)278-0381"
                   classNameDiv="bg-white rounded-lg p-0"
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
@@ -235,7 +235,7 @@ function ContactUs() {
                 <Input
                   text="Name (Required)"
                   type="text"
-                  placeholder="i.e. Rahul Sharma"
+                  placeholder="i.e. John Brown"
                   classNameDiv="bg-white rounded-lg p-0"
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
@@ -271,7 +271,7 @@ function ContactUs() {
                 <Input
                   text="Email (Required)"
                   type="email"
-                  placeholder="i.e. rahulsharma@mail.com"
+                  placeholder="i.e. Johnbrown@mail.com"
                   classNameDiv="bg-white rounded-lg p-0"
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"
@@ -307,7 +307,7 @@ function ContactUs() {
                 <Input
                   text="Phone"
                   type="text"
-                  placeholder="i.e. 123-456-7890"
+                  placeholder="i.e. +1(524)278-0381"
                   classNameDiv="bg-white rounded-lg p-0"
                   classNameInput="text-black placeholder:font-light"
                   classNameText="font-semibold"

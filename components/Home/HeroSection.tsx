@@ -28,9 +28,9 @@ export default function Home() {
       </>
 
       <div
-        className="relative z-20 flex flex-col md:flex-row items-center justify-between md:mx-32 py-4 md:py-8 gap-y-14 md:gap-y-0 mx-0 ">
+        className="relative z-20 flex flex-col md:flex-row items-center justify-between md:mx-10 xl:mx-32 py-4 md:py-8 gap-y-14 md:gap-y-0 mx-0 ">
         <div className="w-10/12 px-2.5 md:w-1/2 order-last md:order-first">
-          <div className="w-full text-white font-semibold text-3xl  md:text-6xl">
+          <div className="w-full text-white font-semibold text-3xl lg:text-6xl">
             <span>Unlock your</span>{" "}
             <span className="text-sq-violet">Brand&apos;s Potential</span>.{" "}
             <span className="hidden md:inline-flex">One at a time Promote and</span>{" "}
@@ -39,7 +39,7 @@ export default function Home() {
           <div className="text-white text-lg md:text-2xl my-5">
             Elevate your content marketing with a powerful brand strategy.
           </div>
-          <Link className={"w-fit h-fit"} href={"/#about-us"}>
+          <Link className={"w-fit h-fit"} href={"/project"}>
             <button
               className="p-3 text-white rounded-md md:rounded-lg whitespace-nowrap bg-[#5237D8] active:opacity-8 hover:opacity-85"
             >{/*<p className="w-full h-fit overflow-clip  text-sm md:text-xl ">
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
 
         <div className="relative order-first md:order-last">
-          <Squirrel className="md:h-[500px] md:w-[420px]"/>
+          <Squirrel className="lg:h-[500px] lg:w-[420px]"/>
           <GlassMorphism
             variant="light"
             className="rounded-xl inline-block absolute -top-2 md:top-0 right-0 translate-x-1/2"

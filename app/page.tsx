@@ -1,4 +1,3 @@
-import ContactUs from "@/components/ContactUs";
 import AboutUs from "@/components/Home/AboutUs";
 import {BentoBox} from "@/components/Home/BentoBox";
 import Home from "@/components/Home/HeroSection";
@@ -6,6 +5,7 @@ import Testimonials from "@/components/Home/Testimonials";
 import React from "react";
 import {Blob} from "@/constants/Icons";
 import Engage from "@/components/Home/Engage";
+import ContactBackground from "@/components/Contact/ContactBackground";
 
 function Page() {
   return (
@@ -25,7 +25,7 @@ function Page() {
       </div>
       <BentoBox/>
       <Testimonials/>
-      <ContactUs/>
+      <ContactBackground/>
     </div>
   );
 }
