@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 
 function Like() {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 md:gap-5 bg-white border md:my-11 px-4 py-2 md:mx-56 ">
+    <div className="flex flex-col items-center justify-center gap-3 md:gap-5 bg-white md:my-11 px-4 py-2 md:mx-56 ">
       <div className="text-lg md:text-4xl text-center font-semibold">
         <span>Liked what you saw?</span>{" "}
         <span className="text-[#444BD3]">Get one for yourself.</span>
