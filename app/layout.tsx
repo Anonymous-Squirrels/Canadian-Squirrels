@@ -14,7 +14,7 @@ export const metadata = {
     title: "Anonymous Squirrels",
     description: "Brand Marketing At Ease",
     type: "website",
-    authors: ["Kumar Priyanshu", "Souradip Saha"],
+    authors: ["Harsh Raj"],
     images: [
       {
         url: "https://squirrels-website.vercel.app/logo.png",

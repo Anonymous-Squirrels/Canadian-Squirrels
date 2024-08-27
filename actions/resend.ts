@@ -12,7 +12,7 @@ export const sendMail = async (formData: string) => {
     const { data, error } = await resend.emails.send({
       from: "Contact <kingshuk@squirrels.co.in>",
       to: ["kingshuk@squirrels.co.in"],
-      subject: "Contact Us Form - squirrels.co.in",
+      subject: "Contact Us Form - thesquirrels.ca",
       react: EmailTemplate({ ...parsedData }) as React.ReactElement,
     });
     if (error) throw new Error(error.message);

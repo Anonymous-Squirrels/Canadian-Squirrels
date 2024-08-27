@@ -25,7 +25,7 @@ const MarqueeSlide = () => {
                   alt={item.replace("marquee/", "")}
                   height={250}
                   width={250}
-                  className="mx-2 md:mx-7 w-[150px] h-[150px] md:w-[250px] md:h-[250px]"
+                  className="mx-2 md:mx-7 w-[150px] h-[150px] md:w-[250px] md:h-[250px] rounded-md"
                 />
               ))}
             </Marquee>
@@ -187,7 +187,7 @@ const MarqueeSlide = () => {
               alt={item.replace("marquee/", "")}
               height={250}
               width={250}
-              className="m-7"
+              className="m-7 rounded-md"
             />
           ))}
         </Marquee>
@@ -202,7 +202,7 @@ const MarqueeSlide = () => {
               alt={item.replace("marquee/", "")}
               height={150}
               width={150}
-              className="m-4"
+              className="m-4 rounded-md"
             />
           ))}
         </Marquee>
