@@ -46,9 +46,9 @@ export const BentoItems = [
   },
 
   {
-    title: "Some of our Work.",
+    title: "Team",
     description:
-      "Take the pain out of book keeping! Wave goodbye to mountains of paperwork and endless email reminders. We manage it all !!",
+      "We are a team of 15+ creative wizards who help you achieve your goals",
     content: (
       <div className="w-fit h-fit">
         <Link href="/project">
@@ -77,7 +77,7 @@ export const BentoItems = [
     description:
       "Our Company provides a lot of services ranging from Brand strategies to SEO Optimization to Web Content Management",
     content: (
-      <div className="max-w-[700px] w-full">
+      <div className="max-w-[700px] flex flex-col justify-between w-full">
   <div className="flex md:mt-6 w-full">
     <Image
       src="/assets/Servicesgroup.png"
@@ -88,10 +88,10 @@ export const BentoItems = [
     />
   </div>
   <div className="mx-auto flex justify-center">
-    <Link href="/services" className="mt-10">
+    <Link href="/services" className="mt-5 md:mt-0">
       <Button
         variant="light"
-        className="rounded-full md:my-32 px-6 md:mt-16 md:px-10 font-medium z-20"
+        className="rounded-full md:my-32 px-6 md:mt-10 md:px-10 font-medium z-20"
       >
         View our services
       </Button>

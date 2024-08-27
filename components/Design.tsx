@@ -18,29 +18,29 @@ const Design = () => {
           <Image
             src="/assets/figma.png"
             alt="logo"
-            width={520}
-            height={520}
+            width={600}
+            height={1000}
             className="h-[300px] w-auto md:h-[380px] xl:h-[520px] z-10"
           />
           <Image
             src="/assets/xd.png"
             alt="logo"
-            width={200}
-            height={200}
+            width={300}
+            height={300}
             className="absolute top-2 right-0 xl:-right-2 h-[100px] w-[100px] md:h-[150px] md:w-[150px] xl:h-[200px] xl:w-[200px]"
           />
           <Image
             src="/assets/ai.png"
             alt="logo"
-            width={200}
-            height={200}
+            width={300}
+            height={300}
             className="absolute bottom-0 right-0 h-[100px] w-[100px] md:h-[150px] md:w-[150px] xl:h-[200px] xl:w-[200px]"
           />
           <Image
             src="/assets/ps.png"
             alt="logo"
-            width={200}
-            height={200}
+            width={300}
+            height={300}
             className="absolute bottom-0 left-0 h-[100px] w-[100px] md:h-[150px] md:w-[150px] xl:h-[200px] xl:w-[200px]"
           />
         </div>

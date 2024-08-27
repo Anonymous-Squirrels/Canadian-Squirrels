@@ -7,7 +7,7 @@ function UIDesign() {
   return (
     <div id="ui-design" className="bg-white grid place-items-center py-5 md:py-5 min-h-screen gap-10 max-w-[1544px] mx-auto">
       <FAB variant="secondary" className={"select-none"}>UI Design</FAB>
-      <div className="text-[#5C3095] text-3xl md:text-4xl font-bold w-[85vw] md:w-96 text-center">
+      <div className="text-[#5C3095] text-2xl md:text-4xl font-bold w-[95vw] md:w-96 text-center">
         Get The Best Design, No Compromise
       </div>
       <div className="flex w-full md:w-10/12 md:max-w-screen-2xl flex-col md:flex-row items-center md:justify-center gap-1 md:gap-24">
