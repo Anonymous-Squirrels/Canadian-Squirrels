@@ -82,7 +82,7 @@ function Marketing() {
                     Start with done-for-you setup
                   </span>
                   <Image
-                    src="/assets/Content4.png"
+                    src="/assets/content4.png"
                     alt="doc"
                     width={300}
                     height={300}
@@ -92,14 +92,14 @@ function Marketing() {
               </div>
               <div className="col-span-1">
                 <Image
-                  src="/assets/Content3.png"
+                  src="/assets/content3.png"
                   alt="doc"
                   width={300}
                   height={300}
                   className="w-screen h-[300px] md:w-full md:h-fit shadow-ContainerShadow rounded-xl mt-10 md:mb-32"
                 />
                 <Image
-                  src="/assets/Content5.png"
+                  src="/assets/content5.png"
                   alt="doc"
                   width={400}
                   height={400}
