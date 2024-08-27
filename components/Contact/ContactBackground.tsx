@@ -1,6 +1,6 @@
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link' // Import the Link component
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link'; // Import the Link component
 
 const ContactBackground = () => {
   return (
@@ -24,13 +24,20 @@ const ContactBackground = () => {
       <div className="relative grid grid-cols-1 md:grid-cols-3 h-full">
         {/* Image 1 */}
         <div className="relative col-span-1 md:col-span-1">
-        <Image
+          <Image
             src="/assets/vmkolkata.jpg"
             alt="Image 3"
             layout="fill"
             objectFit="cover"
             className="w-full h-full"
           />
+          <div className="absolute inset-x-0 top-1/3 transform -translate-y-1/2 bg-black bg-opacity-30 flex flex-col justify-center lg:justify-between gap-1 lg:min-h-20 text-white text-center">
+            <p className="text-lg md:text-2xl text-white font-semibold my-1">HYDERABAD</p>
+            <div className='hidden lg:block'>
+            <p className="text-white text-xs font-semibold">OFF NO 208, BALAJI TOWER C, MIYAPUR X</p>
+            <p className="text-white text-xs font-semibold">ROADS, HYDERABAD, TELENGANA, INDIA</p>
+            </div>
+          </div>
         </div>
         {/* Image 2 */}
         <div className="relative col-span-1 md:col-span-1 hidden md:block">
@@ -41,6 +48,13 @@ const ContactBackground = () => {
             objectFit="cover"
             className="w-full h-full"
           />
+            <div className="absolute inset-x-0 top-1/3 transform -translate-y-1/2 bg-black bg-opacity-30 flex flex-col justify-center lg:justify-between gap-1 lg:min-h-20 text-white text-center">
+            <p className="text-lg md:text-2xl text-white font-semibold my-1">CALGARY</p>
+            <div className='hidden lg:block'>
+              <p className="text-white text-xs font-semibold">820 26 ST NE</p>
+              <p className="text-white text-xs font-semibold">CALGARY AB, T2A 2M4, CANADA</p>
+            </div>
+          </div>
         </div>
         {/* Image 3 */}
         <div className="relative col-span-1 md:col-span-1 hidden md:block">
@@ -51,10 +65,17 @@ const ContactBackground = () => {
             objectFit="cover"
             className="w-full h-full"
           />
+            <div className="absolute inset-x-0 top-1/3 transform -translate-y-1/2 bg-black bg-opacity-30 flex flex-col justify-center lg:justify-between gap-1 lg:min-h-20 text-white text-center">
+            <p className="text-lg md:text-2xl text-white font-semibold my-1">KOLKATA</p>
+            <div className='hidden lg:block'>
+              <p className="text-white text-xs font-semibold">4TH FLOOR, BROJODHAM TOWER, AIRPORT</p>
+              <p className="text-white text-xs font-semibold">GATE NO 1, DUMDUM, KOLKATA, INDIA</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ContactBackground
+export default ContactBackground;

@@ -1,5 +1,4 @@
 export const healthCare = [
-  "marquee/healthCare1.png",
   "marquee/healthCare2.png",
   "marquee/healthCare3.png",
   "marquee/healthCare4.png",
