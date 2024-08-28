@@ -48,9 +48,9 @@ export const BentoItems = [
   {
     title: "Team",
     description:
-      "We are a team of 15+ creative wizards who help you achieve your goals",
+      "We are a team of",
     content: (
-      <div className="w-fit h-fit">
+      <div className="w-fit h-full flex flex-col justify-between">
         <Link href="/project">
           {/*<Button
             variant="light"
@@ -59,15 +59,10 @@ export const BentoItems = [
             View More
           </Button>*/}
         </Link>
-        <div className="flex w-full h-full">
-          <Image
-            src="/assets/someofwork.png"
-            width={300}
-            height={300}
-            alt="works"
-            className="rounded-xl object-cover h-full"
-          />
-        </div>
+        <p className="text-center text-8xl font-extrabold mt-6 md:mb-10">
+          15+
+        </p>
+        <p className="text-center text-xs md:text-lg inline-block text-[#D2D2D2]">creative wizards who help you achieve your goals</p>
       </div>
     ),
   },

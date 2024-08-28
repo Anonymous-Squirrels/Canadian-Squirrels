@@ -1,24 +1,65 @@
 export const TestimonialData = [
   {
-    text: "“ They offered us great suggestions and helped us build our brand with website content and strategies. Highly recommended ! ”",
+    text: "They offered us great suggestions and helped us build our brand with website content and strategies. Highly recommended !",
     profile: "/assets/prayoga.png",
     name: "Rauf Chippa",
     stars: 5,
     designation: "Co-Founder, Prayoga Films",
   },
   {
-    text: "“ Consistently exceeds our expectations as a content partner, delivering top-notch content marketing and branding skills. ”",
+    text: "Consistently exceeds our expectations as a content partner, delivering top-notch content marketing and branding skills.",
     profile: "/assets/leo92.png",
     name: "Himanshu Sawant",
     stars: 5,
     designation: "Brand Experience Manager , Leo9 Studio",
   },
   {
-    text: "“ Their professional and creative team provided great support throughout the project. ”",
+    text: "Their professional and creative team provided great support throughout the project.",
     profile: "/trusted/Mount_Magica.jpg",
     name: "Arpit Kumar",
     stars: 5,
-    designation: "Founder, Mount Magic",
-
-  }
+    designation: "Founder, Mount Magica",
+  },
+  // {
+  //   text: "Team Squirrels transformed our brand into a powerful force. Their logo design and brand identity perfectly capture our vision. We've seen a significant increase in brand recognition since partnering with them.",
+  //   profile: "/trusted/Mount_Magica.jpg",
+  //   name: "John",
+  //   stars: 5,
+  //   designation: "Director of Marketing, Recuro Health, USA",
+  // },
+  // {
+  //   text: "We've seen a significant return on investment (ROI) from our marketing campaigns with Anonymous Squirrels. Their data-driven approach and innovative strategies have helped us reach new customers and expand our market share.",
+  //   profile: "/trusted/Mount_Magica.jpg",
+  //   name: "Sunny Singh",
+  //   stars: 5,
+  //   designation: "Sales & Marketing Head, Costal City Dental, Vancouver, CA",
+  // },
+  // {
+  //   text: "The team at Anonymous Squirrels provided exceptional marketing support, from developing our brand message to executing effective campaigns. Their knowledge of the Saudi Arabian market was invaluable.",
+  //   profile: "/trusted/Mount_Magica.jpg",
+  //   name: "Alhamza Mumtaz",
+  //   stars: 5,
+  //   designation: "Director Marketing, Jannat Properties, Dhahran, Saudi Arabia",
+  // },
+  // {
+  //   text: "We were particularly impressed with Team Squirrel's attention to detail and commitment to user experience. Our website is now a valuable asset for our business.",
+  //   profile: "/trusted/Mount_Magica.jpg",
+  //   name: "Sumit Baghel",
+  //   stars: 5,
+  //   designation: "Chief Engineer (Product), Sila, USA",
+  // },
+  // {
+  //   text: "Squirrel's marketing campaigns have been instrumental in driving traffic to our website and increasing sales. Their expertise in social media advertising and content creation is unparalleled.",
+  //   profile: "/trusted/Mount_Magica.jpg",
+  //   name: "Robert",
+  //   stars: 5,
+  //   designation: "President & CMO, Jennifer & Linda Shipping Co, USA",
+  // },
+  // {
+  //   text: "Located in Toronto, Canada, we sought a marketing partner who could help us expand our online presence. Team Squirrel's social media campaigns and SEO strategies have been instrumental in driving traffic to our website and generating leads from Canadian customers.",
+  //   profile: "/trusted/Mount_Magica.jpg",
+  //   name: "Liam",
+  //   stars: 5,
+  //   designation: "Marketing Manager, Voiceflow, Canada",
+  // }
 ];

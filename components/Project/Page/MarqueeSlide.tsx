@@ -165,7 +165,15 @@ const MarqueeSlide = () => {
 
       </div>
 
-      <div className="w-full h-fit pb-10 hidden md:block">
+      
+
+      <div className='mb-10 hidden md:block'>
+        <div className='text-xl md:text-4xl font-semibold text-white text-center mb-5'>
+              <span className='text-[#9747FF]'>DRIVING</span>
+              <span className='ml-2'> RESULTS</span>
+              <br />
+              <span className='text-[#828282] text-xl ml-2'>Our Last 90-Day Recap</span>
+        </div>
         <Marquee className="w-full h-fit">
           {row1Desktop.map((item, index) => (
             <Image
@@ -194,6 +202,12 @@ const MarqueeSlide = () => {
       </div>
 
       <div className="w-full h-fit pb-5 block md:hidden">
+      <div className='text-xl md:text-4xl font-semibold text-white text-center'>
+              <span className='text-[#9747FF]'>DRIVING</span>
+              <span className='ml-2'> RESULTS</span>
+              <br />
+              <span className='text-[#828282] text-xl ml-2'>Our Last 90-Day Recap</span>
+        </div>
         <Marquee className="w-full h-fit">
           {rowMobile.map((item, index) => (
             <Image

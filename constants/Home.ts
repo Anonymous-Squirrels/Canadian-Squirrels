@@ -5,4 +5,6 @@ export const Trustee = [
   { alt:"Indian_Institute_of_Technology_Bombay_Logo", slug: "trusted/Indian_Institute_of_Technology_Bombay_Logo.png", name: "IIT Bombay" },
   { alt:"poonawalla_fincorp_logo", slug: "trusted/poonawalla_fincorp_logo.jpeg", name: "Poonawalla Fincorp" },
   { alt:"Red_Berries_Digital", slug: "trusted/Red_Beries_Digital.png", name: "Red Berries Digital" },
+  { alt:"careers_360", slug: "trusted/careers.png", name: "careers 360" },
+  { alt:"Mothers_Kitchen", slug: "trusted/mothers_kitchen.png", name: "Mothers Kitchen" },
 ];
