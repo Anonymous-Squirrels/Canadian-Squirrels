@@ -6,7 +6,6 @@ import { TestimonialData } from "@/constants/Testimonials";
 import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
 import "@/style/local_swiper.css";
 import "swiper/css/navigation";
 import "@/app/styles.css";

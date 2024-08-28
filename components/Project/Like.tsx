@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../ui/Button";
+import Link from "next/link";
 
 function Like() {
   return (
@@ -9,9 +10,11 @@ function Like() {
         <span className="text-[#444BD3]">Get one for yourself.</span>
       </div>
       <div className="text-center">
+      <Link href="/contact">
         <Button className="bg-[#444BD3] text-white border border-[#444BD3] transition-all duration-200 md:hover:bg-white md:hover:text-[#444BD3] active:bg-white active:text-[#444BD3] text-xs md:text-base rounded-md md:rounded-lg px-2.5 py-2 md:px-8 md:py-3">
           Let&apos;s Discuss
         </Button>
+      </Link>
       </div>
     </div>
   );

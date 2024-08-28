@@ -1,9 +1,10 @@
+import ContactBackground from '@/components/Contact/ContactBackground';
 import ContactUs from '@/components/ContactUs';
-import Image from 'next/image';
 
 const FullScreenImages = () => {
   return (
     <>
+      <ContactBackground />
       <ContactUs />
     </>
   );

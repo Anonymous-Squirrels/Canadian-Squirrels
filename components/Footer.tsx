@@ -1,9 +1,6 @@
 import { MainLogo } from "@/constants/Icons";
 import Image from "next/image";
 import React from "react";
-import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
-import { developers } from "@/constants/Footer";
-import Link from "next/link";
 
 function Footer() {
   return (
@@ -13,7 +10,7 @@ function Footer() {
           <MainLogo className={"w-10 h-10 md:h-28 md:w-28"} />
           <span className="text-lg md:text-2xl">Anonymous Squirrels</span>
         </div>
-        <div className="flex-1 w-full flex flex-col items-center justify-center">
+        <div className=" flex flex-col items-center justify-center">
           <div className="text-[#B9B3B3] text-center">
             <span className="font-thin text-lg">We help build brands.</span>
             <br />
@@ -75,7 +72,7 @@ function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex-1 flex flex-col items-center justify-end gap-x-3 mb-9 md:mb-0">
+        {/* <div className="flex-1 flex flex-col items-center justify-end gap-x-3 mb-9 md:mb-0">
           <p className="w-fit text-center text-sm hidden md:flex">
             Made with 💜 by team Squirrels
           </p>
@@ -85,8 +82,11 @@ function Footer() {
           <div className="w-fit h-fit flex items-center justify-center md:py-4 relative top-2.5 md:top-0">
             <AnimatedTooltip items={developers} />
           </div>
-        </div>
+        </div> */}
       </div>
+      <p className="w-fit text-center text-sm mx-auto mb-1">
+            Made with 💜 by team Squirrels
+          </p>
       <div className="w-full text-center text-sm font-thin px-4">
         &copy; Copyright {new Date().getFullYear()}, All Rights Reserved by
         Anonymous Squirrels
