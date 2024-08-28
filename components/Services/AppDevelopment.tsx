@@ -50,7 +50,7 @@ const AppDevelopment = () => {
 
         <p className='text-[#969696] md:text-2xl text-center md:text-justify max-w-[550px]'>
         Our team of skilled developers specializes in crafting scalable and high-performance apps using the 
-        latest technologies, including Kotlin, Flutter, and React Native. We'll create a mobile solution that 
+        latest technologies, including Kotlin, Flutter, and React Native. We&apos;ll create a mobile solution that 
         seamlessly integrates with your brand and empowers your business to reach new heights.
         </p>
       </div>
