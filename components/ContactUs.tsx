@@ -58,7 +58,7 @@ function ContactUs() {
   return (
     <div
   id="contact"
-  className="relative bg-black bg-center bg-cover h-fit flex flex-col items-center text-white pb-2 md:pb-14 pt-20 md:pt-32 md:px-36"
+  className="relative bg-black bg-center bg-cover h-fit flex flex-col items-center text-white pb-2 md:pb-14 md:pt-32 md:px-36"
 >
   <Image
     src="/assets/contact-us-shadow.png"
