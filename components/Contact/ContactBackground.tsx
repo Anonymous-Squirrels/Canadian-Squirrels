@@ -3,9 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link'; // Import the Link component
 
 const locations = [
-  { src: "/assets/vmkolkata.jpg", alt: "Image 3", title: "HYDERABAD" },
+  { src: "/assets/hussain.jpg", alt: "Image 3", title: "HYDERABAD" },
   { src: "/assets/canada.jpg", alt: "Image 1", title: "CALGARY" },
-  { src: "/assets/hussain.jpg", alt: "Image 2", title: "KOLKATA" },
+  { src: "/assets/vmkolkata.jpg", alt: "Image 2", title: "KOLKATA" },
 ];
 
 const ContactBackground = () => {
