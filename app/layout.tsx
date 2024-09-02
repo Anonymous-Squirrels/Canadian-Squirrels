@@ -8,11 +8,13 @@ import FlareCursor from "@/components/Cursor/FlareCursor";
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata = {
-  title: "Anonymous Squirrels",
+  title: "The Squirrels",
   description: "Brand Marketing At Ease",
   openGraph: {
-    title: "Anonymous Squirrels",
+    title: "The Squirrels",
     description: "Brand Marketing At Ease",
+    url:"thesquirrels.ca",
+    siteName:"thesquirrels",
     type: "website",
     authors: ["Harsh Raj"],
     images: [
@@ -38,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <head>
-      <title>Anonymous Squirrels</title>
+      <title>The Squirrels</title>
       <link rel="icon" href="/group.ico"/>
     </head>
     <body className={`${inter.className} scrollbar-hide`}>
