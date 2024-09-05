@@ -40,11 +40,11 @@ function Branding() {
               />
             </div>
 
-            <p className="text-sm md:text-lg text-white font-light mx-auto my-4 md:leading-loose text-center md:text-start">
-              From Crafting A Memorable Logo To Developing A Cohesive Brand
-              Message, Our Team Of Experts Will Ensure Your Brand Stands Out In
-              The Market. We&apos;ll Create A Visual Identity That Resonates With Your
-              Target Audience And Reflects Your Brand&apos;s Unique Personality.
+            <p className="text-sm md:text-lg text-gray-200 font-thin mx-auto my-4 md:leading-loose text-center md:text-start">
+              From Crafting A <span className="text-white font-extrabold">Memorable Logo</span> To Developing A Cohesive <span className="text-white font-extrabold">Brand Message</span>
+              , Our Team Of Experts Will Ensure Your Brand Stands Out In
+              The Market. We&apos;ll Create A Visual Identity That Resonates With Your 
+              <span className="text-white font-extrabold"> Target Audience </span> And Reflects Your <span className="text-white font-extrabold"> Brand&apos;s Unique Personality</span>.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
@@ -71,13 +71,13 @@ function Branding() {
                 BRANDING
               </span>
             </div>
-            <p className="text-sm md:text-lg text-white font-light mx-auto mb-4 md:leading-loose text-center md:text-start">
-              From entrepreneurs to influencers and industry leaders, we help
+            <p className="text-sm md:text-lg text-gray-200 font-light mx-auto mb-4 md:leading-loose text-center md:text-start">
+              From <span className="text-white font-extrabold"> entrepreneurs to influencers and industry leaders </span>, we help
               you carve a unique niche in the digital world. We craft tailored
               strategies to enhance your online presence, build a strong
               personal brand, and connect with your target audience. Our
-              services include social media management, content creation,
-              podcast development, and more.
+              services include <span className="text-white font-extrabold">social media management, content creation,
+              podcast development,</span> and more.
             </p>
 
             <div className="flex gap-x-10 justify-center items-center">

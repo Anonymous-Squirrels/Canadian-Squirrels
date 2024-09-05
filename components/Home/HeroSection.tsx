@@ -39,7 +39,7 @@ export default function Home() {
           <div className="text-white text-lg md:text-2xl my-5">
             Elevate your content marketing with a powerful brand strategy.
           </div>
-          <Link className={"w-fit h-fit"} href={"/project"}>
+          <Link className={"w-fit h-fit"} href={"/services"}>
             <button
               className="p-3 text-white rounded-md md:rounded-lg whitespace-nowrap bg-[#5237D8] active:opacity-8 hover:opacity-85"
             >{/*<p className="w-full h-fit overflow-clip  text-sm md:text-xl ">

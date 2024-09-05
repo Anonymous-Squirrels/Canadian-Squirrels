@@ -1,4 +1,3 @@
-import { MainLogo } from "@/constants/Icons";
 import Image from "next/image";
 import React from "react";
 
@@ -7,7 +6,13 @@ function Footer() {
     <div className="bg-[#0F0F0F] text-white md:px-20 pt-12 pb-10 cursor-default text-center">
       <div className="flex flex-col md:flex-row items-center justify-between md:pb-5 border-b border-[#333333] mb-5 gap-y-5 md:px-10">
         <div className="flex-1 flex items-center justify-start gap-2 mb-5 text-center m-2">
-          <MainLogo className={"w-10 h-10 md:h-28 md:w-28"} />
+          <Image
+          src="/logo/footerlogo.png"
+          alt="logo"
+          width={112}
+          height={112}
+          className="w-10 h-fit md:w-28"
+          />
           <span className="text-lg md:text-2xl">Anonymous Squirrels</span>
         </div>
         <div className=" flex flex-col items-center justify-center">

@@ -46,7 +46,7 @@ function Marketing() {
             </div>
 
             <p className="text-sm font-light md:w-5/6 mx-auto my-4 md:leading-loose text-center md:text-start">
-              Our expert consultants craft tailored strategies, designs, and professional feel to elevate your brand.
+              Our expert consultants craft tailored <span className="font-extrabold">strategies, designs,</span> and professional feel to elevate your brand.
             </p>
 
             <Image
@@ -68,7 +68,7 @@ function Marketing() {
               </div>
             </div>
             <p className="text-sm font-light mx-auto md:mt-2 md:leading-loose text-center md:text-start">
-              We craft compelling content that resonates with your audience and drives results. Social Media, content creation to strategy, we do it all.
+              We craft <span className="font-extrabold">compelling content</span> that resonates with your <span className="font-extrabold">audience</span> and drives <span className="font-extrabold">results. Social Media, content creation </span>to <span className="font-extrabold">strategy</span>, we do it all.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 justify-center">
               <div className="col-span-1 pt-4 md:pt-32">
