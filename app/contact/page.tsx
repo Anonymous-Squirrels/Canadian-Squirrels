@@ -7,7 +7,7 @@ const FullScreenImages = () => {
     <div className='bg-black w-full'>
       <ContactBackground />
       <ContactUs />
-      {/* <ThankYou /> */}
+      <ThankYou />
     </div>
   );
 };

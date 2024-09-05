@@ -10,7 +10,7 @@ const locations = [
 
 const ContactBackground = () => {
   return (
-    <div className="relative h-[40vh] md:h-screen w-screen overflow-x-hidden">
+    <div className="relative h-[40vh] md:h-screen w-full overflow-x-hidden">
       {/* Top shadow for 100px height */}
       <div className="absolute top-0 left-0 w-full h-[100px] bg-gradient-to-b from-black/80 to-transparent z-10"></div>
       {/* Bottom shadow */}
