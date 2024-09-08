@@ -50,7 +50,7 @@ export const TestimonialData = [
   },
   {
     text: "Squirrel's marketing campaigns have driven huge traffic to our website and increased sales too. Their expertise in social media advertising and content creation is unparalleled.",
-    profile: "/trusted/jennifer.png",
+    profile: "/trusted/Jennifer.png",
     name: "Robert",
     stars: 5,
     designation: "President & CMO, Jennifer & Linda Shipping Co, USA",
