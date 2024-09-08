@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "@/style/local_swiper.css";
 import "swiper/css/navigation";
 import "@/app/styles.css";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import Button from "../ui/Button";
 
 function Testimonials() {
@@ -45,9 +45,12 @@ function Testimonials() {
           slidesPerView={3}
           spaceBetween={30}
           navigation={true}
-          modules={[Navigation]}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
           loop={true}
-          className=""
+          modules={[Navigation, Autoplay]}
         >
           {TestimonialData.map((i, index) => (
             <SwiperSlide key={index}>
@@ -68,9 +71,12 @@ function Testimonials() {
           slidesPerView={2}
           spaceBetween={20}
           navigation={true}
-          modules={[Navigation]}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
           loop={true}
-          className=""
+          modules={[Navigation, Autoplay]}
         >
           {TestimonialData.map((i, index) => (
             <SwiperSlide key={index}>
@@ -91,9 +97,12 @@ function Testimonials() {
           slidesPerView={1.5}
           spaceBetween={10}
           navigation={true}
-          modules={[Navigation]}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
           loop={true}
-          className=""
+          modules={[Navigation, Autoplay]}
         >
           {TestimonialData.map((i, index) => (
             <SwiperSlide key={index}>
@@ -114,9 +123,12 @@ function Testimonials() {
           slidesPerView={1}
           spaceBetween={10}
           navigation={true}
-          modules={[Navigation]}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
           loop={true}
-          className=""
+          modules={[Navigation, Autoplay]}
         >
           {TestimonialData.map((i, index) => (
             <SwiperSlide key={index}>
