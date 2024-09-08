@@ -26,7 +26,13 @@ function Page() {
       <div className="w-full relative overflow-hidden">
         <ThreeStepProcess/>
         <ContactBackground/>
-        <JoinTeam/>
+        <JoinTeam
+        content1="Become a Squirrel."
+        content2="Join our Team."
+        detail="We are looking for individuals with skills who could join our family of squirrels."
+        link1="/contact"
+        button="Apply Now"
+      />
       </div>
     </div>
   );
