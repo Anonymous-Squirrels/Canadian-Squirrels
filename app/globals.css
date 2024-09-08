@@ -60,8 +60,8 @@ body{
   .flare {
     width: 0;
     height: 0;
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
-      opacity 0.2s ease-in-out;
+    opacity: 0; /* Make the flare invisible */
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
   }
 }
 .flare.pointer {

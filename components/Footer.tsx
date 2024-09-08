@@ -34,11 +34,11 @@ function Footer() {
               <Image
                 src="/logo/linkedin.png"
                 alt="logo"
-                width={40}
-                height={40}
+                width={60}
+                height={60}
               />
             </a>
-            <a
+            {/* <a
               href="https://api.whatsapp.com/send?phone=919122823474"
               target="_blank"
               rel="noopener noreferrer"
@@ -49,7 +49,7 @@ function Footer() {
                 width={40}
                 height={40}
               />
-            </a>
+            </a> */}
             <a
               href="https://www.instagram.com/anonymous_squirrels/"
               target="_blank"
@@ -58,11 +58,11 @@ function Footer() {
               <Image
                 src="/logo/instagramLogo.png"
                 alt="logo"
-                width={40}
-                height={40}
+                width={60}
+                height={60}
               />
             </a>
-            <a
+            {/* <a
               href="https://linktr.ee/kingshukbanerjee/"
               target="_blank"
               rel="noopener noreferrer"
@@ -74,7 +74,7 @@ function Footer() {
                 height={30}
                 className="rounded-lg"
               />
-            </a>
+            </a> */}
           </div>
         </div>
         {/* <div className="flex-1 flex flex-col items-center justify-end gap-x-3 mb-9 md:mb-0">
