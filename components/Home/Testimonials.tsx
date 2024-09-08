@@ -57,7 +57,8 @@ function Testimonials() {
               <Item
                 content={i.text}
                 name={i.name}
-                designation={i.designation}
+                designation1={i.designation1}
+                designation2={i.designation2}
                 rating={i.stars}
                 image={i.profile}
               />
@@ -83,7 +84,8 @@ function Testimonials() {
               <Item
                 content={i.text}
                 name={i.name}
-                designation={i.designation}
+                designation1={i.designation1}
+                designation2={i.designation2}
                 rating={i.stars}
                 image={i.profile}
               />
@@ -109,7 +111,8 @@ function Testimonials() {
               <Item
                 content={i.text}
                 name={i.name}
-                designation={i.designation}
+                designation1={i.designation1}
+                designation2={i.designation2}
                 rating={i.stars}
                 image={i.profile}
               />
@@ -135,7 +138,8 @@ function Testimonials() {
               <Item
                 content={i.text}
                 name={i.name}
-                designation={i.designation}
+                designation1={i.designation1}
+                designation2={i.designation2}
                 rating={i.stars}
                 image={i.profile}
               />

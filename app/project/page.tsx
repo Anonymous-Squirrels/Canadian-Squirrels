@@ -1,7 +1,6 @@
 "use client";
 import HeroSection from "@/components/Project/HeroSection";
-import Like from "@/components/Project/Like";
-import Main from "@/components/Project/Main";
+import JoinTeam from "@/components/About/JoinTeam";
 import React, {useState} from "react";
 import {Blob} from "@/constants/Icons";
 import MarqueeSlide from "@/components/Project/Page/MarqueeSlide";
@@ -19,10 +18,15 @@ function Page() {
           <Blob variant="yellow"/>
         </div>
         <HeroSection section={section} setSection={setSection}/>
-        {/*<Main section={section}/>*/}
         <MarqueeSlide/>
       </div>
-      <Like/>
+      <JoinTeam
+        content1="Liked what you saw?"
+        content2="Get one for yourself."
+        detail=""
+        link1="/contact"
+        button="Let&apos;s Discuss"
+      />
     </div>
   );
 }

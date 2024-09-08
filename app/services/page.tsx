@@ -1,4 +1,4 @@
-import Engage from "@/components/Services/Engage";
+import JoinTeam from "@/components/About/JoinTeam";
 import Branding from "@/components/Services/Branding";
 import HeroSection from "@/components/Services/HeroSection";
 import Marketing from "@/components/Services/Marketing";
@@ -16,7 +16,13 @@ function Page() {
       <Branding />
       <UIDesign />
       <Development />
-      <Engage />
+      <JoinTeam
+        content1="Engage With Your Audience"
+        content2="& Grow Your Business."
+        detail="Here are some of the brands who entrusted us."
+        link1="/project"
+        button="Our Projects"
+      />
     </div>
   );
 }

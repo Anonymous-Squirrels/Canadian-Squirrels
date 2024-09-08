@@ -109,15 +109,26 @@ const ThankYou = () => {
             </div>
           </div>
         </div>
+        
       </div>
-      <div className='w-full flex flex-col md:gap-5 items-center justify-center px-2 py-5 bg-[#8F00FF] text-white'>
-        <p className="text-xl md:text-3xl font-bold text-center">View our portfolio and services for more insights</p>
-        <a href="/Brochure.pdf" target="_blank" rel="noopener noreferrer">
-          <Button className="bg-white rounded-md text-button-color transition-all duration-200  md:hover:bg-button-color md:hover:text-white active:bg-button-color active:text-white w-28 md:px-4 py-2 md:w-fit">
+
+      
+      <div className="px-6 md:px-56 flex flex-col xl:flex-row items-center justify-between text-center py-5 md:py-10 bg-white">
+      <div>
+        <div className="text-xl md:text-3xl font-semibold">
+          <span className=''>View our portfolio and</span>{" "}
+          <span className="text-[#444BD3]">services for more insights.</span>
+        </div>
+      </div>
+      <a href="/Brochure.pdf" target="_blank" rel="noopener noreferrer">
+          <Button
+            variant="primary"
+            className="mt-4 px-6 rounded-lg bg-[#444BD3] hover:border-[#444BD3] hover:bg-transparent hover:text-black border-transparent border"
+          >
             Our Brochure
           </Button>
-        </a>
-      </div>
+      </a>
+    </div>
     </div>
   );
 };
