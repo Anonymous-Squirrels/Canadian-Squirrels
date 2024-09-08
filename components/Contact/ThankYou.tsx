@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { FaLocationDot } from "react-icons/fa6";
 import { format, toZonedTime } from 'date-fns-tz';
 import Image from 'next/image';
+import Button from "../ui/Button";
 
 const ThankYou = () => {
   const [indiaTime, setIndiaTime] = useState('');
@@ -42,7 +43,7 @@ const ThankYou = () => {
         <p className='text-white text-center font-bold text-lg md:text-2xl mt-2'>
           Let us Keep in touch
         </p>
-        <div className='mt-10 md:mt-20 flex flex-col lg:flex-row justify-between gap-5 text-white max-w-6xl mx-auto'>
+        <div className='mt-10 md:mt-20 flex flex-col lg:flex-row justify-between gap-5 text-white max-w-5xl mx-auto'>
           {/* India Section */}
           <div className=''>
             <div className='flex justify-between gap-10'>
@@ -53,7 +54,7 @@ const ThankYou = () => {
                 </p>
               </div>
               <Image
-                src="/assets/calgary.png"
+                src="/assets/india.png"
                 alt="India logo"
                 width={112}
                 height={112}
@@ -108,6 +109,14 @@ const ThankYou = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className='w-full flex flex-col md:gap-5 items-center justify-center px-2 py-5 bg-[#8F00FF] text-white'>
+        <p className="text-xl md:text-3xl font-bold text-center">View our portfolio and services for more insights</p>
+        <a href="/Brochure.pdf" target="_blank" rel="noopener noreferrer">
+          <Button className="bg-white rounded-md text-button-color transition-all duration-200  md:hover:bg-button-color md:hover:text-white active:bg-button-color active:text-white w-28 md:px-4 py-2 md:w-fit">
+            Our Brochure
+          </Button>
+        </a>
       </div>
     </div>
   );
