@@ -35,7 +35,7 @@ function Item({
         <span className="text-sm md:text-xl text-left w-full">{name}</span>
         <span className="text-sm md:text-base font-thin text-left w-full">{designation1}</span>
         <span className="text-sm md:text-base font-thin text-left w-full">{designation2}</span>
-        <div className="w-full">
+        {/* <div className="w-full">
           <span className="w-fit grid grid-cols-5">
             {Array(rating)
               .fill(null)
@@ -43,7 +43,7 @@ function Item({
                 <span key={index}>⭐</span>
               ))}
           </span>
-        </div>
+        </div> */}
       </div>
     </div>
     {/* <ImQuotesRight className="h-10 w-10 md:h-20 md:w-20 text-[#434343]"/> */}

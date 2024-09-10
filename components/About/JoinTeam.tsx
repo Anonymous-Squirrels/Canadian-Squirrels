@@ -13,7 +13,7 @@ interface JoinTeamProps {
 
 const JoinTeam: React.FC<JoinTeamProps> = ({ content1, content2, detail, link1, button }) => {
   return (
-    <div className="mx-6 md:mx-56 flex flex-col xl:flex-row items-center justify-between text-center my-5 md:my-10">
+    <div className="mx-6 md:mx-48 flex flex-col xl:flex-row items-center justify-between text-center my-5 md:my-10">
       <div>
         <div className="text-xl md:text-3xl font-semibold">
           <span>{content1}</span>{" "}

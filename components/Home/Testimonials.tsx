@@ -40,7 +40,7 @@ function Testimonials() {
         </div>
       </div>
 
-      <div className="hidden lg:flex w-full h-72 px-10">
+      <div className="hidden lg:flex w-full h-64 px-10">
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -67,7 +67,7 @@ function Testimonials() {
         </Swiper>
       </div>
 
-      <div className="hidden lg:hidden md:flex w-full h-72 px-3">
+      <div className="hidden lg:hidden md:flex w-full h-64 px-3">
         <Swiper
           slidesPerView={2}
           spaceBetween={20}
