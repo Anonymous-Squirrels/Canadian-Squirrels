@@ -54,7 +54,7 @@ function AboutUs() {
             alt="gradient"
             width={1500}
             height={350}
-            className="w-full h-28 md:h-[350px]"
+            className="w-full h-28 md:h-[225px] lg:h-[350px]"
           />
         </div>
 

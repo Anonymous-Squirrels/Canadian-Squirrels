@@ -51,15 +51,7 @@ export const BentoItems = [
       "We are a team of",
     content: (
       <div className="w-fit h-full flex flex-col justify-between">
-        <Link href="/project">
-          {/*<Button
-            variant="light"
-            className="rounded-2xl py-0 font-medium px-6 md:py-1 md:px-10"
-          >
-            View More
-          </Button>*/}
-        </Link>
-        <p className="text-center text-8xl font-extrabold mt-6 md:mb-10">
+        <p className="text-center text-6xl font-extrabold md:mt-6 md:mb-10">
           15+
         </p>
         <p className="text-center text-xs md:text-lg inline-block text-[#D2D2D2]">creative wizards who help you achieve your goals</p>

@@ -71,26 +71,26 @@ export default function Engage() {
       onMouseLeave={() => setCursorAnimation(false)}
     >
       <div
-        className={"w-[1000px] flex flex-col items-center justify-center"}
+        className={"w-full xl:w-[1000px] flex flex-col items-center justify-center"}
         ref={divRef}
       >
         <p
-          className={`hover-this text-8xl font-medium self-start flex items-center justify-around gap-3 relative -left-[70%] ${
+          className={`hover-this text-6xl xl:text-8xl font-medium self-start flex items-center justify-around gap-3 relative -left-[70%] ${
             isIntersecting && "brand"
           } `}
         >
-          <span className={"span-text"}>
+          <span className={" span-text "}>
             Brand Identity
             <span className="bg-black h-4 w-4 text-white inline-block" />
           </span>
         </p>
-        <p className="hover-this text-[230px] font-bold self-start flex items-center justify-around gap-3">
+        <p className="hover-this text-[180px] xl:text-[230px] font-bold self-center flex items-center justify-around gap-3">
           <span className={"span-text"}>
             ENGAGE
             <span className="bg-black inline-block" />
           </span>
         </p>
-        <p className="hover-this text-8xl font-medium self-end">
+        <p className="hover-this text-6xl xl:text-8xl font-medium self-end">
           <span
             className={`span-text relative -right-[70%] ${
               isIntersecting && "content"
