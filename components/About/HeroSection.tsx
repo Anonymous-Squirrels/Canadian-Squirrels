@@ -1,6 +1,5 @@
 import {Blob, DownArrow, TextLogo} from "@/constants/Icons";
 import React from "react";
-import Link from "next/link";
 
 function HeroSection() {
   return (
@@ -23,7 +22,7 @@ function HeroSection() {
         </span>
       </div>
       <div className="absolute bottom-10 z-20 ">
-        <DownArrow className="animate-bounce h-11 w-11 md:w-14 md:h-14"/>
+        <DownArrow color="white" className="animate-bounce h-11 w-11 md:w-14 md:h-14"/>
       </div>
     </div>
   );

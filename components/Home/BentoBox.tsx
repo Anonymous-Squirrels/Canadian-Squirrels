@@ -5,7 +5,7 @@ import GlassMorphism from "@/components/ui/GlassMorphism";
 
 export function BentoBox() {
   return (
-    <div className="bg-[url('/assets/baltic-rose.webp')] bg-cover text-white p-10 md:p-32">
+    <div className="bg-[url('/assets/baltic-rose.webp')] bg-cover text-white p-10 lg:p-32">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
         {/* Render all four boxes */}
         {BentoItems.slice(0, 2).map((item, i) => (
@@ -37,7 +37,7 @@ export function BentoBox() {
     <GlassMorphism
       key={i}
       variant={"light"}
-      className={` md:min-h-[400px] h-full overflow-hidden rounded-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] space-y-4 w-full place-items-center 
+      className={` md:min-h-[400px] h-full overflow-hidden rounded-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:-white/[0.2] md:space-y-4 w-full place-items-center 
         ${i === 0 ? "md:col-span-1" : ""}
         ${i === 1 ? "md:col-span-2" : ""}`}
     >

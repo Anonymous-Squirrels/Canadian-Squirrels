@@ -41,7 +41,7 @@ function NavBar() {
                   <span>Squirrels</span>
                 </div>
               </Link>
-              <ul className="hidden md:flex items-center gap-10 group text-lg">
+              <ul className="hidden md:flex items-center gap-9 group text-lg">
                 {NavLinks.map((item) => (
                   <Link
                     href={item.path}

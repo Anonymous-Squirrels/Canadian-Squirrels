@@ -39,7 +39,7 @@ function HeroSection() {
 
       <div className="z-20 absolute bottom-16 md:bottom-9">
         <Link href="#ui-design" className={"h-11 w-11 md:w-14 md:h-14"}>
-          <DownArrow className="animate-bounce h-11 w-11 md:w-14 md:h-14"/>
+          <DownArrow color="white" className="animate-bounce h-11 w-11 md:w-14 md:h-14"/>
         </Link>
       </div>
 

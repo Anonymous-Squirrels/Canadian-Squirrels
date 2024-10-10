@@ -79,7 +79,7 @@ export default function Home() {
       <div className="text-white w-full flex flex-col justify-center items-center my-8">
         <span className="text-2xl font-semibold">Trusted By</span>
         <div
-  className="w-11/12 grid grid-cols-4 md:grid-cols-8 place-items-center gap-3.5 md:gap-10 mt-10 gap-y-5 z-20">
+  className="w-11/12 grid grid-cols-4 lg:grid-cols-8 place-items-center gap-y-3.5 md:gap-10 mt-10">
   {Trustee.map((item: { alt: string; slug: string; name: string }, index) => (
     <div key={index} className="w-full h-full flex flex-col items-center text-xs md:text-base text-center">
       
