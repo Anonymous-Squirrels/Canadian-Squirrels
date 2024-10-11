@@ -13,7 +13,7 @@ const OtherWorks = () => {
                     <Image
                     src={i.image}
                     alt="logo"
-                    width={240}
+                    width={240} 
                     height={200}
                     className=""
                     />
