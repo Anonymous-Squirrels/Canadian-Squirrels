@@ -19,9 +19,9 @@ function Page() {
       <JoinTeam
         content1="Engage With Your Audience"
         content2="& Grow Your Business."
-        detail="Here are some of the brands who entrusted us."
-        link1="/project"
-        button="Our Projects"
+        detail="Here are some of the dental works."
+        link1="/casestudy"
+        button="Case Study"
       />
     </div>
   );

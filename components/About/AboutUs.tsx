@@ -26,7 +26,7 @@ function AboutUs() {
   }, [intersecting]);
 
   useEffect(() => {
-    if (brand < 54 && intersecting) {
+    if (brand < 34 && intersecting) { //54
       const id = setTimeout(() => {
         setBrand(prev => prev + 1);
       }, 100);
@@ -78,23 +78,29 @@ function AboutUs() {
           <div className="border-b-4 md:border-b-8 border-[#7B61FF] text-center pb-8 md:w-44 w-24">
             <span className="text-[#7B61FF] text-4xl md:text-7xl">{brand}+</span>
             <br />
-            <span>Brands</span>
+            {/* <span>Brands</span> */}
+            <span>Dental Clinics</span>
           </div>
           <div className="border-b-4 md:border-b-8 border-[#7B61FF] text-center pb-8 md:w-44 w-24">
             <span className="text-[#7B61FF] text-4xl md:text-7xl">{domain}+</span>
             <br />
-            <span>Domains</span>
+            {/* <span>Domains</span> */}
+            <span>Healthcare Chains</span>
           </div>
           <div className="border-b-4 md:border-b-8 border-[#7B61FF] text-center pb-8 md:w-44 w-24">
             <span className="text-[#7B61FF] text-4xl md:text-7xl">{country}+</span>
             <br />
+            {/* <span>Countries</span> */}
             <span>Countries</span>
           </div>
         </div>
         <div className="md:mx-72 w-full md:px-52 px-6 text-center font-normal text-base text-md md:text-lg">
-          We are a Brand Strategy and Content Marketing agency, helping
+          {/* We are a Brand Strategy and Content Marketing agency, helping
           companies to brand better with tailored strategies and convey their
-          business stories better than ever.
+          business stories better than ever. */}
+          We&apos;re your partners in healthcare and dental marketing. Our team of skilled professionals will 
+          develop effective branding strategies, create engaging content, and leverage the latest digital 
+          technologies to help your practice stand out.
         </div>
       </div>
     </div>

@@ -6,10 +6,11 @@ import ThreeStepProcess from "@/components/About/ThreeStepProcess";
 import React from "react";
 import {Blob} from "@/constants/Icons";
 import ContactBackground from "@/components/Contact/ContactBackground";
+import Google from "@/components/About/Google";
 
 function Page() {
   return (
-    <div className="w-full ">
+    <div className="w-full">
       <div className="w-full relative overflow-hidden">
       <div className="h-[15vh] bg-black"></div>
         <div className="absolute hidden md:block md:left-60 -translate-x-1/2 -top-72 z-10">
@@ -20,6 +21,7 @@ function Page() {
         </div>
 
         <HeroSection/>
+        <Google />
         <AboutUs/>
       </div>
       <OurValues/>

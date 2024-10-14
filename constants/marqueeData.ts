@@ -49,25 +49,37 @@ export const horeca = [
 
 export const row1Desktop = [
   "marquee/Artboard1.png",
+  "dental/firm1.png",
   "marquee/Artboard2.png",
+  "dental/firm2.png",
   "marquee/Artboard3.png",
+  "dental/firm3.png",
   "marquee/Artboard4.png",
 ];
 
 export const row2Desktop = [
   "marquee/Artboard5.png",
+  "dental/firm4.png",
   "marquee/Artboard6.png",
+  "dental/firm5.png",
   "marquee/Artboard7.png",
+  "dental/firm6.png",
   "marquee/Artboard8.png",
 ];
 
 export const rowMobile = [
   "marquee/Artboard1.png",
   "marquee/Artboard2.png",
+  "dental/firm1.png",
   "marquee/Artboard3.png",
+  "dental/firm2.png",
   "marquee/Artboard4.png",
+  "dental/firm3.png",
   "marquee/Artboard5.png",
+  "dental/firm4.png",
   "marquee/Artboard6.png",
+  "dental/firm5.png",
   "marquee/Artboard7.png",
+  "dental/firm6.png",
   "marquee/Artboard8.png",
 ]
