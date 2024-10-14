@@ -31,13 +31,19 @@ export default function Home() {
         className="relative z-20 flex flex-col md:flex-row items-center justify-between md:mx-10 xl:mx-32 py-4 md:py-8 gap-y-14 md:gap-y-0 mx-0 ">
         <div className="w-10/12 px-2.5 md:w-1/2 order-last md:order-first">
           <div className="w-full text-white font-semibold text-3xl lg:text-6xl">
-            <span>Unlock your</span>{" "}
+            {/* <span>Unlock your</span>{" "}
             <span className="text-sq-violet">Brand&apos;s Potential</span>.{" "}
             <span className="hidden md:inline-flex">One at a time Promote and</span>{" "}
-            <span className="text-sq-violet hidden md:inline-flex">Grow</span>
+            <span className="text-sq-violet hidden md:inline-flex">Grow</span> */}
+            <span>Elevate your </span>
+            <span className="text-sq-violet">healthcare </span>
+            <span>and </span>
+            <span className="text-sq-violet">dental marketing </span>
+            <span>with our expert team.</span>
           </div>
           <div className="text-white text-lg md:text-2xl my-5">
-            Elevate your content marketing with a powerful brand strategy.
+            {/* Elevate your content marketing with a powerful brand strategy. */}
+            We specialize in creating tailored strategies that drive results and help you stand out in your industry.
           </div>
           <Link className={"w-fit h-fit"} href={"/services"}>
             <button

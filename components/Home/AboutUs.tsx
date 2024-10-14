@@ -20,18 +20,22 @@ function AboutUs() {
             <span className="text-[#9C3DFC] italic">
             storytellers, creative wizards and tech geeks
           </span>{" "}
-            who help you convey your story better.
+            {/* who help you convey your story better. */}
+            who help you convert more patients & build a brand.
             <br/>
             <br/>
             <div className="text-base md:text-lg px-5 font-normal">
-              We are a Brand Strategy and Content Marketing company with over{" "}
+              {/* We are a Brand Strategy and Content Marketing company with over{" "}
               <span className="text-[#BE96FF]">50+ names in our clientele.</span>{" "}
               We specialize in brand communications and transforming your
               companies into brands that people will remember.
               Our team is here to{" "}
               <span className="text-[#BE96FF]">
               take your branding and game to the next level.
-            </span>
+            </span> */}
+            As a leading healthcare and dental marketing agency, we&apos;re dedicated to crafting compelling brand
+             stories that resonate with your audience. Our team of creative experts and digital strategists 
+             will help you elevate your brand and drive results.
             </div>
           </div>
 

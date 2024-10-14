@@ -48,7 +48,7 @@ const DentalCare: React.FC<DentalCareProps> = ({ Posters, ListItems, Title }) =>
       alt="poster-1"
       width={800}
       height={400}
-      className="w-full h-auto object-cover rounded-2xl"
+      className="w-full h-auto object-cover rounded-2xl shadow-valuesContainerShadow"
     />
   </div>
   <div className='w-full md:w-[30%] flex justify-center items-center'>
@@ -57,7 +57,7 @@ const DentalCare: React.FC<DentalCareProps> = ({ Posters, ListItems, Title }) =>
       alt="poster-2"
       width={400}
       height={400}
-      className="h-auto w-full md:h-full md:w-auto object-cover rounded-2xl"
+      className="h-auto w-full md:h-full md:w-auto object-cover rounded-2xl shadow-valuesContainerShadow"
     />
   </div>
 </div>
@@ -69,7 +69,7 @@ const DentalCare: React.FC<DentalCareProps> = ({ Posters, ListItems, Title }) =>
       alt="poster-2"
       width={400}
       height={400}
-      className="h-auto w-full md:h-full md:w-auto object-cover rounded-2xl"
+      className="h-auto w-full md:h-full md:w-auto object-cover rounded-2xl shadow-valuesContainerShadow"
     />
   </div>
   <div className='w-full md:w-[70%] flex justify-center items-center'>
@@ -78,7 +78,7 @@ const DentalCare: React.FC<DentalCareProps> = ({ Posters, ListItems, Title }) =>
       alt="poster-1"
       width={800}
       height={400}
-      className="w-full h-auto object-cover rounded-2xl"
+      className="w-full h-auto object-cover rounded-2xl shadow-valuesContainerShadow"
     />
   </div>
 </div>

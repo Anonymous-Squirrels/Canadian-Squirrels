@@ -40,6 +40,42 @@ const MarqueeSlide = () => {
         </div>
 
 
+        <div className="flex flex-col items-center gap-y-10 md:gap-y-16 font-bold md:my-10">
+        <div className="w-full md:px-56">
+          <span className="text-base md:text-4xl px-5 text-center md:px-56 inline-block w-full">
+            We have also{" "}
+            <span className="text-[#7B61FF]">
+            worked with
+            </span>
+          </span>
+        </div>
+        <div className="flex w-full items-center justify-between md:justify-center gap-x-5 md:gap-20 px-7">
+          <div className="border-b-4 md:border-b-8 border-[#7B61FF] text-center pb-8 md:w-44 w-24">
+            <span className="text-[#7B61FF] text-4xl md:text-7xl">54+</span>
+            <br />
+            {/* <span>Brands</span> */}
+            <span className='text-xl'>Brands</span>
+          </div>
+          <div className="border-b-4 md:border-b-8 border-[#7B61FF] text-center pb-8 md:w-44 w-24">
+            <span className="text-[#7B61FF] text-4xl md:text-7xl">20+</span>
+            <br />
+            {/* <span>Domains</span> */}
+            <span className='text-xl'>Industries</span>
+          </div>
+          <div className="border-b-4 md:border-b-8 border-[#7B61FF] text-center pb-8 md:w-44 w-24">
+            <span className="text-[#7B61FF] text-4xl md:text-7xl">4+</span>
+            <br />
+            {/* <span>Countries</span> */}
+            <span className='text-xl'>Countries</span>
+          </div>
+        </div>
+        <div className="text-center text-base md:text-4xl px-5">
+        Here are some of names in our{" "}
+        <span className='text-[#7B61FF]'>clients</span>
+        </div>
+      </div>
+
+
         <div className='flex flex-col md:flex-row gap-10 justify-between'>
           <div className='md:w-[55%]'>
           <h2 className='text-xl md:text-4xl font-semibold text-white text-center mb-5'>
@@ -226,29 +262,31 @@ const MarqueeSlide = () => {
               alt={item.replace("marquee/", "")}
               height={290}
               width={290}
-              className="mx-7 "
+              className="mx-7 rounded-md object-cover w-[200px] h-[200px]"
             />
           ))}
         </Marquee>
                 </GlassMorphism>
         
 
-        <GlassMorphism
-                  variant="light"
-                  className="border border-white/25 rounded-lg mt-7"
-                ><Marquee className="w-full h-fit" direction={"right"}>
-                {row2Desktop.map((item, index) => (
-                  <Image
-                    key={index}
-                    src={`/${item}`}
-                    alt={item.replace("marquee/", "")}
-                    height={290}
-                    width={290}
-                    className="mx-7 rounded-md"
-                  />
-                ))}
-              </Marquee>
-        </GlassMorphism>
+                <GlassMorphism
+  variant="light"
+  className="border border-white/25 rounded-lg mt-7"
+>
+  <Marquee className="w-full h-fit" direction={"right"}>
+    {row2Desktop.map((item, index) => (
+      <Image
+        key={index}
+        src={`/${item}`}
+        alt={item.replace("marquee/", "")}
+        height={290}
+        width={290}
+        className="mx-7 rounded-md object-cover w-[200px] h-[200px]"
+      />
+    ))}
+  </Marquee>
+</GlassMorphism>
+
         
       </div>
 

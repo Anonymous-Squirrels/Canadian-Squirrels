@@ -21,8 +21,8 @@ const page = () => {
         content1="Engage With Your Audience"
         content2="& Grow Your Business."
         detail="Here are some of the brands who entrusted us."
-        link1="/casestudy"
-        button="Case Study"
+        link1="/project"
+        button="Projects"
       />
     </div>
   )

@@ -13,9 +13,9 @@ const OtherWorks = () => {
                     <Image
                     src={i.image}
                     alt="logo"
-                    width={240} 
+                    width={240}
                     height={200}
-                    className=""
+                    className="rounded-xl shadow-valuesContainerShadow"
                     />
                     <p className='font-semibold text-center'>{i.name},</p>
                     <span>{i.city}</span>
