@@ -26,18 +26,18 @@
 .question_container.active {
   color: rgb(255, 255, 255);
   background-image: linear-gradient(
-          90deg,
-          transparent,
-          rgba(0, 0, 0, 0.04),
-          transparent
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.04),
+    transparent
   );
 }
 .wrapper .question_container:hover {
   background-image: linear-gradient(
-          90deg,
-          transparent,
-          rgba(0, 0, 0, 0.04),
-          transparent
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.04),
+    transparent
   );
 }
 .wrapper .arrow {

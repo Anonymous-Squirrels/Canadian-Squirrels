@@ -1,5 +1,5 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 function Footer() {
   return (
@@ -7,16 +7,16 @@ function Footer() {
       <div className="flex flex-col lg:flex-row items-center justify-between md:pb-5 border-b border-[#333333] mb-5 gap-y-5 md:px-10">
         <div className=" flex items-center gap-2 mb-5 text-center m-2">
           <Image
-          src="/logo/footerlogo.png"
-          alt="logo"
-          width={112}
-          height={112}
-          className="w-10 h-fit md:w-28"
+            src="/logo/footerlogo.png"
+            alt="logo"
+            width={112}
+            height={112}
+            className="w-10 h-fit md:w-28"
           />
           <span className="text-lg md:text-2xl">Anonymous Squirrels</span>
         </div>
         <div>
-        <Image
+          <Image
             src="/assets/Google.jpg"
             alt="google"
             width={150}
@@ -99,8 +99,8 @@ function Footer() {
         </div> */}
       </div>
       <p className="w-fit text-center text-sm mx-auto mb-1">
-            Made with 💜 by team Squirrels
-          </p>
+        Made with 💜 by team Squirrels
+      </p>
       <div className="w-full text-center text-sm font-thin px-4">
         &copy; Copyright {new Date().getFullYear()}, All Rights Reserved by
         Anonymous Squirrels

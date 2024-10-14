@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type OurValuesCardProps = {
   icon: React.ReactNode;
@@ -7,7 +7,12 @@ type OurValuesCardProps = {
   content: string;
 };
 
-const OurValuesCard = ({ icon, label, Classname, content }: OurValuesCardProps) => {
+const OurValuesCard = ({
+  icon,
+  label,
+  Classname,
+  content,
+}: OurValuesCardProps) => {
   return (
     <>
       <div
@@ -18,7 +23,9 @@ const OurValuesCard = ({ icon, label, Classname, content }: OurValuesCardProps) 
             <span>{icon}</span>
           </div>
           <div className="mr-2 h-[3px] md:h-[5px] w-full bg-gradient-to-l from-[#7B61FF] to-transparent"></div>
-          <div className="text-xl md:text-2xl text-white 3xl:text-3xl">{label}</div>
+          <div className="text-xl md:text-2xl text-white 3xl:text-3xl">
+            {label}
+          </div>
         </div>
         <p className="cursor-default pt-4 md:pt-8 text-[#7d8590] duration-300 transition text-base group-hover:text-white 3xl:text-lg leading-[25px]">
           {content}

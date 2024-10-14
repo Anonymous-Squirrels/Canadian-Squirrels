@@ -1,16 +1,16 @@
-"use client";
-import React from "react";
-import { Message } from "@/constants/Icons";
-import Item from "./Testimonials/Item";
-import { TestimonialData } from "@/constants/Testimonials";
-import Image from "next/image";
+'use client';
+import React from 'react';
+import { Message } from '@/constants/Icons';
+import Item from './Testimonials/Item';
+import { TestimonialData } from '@/constants/Testimonials';
+import Image from 'next/image';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import "@/style/local_swiper.css";
-import "swiper/css/navigation";
-import "@/app/styles.css";
-import { Navigation, Autoplay } from "swiper/modules";
-import Button from "../ui/Button";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import '@/style/local_swiper.css';
+import 'swiper/css/navigation';
+import '@/app/styles.css';
+import { Navigation, Autoplay } from 'swiper/modules';
+import Button from '../ui/Button';
 
 function Testimonials() {
   return (
@@ -34,9 +34,9 @@ function Testimonials() {
           Our Success <span className="text-[#7B61FF]">Stories</span>
         </div>
         <div className="text-sm md:text-xl md:font-bold w-11/12 mb-5">
-          Thank you for your trust in Anonymous Squirrels! We are grateful for your feedback and are
-          committed to providing the best services. Read what our clients have to say
-          about their experience with us.
+          Thank you for your trust in Anonymous Squirrels! We are grateful for
+          your feedback and are committed to providing the best services. Read
+          what our clients have to say about their experience with us.
         </div>
       </div>
 

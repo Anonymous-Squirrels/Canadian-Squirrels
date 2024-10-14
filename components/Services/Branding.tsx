@@ -1,17 +1,17 @@
-import React from "react";
-import FAB from "../ui/FAB";
-import Image from "next/image";
-import GlassMorphism from "../ui/GlassMorphism";
+import React from 'react';
+import FAB from '../ui/FAB';
+import Image from 'next/image';
+import GlassMorphism from '../ui/GlassMorphism';
 
 function Branding() {
   const images = [
-    { src: "/dental/firm1.png", alt: "Image 1" },
-    { src: "/dental/firm2.png", alt: "Image 2" },
-    { src: "/dental/firm3.png", alt: "Image 3" },
-    { src: "/dental/firm4.png", alt: "Image 4" },
-    { src: "/dental/firm5.png", alt: "Image 5" },
-    { src: "/dental/firm6.png", alt: "Image 6" },
-  ]; 
+    { src: '/dental/firm1.png', alt: 'Image 1' },
+    { src: '/dental/firm2.png', alt: 'Image 2' },
+    { src: '/dental/firm3.png', alt: 'Image 3' },
+    { src: '/dental/firm4.png', alt: 'Image 4' },
+    { src: '/dental/firm5.png', alt: 'Image 5' },
+    { src: '/dental/firm6.png', alt: 'Image 6' },
+  ];
 
   return (
     <div className="w-[100%] py-10 bg-black grid md:gap-y-8 place-items-center">
@@ -41,10 +41,23 @@ function Branding() {
             </div>
 
             <p className="text-sm md:text-lg text-gray-200 font-thin mx-auto my-4 md:leading-loose text-center md:text-start">
-              From Crafting A <span className="text-white font-extrabold">Memorable Logo</span> To Developing A Cohesive <span className="text-white font-extrabold">Brand Message</span>
-              , Our Team Of Experts Will Ensure Your Brand Stands Out In
-              The Market. We&apos;ll Create A Visual Identity That Resonates With Your 
-              <span className="text-white font-extrabold"> Target Audience </span> And Reflects Your <span className="text-white font-extrabold"> Brand&apos;s Unique Personality</span>.
+              From Crafting A{' '}
+              <span className="text-white font-extrabold">Memorable Logo</span>{' '}
+              To Developing A Cohesive{' '}
+              <span className="text-white font-extrabold">Brand Message</span>,
+              Our Team Of Experts Will Ensure Your Brand Stands Out In The
+              Market. We&apos;ll Create A Visual Identity That Resonates With
+              Your
+              <span className="text-white font-extrabold">
+                {' '}
+                Target Audience{' '}
+              </span>{' '}
+              And Reflects Your{' '}
+              <span className="text-white font-extrabold">
+                {' '}
+                Brand&apos;s Unique Personality
+              </span>
+              .
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
@@ -72,12 +85,19 @@ function Branding() {
               </span>
             </div>
             <p className="text-sm md:text-lg text-gray-200 font-light mx-auto mb-4 md:leading-loose text-center md:text-start">
-              From <span className="text-white font-extrabold"> entrepreneurs to influencers and industry leaders </span>, we help
-              you carve a unique niche in the digital world. We craft tailored
-              strategies to enhance your online presence, build a strong
-              personal brand, and connect with your target audience. Our
-              services include <span className="text-white font-extrabold">social media management, content creation,
-              podcast development,</span> and more.
+              From{' '}
+              <span className="text-white font-extrabold">
+                {' '}
+                entrepreneurs to influencers and industry leaders{' '}
+              </span>
+              , we help you carve a unique niche in the digital world. We craft
+              tailored strategies to enhance your online presence, build a
+              strong personal brand, and connect with your target audience. Our
+              services include{' '}
+              <span className="text-white font-extrabold">
+                social media management, content creation, podcast development,
+              </span>{' '}
+              and more.
             </p>
 
             <div className="flex gap-x-10 justify-center items-center">
@@ -93,7 +113,7 @@ function Branding() {
                   variant="light"
                   className="border border-white/25 overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
                 >
-                  {" "}
+                  {' '}
                 </GlassMorphism>
               </div>
               <div className="relative">
@@ -108,7 +128,7 @@ function Branding() {
                   variant="light"
                   className="border border-white/25 overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
                 >
-                  {" "}
+                  {' '}
                 </GlassMorphism>
               </div>
               <div className="relative">
@@ -123,7 +143,7 @@ function Branding() {
                   variant="light"
                   className="border border-white/25 overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
                 >
-                  {" "}
+                  {' '}
                 </GlassMorphism>
               </div>
             </div>

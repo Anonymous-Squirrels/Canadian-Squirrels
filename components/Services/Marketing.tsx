@@ -1,6 +1,6 @@
-import FAB from "../ui/FAB";
-import Image from "next/image";
-import { Tick } from "@/constants/Icons";
+import FAB from '../ui/FAB';
+import Image from 'next/image';
+import { Tick } from '@/constants/Icons';
 
 function Marketing() {
   return (
@@ -12,16 +12,24 @@ function Marketing() {
         <div className="w-full flex flex-col xl:flex-row items-center md:items-stretch justify-around md:gap-14">
           <div className="w-full xl:w-2/5 p-5 xl:p-0">
             <div className="mb-10 w-full text-center">
-              <span className="text-[#5237D8] text-2xl md:text-4xl font-bold">MARKETING</span>
+              <span className="text-[#5237D8] text-2xl md:text-4xl font-bold">
+                MARKETING
+              </span>
               <br />
-              <span className="text-black text-2xl md:text-4xl font-bold">&</span>
+              <span className="text-black text-2xl md:text-4xl font-bold">
+                &
+              </span>
               <br />
-              <span className="text-[#5237D8] text-2xl md:text-4xl font-bold">ADVERTISING</span>
+              <span className="text-[#5237D8] text-2xl md:text-4xl font-bold">
+                ADVERTISING
+              </span>
               <br />
               <br />
               <span className="text-[#5C3095] font-bold">STRATEGIZE</span>
               <br />
-              <span className="text-2xl md:text-3xl leading-6 text-black font-bold">Grow your Reach</span>
+              <span className="text-2xl md:text-3xl leading-6 text-black font-bold">
+                Grow your Reach
+              </span>
             </div>
 
             <div className="flex w-full gap-5">
@@ -46,7 +54,9 @@ function Marketing() {
             </div>
 
             <p className="text-sm font-light md:w-5/6 mx-auto my-4 md:leading-loose text-center md:text-start">
-              Our expert consultants craft tailored <span className="font-extrabold">strategies, designs,</span> and professional feel to elevate your brand.
+              Our expert consultants craft tailored{' '}
+              <span className="font-extrabold">strategies, designs,</span> and
+              professional feel to elevate your brand.
             </p>
 
             <Image
@@ -60,15 +70,31 @@ function Marketing() {
 
           <div className="w-full xl:w-2/5 p-5 xl:p-0">
             <div className="mb-10 w-full text-center">
-              <span className="text-[#5237D8] text-2xl md:text-4xl font-bold">CONTENT </span>
-              <span className="text-black text-2xl md:text-4xl font-bold">Marketing</span>
+              <span className="text-[#5237D8] text-2xl md:text-4xl font-bold">
+                CONTENT{' '}
+              </span>
+              <span className="text-black text-2xl md:text-4xl font-bold">
+                Marketing
+              </span>
               <div className="mt-2">
-                <span className="text-black text-2xl md:text-4xl font-bold">& Brand</span>
-                <span className="text-[#5237D8] text-2xl md:text-4xl font-bold"> STRATEGY</span>
+                <span className="text-black text-2xl md:text-4xl font-bold">
+                  & Brand
+                </span>
+                <span className="text-[#5237D8] text-2xl md:text-4xl font-bold">
+                  {' '}
+                  STRATEGY
+                </span>
               </div>
             </div>
             <p className="text-sm font-light mx-auto md:mt-2 md:leading-loose text-center md:text-start">
-              We craft <span className="font-extrabold">compelling content</span> that resonates with your <span className="font-extrabold">audience</span> and drives <span className="font-extrabold">results. Social Media, content creation </span>to <span className="font-extrabold">strategy</span>, we do it all.
+              We craft{' '}
+              <span className="font-extrabold">compelling content</span> that
+              resonates with your{' '}
+              <span className="font-extrabold">audience</span> and drives{' '}
+              <span className="font-extrabold">
+                results. Social Media, content creation{' '}
+              </span>
+              to <span className="font-extrabold">strategy</span>, we do it all.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 justify-center">
               <div className="col-span-1 pt-4 md:pt-32">

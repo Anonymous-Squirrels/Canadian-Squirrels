@@ -1,4 +1,4 @@
-import {onCLS, onINP, onLCP} from 'web-vitals';
+import { onCLS, onINP, onLCP } from 'web-vitals';
 
 export default function sendToAnalytics(metric) {
   // Replace with whatever serialization method you prefer.
@@ -7,7 +7,7 @@ export default function sendToAnalytics(metric) {
 
   // Use `navigator.sendBeacon()` if available, falling back to `fetch()`.
   (navigator.sendBeacon && navigator.sendBeacon('/analytics', body)) ||
-  fetch('/analytics', {body, method: 'POST', keepalive: true});
+    fetch('/analytics', { body, method: 'POST', keepalive: true });
 }
 
 onCLS(sendToAnalytics);

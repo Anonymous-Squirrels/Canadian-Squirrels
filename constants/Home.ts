@@ -10,12 +10,32 @@
 // ];
 
 export const Trustee = [
-  { alt:"Oak", slug: "dental/firm1.png", name: "Oak Dental" },
-  { alt:"Clove", slug: "dental/firm2.png", name: "Clove Dental" },
-  { alt:"Costal City Dunsmuir Dental", slug: "dental/firm3.png",name: "Costal City Dunsmuir Dental" },
-  { alt:"Forest Lane Dental", slug: "dental/firm4.png", name: "Forest Lane Dental" },
-  { alt:"Chaparral Smiles Dental", slug: "dental/firm5.png", name: "Chaparral Smiles Dental" },
-  { alt:"Sherwood Park Dentistry", slug: "dental/firm6.png", name: "Sherwood Park Dentistry" },
-  { alt:"oyo", slug: "trusted/oyo-rooms-logo.png", name: "OYO" },
-  { alt:"Mothers_Kitchen", slug: "trusted/mothers_kitchen.png", name: "Mothers Kitchen" },
+  { alt: 'Oak', slug: 'dental/firm1.png', name: 'Oak Dental' },
+  { alt: 'Clove', slug: 'dental/firm2.png', name: 'Clove Dental' },
+  {
+    alt: 'Costal City Dunsmuir Dental',
+    slug: 'dental/firm3.png',
+    name: 'Costal City Dunsmuir Dental',
+  },
+  {
+    alt: 'Forest Lane Dental',
+    slug: 'dental/firm4.png',
+    name: 'Forest Lane Dental',
+  },
+  {
+    alt: 'Chaparral Smiles Dental',
+    slug: 'dental/firm5.png',
+    name: 'Chaparral Smiles Dental',
+  },
+  {
+    alt: 'Sherwood Park Dentistry',
+    slug: 'dental/firm6.png',
+    name: 'Sherwood Park Dentistry',
+  },
+  { alt: 'oyo', slug: 'trusted/oyo-rooms-logo.png', name: 'OYO' },
+  {
+    alt: 'Mothers_Kitchen',
+    slug: 'trusted/mothers_kitchen.png',
+    name: 'Mothers Kitchen',
+  },
 ];

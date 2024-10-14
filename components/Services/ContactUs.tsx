@@ -1,13 +1,13 @@
-"use client";
-import React from "react";
-import Input from "../ui/Input";
+'use client';
+import React from 'react';
+import Input from '../ui/Input';
 
 function ContactUs() {
   const [formData, setFormData] = React.useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
   });
 
   const handleChange = (

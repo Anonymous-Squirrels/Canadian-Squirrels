@@ -1,11 +1,11 @@
-import JoinTeam from "@/components/About/JoinTeam";
-import Branding from "@/components/Services/Branding";
-import HeroSection from "@/components/Services/HeroSection";
-import Marketing from "@/components/Services/Marketing";
-import UIDesign from "@/components/Services/UIDesign";
-import Development from "@/components/Services/Development";
-import AllServices from "@/components/Services/AllServices";
-import React from "react";
+import JoinTeam from '@/components/About/JoinTeam';
+import Branding from '@/components/Services/Branding';
+import HeroSection from '@/components/Services/HeroSection';
+import Marketing from '@/components/Services/Marketing';
+import UIDesign from '@/components/Services/UIDesign';
+import Development from '@/components/Services/Development';
+import AllServices from '@/components/Services/AllServices';
+import React from 'react';
 
 function Page() {
   return (
