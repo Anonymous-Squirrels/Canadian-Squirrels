@@ -1,131 +1,131 @@
 {
-    "allsmiles": {
-      "heading": "ALL SMILES DENTAL CARE",
-      "images": [
-        {
-          "image": "/dental/dental1.png"
-        },
-        {
-          "image": "/dental/dental2.png"
-        },
-        {
-          "image": "/dental/dental3.png"
-        },
-        {
-          "image": "/dental/dental4.png"
-        },
-        {
-          "image": "/dental/dental5.png"
-        }
-      ],
-      "amimationlist": [
-        {
-          "icon": "/dental/icons.png",
-          "data":"40%",
-          "detail":"Growth and Improved User Engagement in Instagram."
-        },
-        {
-          "icon": "/dental/icons1.png",
-          "data":"80/100",
-          "detail":"SEO Score: From 22/100 to 80/100 in less than 30 days"
-        },
-        {
-          "icon": "/dental/icons2.png",
-          "data":"520+",
-          "detail":"Customer Interaction Leads  in less than 30 days"
-        },
-        {
-          "icon": "/dental/icons3.png",
-          "data":"519",
-          "detail":"Business Profile Discoveries."
-        },
-        {
-          "icon": "/dental/icons4.png",
-          "data":"145",
-          "detail":"Calls Made from Business Profile."
-        },
-        {
-          "icon": "/dental/icons5.png",
-          "data":"10,000+",
-          "detail":"Clicks"
-        }
-      ]
-    },
-    "bowriver": {
-      "heading": "BOW RIVER DENTAL",
-      "images": [
-        {
-          "image": "/dental/dental6.png"
-        },
-        {
-          "image": "/dental/dental7.png"
-        },
-        {
-          "image": "/dental/dental8.png"
-        },
-        {
-          "image": "/dental/dental9.png"
-        },
-        {
-          "image": "/dental/dental10.png"
-        }
-      ],
-      "amimationlist": [
-        {
-          "icon": "/dental/icons.png",
-          "data":"40%",
-          "detail":"Growth and Improved User Engagement in Instagram. 10k+ Reel views in less than 3 Days."
-        },
-        {
-          "icon": "/dental/icons1.png",
-          "data":"88/100",
-          "detail":"SEO Score: From 32/100 to 80/100 in less than 30 days"
-        },
-        {
-          "icon": "/dental/icons2.png",
-          "data":"430+",
-          "detail":"Customer Interaction Leads  in less than 30 days"
-        },
-        {
-          "icon": "/dental/icons3.png",
-          "data":"434",
-          "detail":"Business Profile Discoveries."
-        },
-        {
-          "icon": "/dental/icons4.png",
-          "data":"155",
-          "detail":"Calls Made from Business Profile."
-        },
-        {
-          "icon": "/dental/icons5.png",
-          "data":"15,000+",
-          "detail":"Clicks"
-        }
-      ]
-    },
-    "oasissmiledental": {
-      "heading": "OASIS SMILE DENTAL",
-      "images": [
-        {
-          "image": "/dental/dental11.png"
-        }
-      ],
-      "amimationlist": [
-        {
-          "icon": "/dental/icons6.png",
-          "data":"",
-          "detail":"Offers to Drive Customer Leads"
-        },
-        {
-          "icon": "/dental/icons7.png",
-          "data":"+45%",
-          "detail":"Marketing Strategies to boost Engagement"
-        },
-        {
-          "icon": "/dental/icons8.png",
-          "data":"10k+",
-          "detail":"account reach in less than 30 days"
-        }
-      ]
-    }
+  "allsmiles": {
+    "heading": "ALL SMILES DENTAL CARE",
+    "images": [
+      {
+        "image": "/dental/dental1.png"
+      },
+      {
+        "image": "/dental/dental2.png"
+      },
+      {
+        "image": "/dental/dental3.png"
+      },
+      {
+        "image": "/dental/dental4.png"
+      },
+      {
+        "image": "/dental/dental5.png"
+      }
+    ],
+    "amimationlist": [
+      {
+        "icon": "/dental/icons.png",
+        "data": "40%",
+        "detail": "Growth and Improved User Engagement in Instagram."
+      },
+      {
+        "icon": "/dental/icons1.png",
+        "data": "80/100",
+        "detail": "SEO Score: From 22/100 to 80/100 in less than 30 days"
+      },
+      {
+        "icon": "/dental/icons2.png",
+        "data": "520+",
+        "detail": "Customer Interaction Leads  in less than 30 days"
+      },
+      {
+        "icon": "/dental/icons3.png",
+        "data": "519",
+        "detail": "Business Profile Discoveries."
+      },
+      {
+        "icon": "/dental/icons4.png",
+        "data": "145",
+        "detail": "Calls Made from Business Profile."
+      },
+      {
+        "icon": "/dental/icons5.png",
+        "data": "10,000+",
+        "detail": "Clicks"
+      }
+    ]
+  },
+  "bowriver": {
+    "heading": "BOW RIVER DENTAL",
+    "images": [
+      {
+        "image": "/dental/dental6.png"
+      },
+      {
+        "image": "/dental/dental7.png"
+      },
+      {
+        "image": "/dental/dental8.png"
+      },
+      {
+        "image": "/dental/dental9.png"
+      },
+      {
+        "image": "/dental/dental10.png"
+      }
+    ],
+    "amimationlist": [
+      {
+        "icon": "/dental/icons.png",
+        "data": "40%",
+        "detail": "Growth and Improved User Engagement in Instagram. 10k+ Reel views in less than 3 Days."
+      },
+      {
+        "icon": "/dental/icons1.png",
+        "data": "88/100",
+        "detail": "SEO Score: From 32/100 to 80/100 in less than 30 days"
+      },
+      {
+        "icon": "/dental/icons2.png",
+        "data": "430+",
+        "detail": "Customer Interaction Leads  in less than 30 days"
+      },
+      {
+        "icon": "/dental/icons3.png",
+        "data": "434",
+        "detail": "Business Profile Discoveries."
+      },
+      {
+        "icon": "/dental/icons4.png",
+        "data": "155",
+        "detail": "Calls Made from Business Profile."
+      },
+      {
+        "icon": "/dental/icons5.png",
+        "data": "15,000+",
+        "detail": "Clicks"
+      }
+    ]
+  },
+  "oasissmiledental": {
+    "heading": "OASIS SMILE DENTAL",
+    "images": [
+      {
+        "image": "/dental/dental11.png"
+      }
+    ],
+    "amimationlist": [
+      {
+        "icon": "/dental/icons6.png",
+        "data": "",
+        "detail": "Offers to Drive Customer Leads"
+      },
+      {
+        "icon": "/dental/icons7.png",
+        "data": "+45%",
+        "detail": "Marketing Strategies to boost Engagement"
+      },
+      {
+        "icon": "/dental/icons8.png",
+        "data": "10k+",
+        "detail": "account reach in less than 30 days"
+      }
+    ]
   }
+}

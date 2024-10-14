@@ -1,40 +1,40 @@
-import AboutUs from "@/components/About/AboutUs";
-import HeroSection from "@/components/About/HeroSection";
-import JoinTeam from "@/components/About/JoinTeam";
-import OurValues from "@/components/About/OurValues";
-import ThreeStepProcess from "@/components/About/ThreeStepProcess";
-import React from "react";
-import {Blob} from "@/constants/Icons";
-import ContactBackground from "@/components/Contact/ContactBackground";
-import Google from "@/components/About/Google";
+import AboutUs from '@/components/About/AboutUs';
+import HeroSection from '@/components/About/HeroSection';
+import JoinTeam from '@/components/About/JoinTeam';
+import OurValues from '@/components/About/OurValues';
+import ThreeStepProcess from '@/components/About/ThreeStepProcess';
+import React from 'react';
+import { Blob } from '@/constants/Icons';
+import ContactBackground from '@/components/Contact/ContactBackground';
+import Google from '@/components/About/Google';
 
 function Page() {
   return (
     <div className="w-full">
       <div className="w-full relative overflow-hidden">
-      <div className="h-[15vh] bg-black"></div>
+        <div className="h-[15vh] bg-black"></div>
         <div className="absolute hidden md:block md:left-60 -translate-x-1/2 -top-72 z-10">
-          <Blob variant="violet"/>
+          <Blob variant="violet" />
         </div>
         <div className="absolute hidden md:block right-52 translate-x-1/2 top-60 z-10">
-          <Blob variant="yellow"/>
+          <Blob variant="yellow" />
         </div>
 
-        <HeroSection/>
+        <HeroSection />
         <Google />
-        <AboutUs/>
+        <AboutUs />
       </div>
-      <OurValues/>
+      <OurValues />
       <div className="w-full relative overflow-hidden">
-        <ThreeStepProcess/>
-        <ContactBackground/>
+        <ThreeStepProcess />
+        <ContactBackground />
         <JoinTeam
-        content1="Become a Squirrel."
-        content2="Join our Team."
-        detail="We are looking for individuals with skills who could join our family of squirrels."
-        link1="/contact"
-        button="Apply Now"
-      />
+          content1="Become a Squirrel."
+          content2="Join our Team."
+          detail="We are looking for individuals with skills who could join our family of squirrels."
+          link1="/contact"
+          button="Apply Now"
+        />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import ContactUs from '@/components/ContactUs';
 
 const FullScreenImages = () => {
   return (
-    <div className='bg-black w-full'>
+    <div className="bg-black w-full">
       <ContactBackground />
       <ContactUs />
       <ThankYou />

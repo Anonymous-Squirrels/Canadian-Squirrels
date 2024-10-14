@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 html {
-  @apply scroll-smooth
+  @apply scroll-smooth;
 }
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -27,11 +27,10 @@ body{
   }
 }
 
-@media ( min-width: 768px) {
+@media (min-width: 768px) {
   .hidden-parent {
     visibility: hidden;
   }
-
 }
 
 .visible-child {
@@ -61,12 +60,12 @@ body{
     width: 0;
     height: 0;
     opacity: 0; /* Make the flare invisible */
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out, height 0.2s ease-in-out,opacity 0.2s ease-in-out;
   }
 }
 .flare.pointer {
   opacity: 0 !important;
-  transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out,opacity 0.2s ease-in-out;
 }
 @layer base {
   :root {
@@ -94,7 +93,8 @@ body{
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem;}
+    --radius: 0.5rem;
+  }
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -119,9 +119,14 @@ body{
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;}}
+    --chart-5: 340 75% 55%;
+  }
+}
 @layer base {
   * {
-    @apply border-border;}
+    @apply border-border;
+  }
   body {
-    @apply bg-background text-foreground;}}
+    @apply bg-background text-foreground;
+  }
+}

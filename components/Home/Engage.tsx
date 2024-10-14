@@ -1,6 +1,6 @@
-"use client";
-import React, { useEffect, useRef, useState } from "react";
-import "@/style/EngageAnimation.css";
+'use client';
+import React, { useEffect, useRef, useState } from 'react';
+import '@/style/EngageAnimation.css';
 
 export default function Engage() {
   const divRef = useRef(null);
@@ -8,11 +8,11 @@ export default function Engage() {
   const [cursorAnimation, setCursorAnimation] = useState<boolean>(false);
 
   useEffect(() => {
-    const link = document.querySelectorAll("div > .hover-this");
-    const cursor = document.querySelector(".cursor") as HTMLElement;
+    const link = document.querySelectorAll('div > .hover-this');
+    const cursor = document.querySelector('.cursor') as HTMLElement;
 
     const animateIt = function (this: HTMLElement, e: MouseEvent) {
-      const span = this.querySelector("span");
+      const span = this.querySelector('span');
       if (!span) return;
       const { offsetX: x, offsetY: y } = e,
         { offsetWidth: width, offsetHeight: height } = this,
@@ -22,33 +22,33 @@ export default function Engage() {
 
       span.style.transform = `translate(${xMove}px, ${yMove}px)`;
 
-      if (e.type === "mouseleave") span.style.transform = "";
+      if (e.type === 'mouseleave') span.style.transform = '';
     };
 
     const editCursor = (e: MouseEvent) => {
       const { clientX: x, clientY: y } = e;
       if (cursor) {
-        cursor.style.left = x + "px";
-        cursor.style.top = y + "px";
+        cursor.style.left = x + 'px';
+        cursor.style.top = y + 'px';
       }
     };
 
     link.forEach((b) =>
-      b.addEventListener("mousemove", animateIt as EventListener)
+      b.addEventListener('mousemove', animateIt as EventListener)
     );
     link.forEach((b) =>
-      b.addEventListener("mouseleave", animateIt as EventListener)
+      b.addEventListener('mouseleave', animateIt as EventListener)
     );
-    window.addEventListener("mousemove", editCursor);
+    window.addEventListener('mousemove', editCursor);
 
     return () => {
       link.forEach((b) =>
-        b.removeEventListener("mousemove", animateIt as EventListener)
+        b.removeEventListener('mousemove', animateIt as EventListener)
       );
       link.forEach((b) =>
-        b.removeEventListener("mouseleave", animateIt as EventListener)
+        b.removeEventListener('mouseleave', animateIt as EventListener)
       );
-      window.removeEventListener("mousemove", editCursor);
+      window.removeEventListener('mousemove', editCursor);
     };
   }, [cursorAnimation]);
 
@@ -71,21 +71,23 @@ export default function Engage() {
       onMouseLeave={() => setCursorAnimation(false)}
     >
       <div
-        className={"w-full xl:w-[1000px] flex flex-col items-center justify-center"}
+        className={
+          'w-full xl:w-[1000px] flex flex-col items-center justify-center'
+        }
         ref={divRef}
       >
         <p
           className={`hover-this text-6xl xl:text-8xl font-medium self-start flex items-center justify-around gap-3 relative -left-[70%] ${
-            isIntersecting && "brand"
+            isIntersecting && 'brand'
           } `}
         >
-          <span className={" span-text "}>
+          <span className={' span-text '}>
             Brand Identity
             <span className="bg-black h-4 w-4 text-white inline-block" />
           </span>
         </p>
         <p className="hover-this text-[180px] xl:text-[230px] font-bold self-center flex items-center justify-around gap-3">
-          <span className={"span-text"}>
+          <span className={'span-text'}>
             ENGAGE
             <span className="bg-black inline-block" />
           </span>
@@ -93,7 +95,7 @@ export default function Engage() {
         <p className="hover-this text-6xl xl:text-8xl font-medium self-end">
           <span
             className={`span-text relative -right-[70%] ${
-              isIntersecting && "content"
+              isIntersecting && 'content'
             }`}
           >
             Content Marketing

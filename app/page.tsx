@@ -1,31 +1,31 @@
-import AboutUs from "@/components/Home/AboutUs";
-import {BentoBox} from "@/components/Home/BentoBox";
-import Home from "@/components/Home/HeroSection";
-import Testimonials from "@/components/Home/Testimonials";
-import React from "react";
-import {Blob} from "@/constants/Icons";
-import Engage from "@/components/Home/Engage";
-import ContactBackground from "@/components/Contact/ContactBackground";
+import AboutUs from '@/components/Home/AboutUs';
+import { BentoBox } from '@/components/Home/BentoBox';
+import Home from '@/components/Home/HeroSection';
+import Testimonials from '@/components/Home/Testimonials';
+import React from 'react';
+import { Blob } from '@/constants/Icons';
+import Engage from '@/components/Home/Engage';
+import ContactBackground from '@/components/Contact/ContactBackground';
 
 function Page() {
   return (
     <div className="scrollbar-hide cursor-default">
       <div className="w-full relative overflow-hidden">
         <div className="absolute md:hidden -translate-x-1/2 -top-52 z-10">
-          <Blob variant="violet"/>
+          <Blob variant="violet" />
         </div>
         <div className="absolute -right-10 translate-x-1/2 -top-80 z-10 md:hidden">
-          <Blob variant="yellow"/>
+          <Blob variant="yellow" />
         </div>
-        <Home/>
+        <Home />
         <div className="hidden md:block w-full h-[700px]">
-          <Engage/>
+          <Engage />
         </div>
-        <AboutUs/>
+        <AboutUs />
       </div>
-      <BentoBox/>
-      <Testimonials/>
-      <ContactBackground/>
+      <BentoBox />
+      <Testimonials />
+      <ContactBackground />
     </div>
   );
 }

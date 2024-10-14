@@ -1,6 +1,6 @@
-import { Blob } from "@/constants/Icons";
-import { Tags } from "@/constants/Projects";
-import React from "react";
+import { Blob } from '@/constants/Icons';
+import { Tags } from '@/constants/Projects';
+import React from 'react';
 
 function HeroSection({
   section,
@@ -11,9 +11,8 @@ function HeroSection({
 }) {
   return (
     <div className="h-[50vh] md:h-[100vh] bg-black text-white grid place-items-center relative overflow-hidden">
-
       <span className="text-3xl md:text-7xl text-center font-semibold w-3/4 md:w-2/5 r-2">
-        Here&apos;s some work we are{" "}
+        Here&apos;s some work we are{' '}
         <span className="text-[#7B61FF]">proud of</span>.
       </span>
       {/*<div className="flex items-center justify-center md:w-screen gap-5 md:gap-10 px-8 flex-wrap z-20">
