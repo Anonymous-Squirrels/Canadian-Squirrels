@@ -50,39 +50,6 @@ const ThankYou = () => {
           Let us Keep in touch
         </p>
         <div className="mt-10 md:mt-20 flex flex-col lg:flex-row justify-between gap-5 text-white max-w-5xl mx-auto">
-          {/* India Section */}
-          <div className="">
-            <div className="flex justify-between gap-10">
-              <div className="">
-                <p className="text-3xl md:text-6xl font-bold">INDIA</p>
-                <p className="mt-2 text-xl md:text-3xl">{indiaTime}</p>
-              </div>
-              <Image
-                src="/assets/india.png"
-                alt="India logo"
-                width={112}
-                height={112}
-                className=" w-fit h-16 sm:h-28"
-              />
-            </div>
-            <div className="flex gap-5 justify-start items-center mt-2 md:mt-5 text-base md:text-xl">
-              <FaLocationDot className="text-base md:text-2xl text-white" />
-              <p>Hyderabad, Kolkata & Ranchi</p>
-            </div>
-            <div className="flex gap-5 justify-start mt-2 md:mt-5 text-base md:text-xl">
-              <p>Mail:</p>
-              <a href="mailto:hello@thesquirrels.ca" className="underline">
-                hello@thesquirrels.ca
-              </a>
-            </div>
-            <div className="flex gap-5 justify-start items-center mt-2 md:mt-5 text-base md:text-xl">
-              <p>Call:</p>
-              <a href="tel:+919122823474" className="underline">
-                +91 9122823474
-              </a>
-            </div>
-          </div>
-
           {/* Canada Section */}
           <div className="">
             <div className="flex justify-between gap-10">
@@ -119,6 +86,38 @@ const ThankYou = () => {
                   +1(587)962-3182
                 </a>
               </div>
+            </div>
+          </div>
+          {/* India Section */}
+          <div className="">
+            <div className="flex justify-between gap-10">
+              <div className="">
+                <p className="text-3xl md:text-6xl font-bold">INDIA</p>
+                <p className="mt-2 text-xl md:text-3xl">{indiaTime}</p>
+              </div>
+              <Image
+                src="/assets/india.png"
+                alt="India logo"
+                width={112}
+                height={112}
+                className=" w-fit h-16 sm:h-28"
+              />
+            </div>
+            <div className="flex gap-5 justify-start items-center mt-2 md:mt-5 text-base md:text-xl">
+              <FaLocationDot className="text-base md:text-2xl text-white" />
+              <p>Hyderabad, Kolkata & Ranchi</p>
+            </div>
+            <div className="flex gap-5 justify-start mt-2 md:mt-5 text-base md:text-xl">
+              <p>Mail:</p>
+              <a href="mailto:hello@thesquirrels.ca" className="underline">
+                hello@thesquirrels.ca
+              </a>
+            </div>
+            <div className="flex gap-5 justify-start items-center mt-2 md:mt-5 text-base md:text-xl">
+              <p>Call:</p>
+              <a href="tel:+919122823474" className="underline">
+                +91 9122823474
+              </a>
             </div>
           </div>
         </div>

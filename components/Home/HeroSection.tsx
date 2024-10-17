@@ -82,7 +82,7 @@ export default function Home() {
 
       <div className="text-white w-full flex flex-col justify-center items-center my-8">
         <span className="text-2xl font-semibold">Trusted By</span>
-        <div className="w-11/12 grid grid-cols-4 lg:grid-cols-8 place-items-center gap-y-3.5 md:gap-10 mt-10">
+        <div className="w-11/12 grid grid-cols-4 lg:grid-cols-8 place-items-center gap-y-4 gap-x-4 md:gap-10 mt-10">
           {Trustee.map(
             (item: { alt: string; slug: string; name: string }, index) => (
               <div
@@ -100,7 +100,7 @@ export default function Home() {
                   />
                 </div>
 
-                <p className="my-2.5 max-w-[90px] md:max-w-fit">{item.name}</p>
+                <p className="my-2.5 text-xs md:text-base max-w-[90px] md:max-w-fit">{item.name}</p>
               </div>
             )
           )}
