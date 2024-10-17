@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 import {
@@ -14,10 +16,64 @@ import {
 } from '@/constants/marqueeData';
 import Image from 'next/image';
 import GlassMorphism from '@/components/ui/GlassMorphism';
+import { useEffect, useRef, useState } from 'react';
 
 const MarqueeSlide = () => {
+  const [brand, setBrand] = useState<number>(0);
+  const [domain, setDomain] = useState<number>(0);
+  const [country, setCountry] = useState<number>(0);
+  const [intersecting, setIsIntersecting] = useState<boolean>(false);
+  const divRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (item) => {
+        if (item[0].isIntersecting) {
+          setIsIntersecting(true);
+        }
+      },
+      { threshold: 0.7 }
+    );
+
+    if (divRef.current) {
+      observer.observe(divRef.current);
+    }
+
+    if (intersecting && divRef.current) {
+      observer.unobserve(divRef.current);
+    }
+  }, [intersecting]);
+
+  useEffect(() => {
+    if (brand < 54 && intersecting) {
+      //54
+      const id = setTimeout(() => {
+        setBrand((prev) => prev + 1);
+      }, 100);
+      return () => clearTimeout(id);
+    }
+  }, [brand, intersecting]);
+
+  useEffect(() => {
+    if (domain < 20 && intersecting) {
+      const id = setTimeout(() => {
+        setDomain((prev) => prev + 1);
+      }, 200);
+      return () => clearTimeout(id);
+    }
+  }, [domain, intersecting]);
+
+  useEffect(() => {
+    if (country < 4 && intersecting) {
+      const id = setTimeout(() => {
+        setCountry((prev) => prev + 1);
+      }, 400);
+      return () => clearTimeout(id);
+    }
+  }, [country, intersecting]);
+
   return (
-    <div className="bg-black text-white w-full h-fit">
+    <div className="bg-black text-white w-full h-fit" ref={divRef}>
       <div className=" max-w-[1400px] mx-auto">
         <div className="flex flex-col gap-10">
           <div>
@@ -55,19 +111,25 @@ const MarqueeSlide = () => {
             </div>
             <div className="flex w-full items-center justify-between md:justify-center gap-x-5 md:gap-20 px-7">
               <div className="border-b-4 md:border-b-8 border-[#7B61FF] text-center pb-8 md:w-44 w-24">
-                <span className="text-[#7B61FF] text-4xl md:text-7xl">54+</span>
+                <span className="text-[#7B61FF] text-4xl md:text-7xl">
+                  54+
+                </span>
                 <br />
                 {/* <span>Brands</span> */}
-                <span className="text-xl">Brands</span>
+                <span className="text-xl">Brand</span>
               </div>
               <div className="border-b-4 md:border-b-8 border-[#7B61FF] text-center pb-8 md:w-44 w-24">
-                <span className="text-[#7B61FF] text-4xl md:text-7xl">20+</span>
+                <span className="text-[#7B61FF] text-4xl md:text-7xl">
+                  20+
+                </span>
                 <br />
                 {/* <span>Domains</span> */}
                 <span className="text-xl">Industries</span>
               </div>
               <div className="border-b-4 md:border-b-8 border-[#7B61FF] text-center pb-8 md:w-44 w-24">
-                <span className="text-[#7B61FF] text-4xl md:text-7xl">4+</span>
+                <span className="text-[#7B61FF] text-4xl md:text-7xl">
+                  4+
+                </span>
                 <br />
                 {/* <span>Countries</span> */}
                 <span className="text-xl">Countries</span>

@@ -29,7 +29,7 @@ const DentalCare: React.FC<DentalCareProps> = ({
         {Title}
       </h1>
 
-      <div className="flex lg:flex-row flex-col items-center">
+      <div className="flex lg:flex-row flex-col gap-5 items-center">
         <div className="w-full md:w-[50%] xl:w-[70%] flex flex-col justify-center items-center">
           <Image
             src={Posters[0].image}
@@ -74,22 +74,27 @@ const DentalCare: React.FC<DentalCareProps> = ({
           </div>
 
           <div className="flex md:flex-row flex-col gap-10">
+            {/* First Image Container */}
             <div className="w-full md:w-[30%] flex justify-center items-center">
               <Image
                 src={Posters[3].image}
                 alt="poster-2"
                 width={400}
                 height={400}
-                className="h-auto w-full md:h-full md:w-auto object-cover rounded-2xl shadow-valuesContainerShadow"
+                className="w-full h-auto md:w-auto md:h-full object-cover rounded-2xl shadow-valuesContainerShadow"
+                style={{ objectFit: 'cover' }} // Ensures image covers the space without being cut off
               />
             </div>
+
+            {/* Second Image Container */}
             <div className="w-full md:w-[70%] flex justify-center items-center">
               <Image
                 src={Posters[4].image}
                 alt="poster-1"
                 width={800}
                 height={400}
-                className="w-full h-auto object-cover rounded-2xl shadow-valuesContainerShadow"
+                className="w-full h-full object-cover rounded-2xl shadow-valuesContainerShadow"
+                style={{ objectFit: 'cover' }} // Keeps the second image also intact
               />
             </div>
           </div>

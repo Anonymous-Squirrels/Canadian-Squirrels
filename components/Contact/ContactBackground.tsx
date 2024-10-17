@@ -10,7 +10,7 @@ const locations = [
 
 const ContactBackground = () => {
   return (
-    <div className="relative h-[40vh] md:h[70vh] xl:h-screen w-full overflow-x-hidden">
+    <div className="relative h[70vh] xl:h-screen w-full overflow-x-hidden">
       {/* Top shadow for 100px height */}
       <div className="absolute top-0 left-0 w-full h-[100px] bg-gradient-to-b from-black/80 to-transparent z-10"></div>
       {/* Bottom shadow */}
@@ -29,29 +29,30 @@ const ContactBackground = () => {
         </div>
       </Link>
 
-      <div className="relative grid grid-cols-1 md:grid-cols-3 h-full">
-        {locations.map((location, index) => (
-          <div
-            key={index}
-            className={`relative col-span-1 md:col-span-1 ${
-              index > 0 ? 'hidden md:block' : ''
-            }`}
-          >
-            <Image
-              src={location.src}
-              alt={location.alt}
-              layout="fill"
-              objectFit="cover"
-              className="w-full h-full"
-            />
-            <div className="absolute inset-x-0 top-1/3 transform -translate-y-1/2 bg-black bg-opacity-30 text-white text-center">
-              <p className="text-5xl md:text-4xl lg:text-5xl 2xl:text-7xl text-white my-1">
-                {location.title}
-              </p>
-            </div>
-          </div>
-        ))}
+      <div className="relative grid grid-cols-1 md:grid-cols-3 min-h-screen h-auto">
+  {locations.map((location, index) => (
+    <div
+      key={index}
+      className={`relative col-span-1 md:col-span-1 ${
+        index > 0 ? 'block md:block' : ''
+      }`}
+    >
+      <Image
+        src={location.src}
+        alt={location.alt}
+        layout="fill"
+        objectFit="cover"
+        className="w-full h-full"
+      />
+      <div className="absolute inset-x-0 top-1/3 transform -translate-y-1/2 bg-black bg-opacity-30 text-white text-center">
+        <p className="text-5xl md:text-4xl lg:text-5xl 2xl:text-7xl text-white my-1">
+          {location.title}
+        </p>
       </div>
+    </div>
+  ))}
+</div>
+
     </div>
   );
 };

@@ -26,7 +26,7 @@ export const DENTAL = [
   },
   {
     image: '/dental/firm6.png',
-    name: 'Sherwood Park Dentistry',
+    name: 'Affinity Dental',
     city: 'Edmonton',
   },
 ];

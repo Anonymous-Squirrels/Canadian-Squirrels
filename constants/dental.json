@@ -12,7 +12,7 @@
         "image": "/dental/dental3.png"
       },
       {
-        "image": "/dental/dental4.png"
+        "image": "/dental/dental4.jpg"
       },
       {
         "image": "/dental/dental5.png"
@@ -125,6 +125,21 @@
         "icon": "/dental/icons8.png",
         "data": "10k+",
         "detail": "account reach in less than 30 days"
+      },
+      {
+        "icon": "/dental/icons9.png",
+        "data": "276",
+        "detail": "Leads in 45 days"
+      },
+      {
+        "icon": "/dental/icons10.png",
+        "data": "23,760+",
+        "detail": "Organic Impressions in 30 days"
+      },
+      {
+        "icon": "/dental/icons11.png",
+        "data": "500+",
+        "detail": "Follower hike in 15 days"
       }
     ]
   }

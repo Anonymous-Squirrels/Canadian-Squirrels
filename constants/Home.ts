@@ -10,27 +10,27 @@
 // ];
 
 export const Trustee = [
-  { alt: 'Oak', slug: 'dental/firm1.png', name: 'Oak Dental' },
-  { alt: 'Clove', slug: 'dental/firm2.png', name: 'Clove Dental' },
+  { alt: 'Oak', slug: 'dental/firmcircle1.png', name: 'Oak Dental' },
+  { alt: 'Clove', slug: 'dental/firmcircle2.png', name: 'Clove Dental' },
   {
     alt: 'Costal City Dunsmuir Dental',
-    slug: 'dental/firm3.png',
+    slug: 'dental/firmcircle3.png',
     name: 'Costal City Dunsmuir Dental',
   },
   {
     alt: 'Forest Lane Dental',
-    slug: 'dental/firm4.png',
+    slug: 'dental/firmcircle4.png',
     name: 'Forest Lane Dental',
   },
   {
     alt: 'Chaparral Smiles Dental',
-    slug: 'dental/firm5.png',
+    slug: 'dental/firmcircle5.png',
     name: 'Chaparral Smiles Dental',
   },
   {
-    alt: 'Sherwood Park Dentistry',
-    slug: 'dental/firm6.png',
-    name: 'Sherwood Park Dentistry',
+    alt: 'Affinity Dental',
+    slug: 'dental/firmcircle6.png',
+    name: 'Affinity Dental',
   },
   { alt: 'oyo', slug: 'trusted/oyo-rooms-logo.png', name: 'OYO' },
   {
