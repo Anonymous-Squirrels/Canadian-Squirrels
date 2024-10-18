@@ -17,10 +17,10 @@ function NavBar() {
       <div className="w-full px-4 md:p-4">
         <div className={`w-full h-fit ${isOpen && 'mt-60'} md:mt-0`}>
           <div
-            className={`text-white rounded-lg md:px-8 min-h-16 md:h-20 w-full  bg-[#282828]
+            className={`text-white rounded-lg md:px-8 min-h-16 md:h-20 w-full p-2 pt-3 bg-[#282828]
             ${!isOpen ? 'flex items-center' : ''}`}
           >
-            <div className="flex items-center justify-between w-full relative p-1">
+            <div className="flex items-center justify-between w-full relative">
               <Link href="/" className="flex items-center gap-3 group">
                 <div className="h-fit w-fit hidden md:flex element z-20 -ml-5 px-5 py-4">
                   <Logo className="h-9 md:h-fit" />

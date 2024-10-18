@@ -23,8 +23,8 @@ const Google = () => {
           ADVANTAGE for YOU
         </h6>
         <p className="text-base md:text-lg">
-          We have been handling ad spends of over $400,000 every month only for
-          our dental clients and know how to exactly maximize the ROI.
+          We have been handling ad spends of over <span className='text-yellow-400'>$400,000 every month</span> only for
+          <span className='text-yellow-400'> our dental clients </span> and know how to exactly maximize <span className='text-yellow-400'>the ROI</span>.
         </p>
       </div>
     </div>

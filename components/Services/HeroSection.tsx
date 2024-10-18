@@ -13,11 +13,8 @@ function HeroSection() {
           <div className="text-3xl md:text-6xl font-semibold md:w-[50vw] w-[85vw]">
             We Provide Services. A Lot...
           </div>
-          <div className="text-[#C1C1C1] text-sm md:text-lg hidden md:grid">
+          <div className="text-[#C1C1C1] text-sm md:text-lg">
             Enhance every aspect of your business sales, ensuring <br />
-            satisfaction, loyalty, and unparalleled service.
-          </div>
-          <div className="text-[#C1C1C1] text-sm grid md:hidden">
             satisfaction, loyalty, and unparalleled service.
           </div>
 
