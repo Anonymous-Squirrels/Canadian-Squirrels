@@ -14,24 +14,9 @@ import Image from 'next/image';
 
 function ContactUs() {
   const {
-    register: register1,
-    handleSubmit: handleSubmit1,
-    formState: { errors: errors1, isSubmitting: isSubmitting1 },
-  } = useForm<z.infer<typeof formInputSchema>>({
-    resolver: zodResolver(formInputSchema),
-    defaultValues: {
-      name: '',
-      email: '',
-      phone: '',
-      messageToTeam: '',
-      social: '',
-      website: '',
-    },
-  });
-
-  const {
     register: register2,
     handleSubmit: handleSubmit2,
+    reset: reset2,
     formState: { errors: errors2, isSubmitting: isSubmitting2 },
   } = useForm<z.infer<typeof formInputSchema>>({
     resolver: zodResolver(formInputSchema),
@@ -49,16 +34,17 @@ function ContactUs() {
     data
   ) => {
     sendMail(JSON.stringify(data))
-      .then(() =>
-        toast.success('Mail sent successfully! You will be contacted soon.')
-      )
+      .then(() => {
+        toast.success('Mail sent successfully! You will be contacted soon.');
+        reset2();
+      })
       .catch(() => toast.error('Mail not sent. Please try again later.'));
   };
 
   return (
     <div
       id="contact"
-      className="relative bg-black bg-center bg-cover h-fit flex flex-col items-center text-white pb-2 md:pb-14 md:pt-32 md:px-36"
+      className="relative bg-black bg-center bg-cover flex flex-col items-center text-white pb-4 md:pb-14 md:pt-32 md:px-8 lg:px-36"
     >
       <Image
         src="/assets/contact-us-shadow.png"
@@ -67,13 +53,6 @@ function ContactUs() {
         height={500}
         className="absolute -bottom-[15%] -left-[60%] z-10 h-[500px] w-[2000px]"
       />
-      {/* <Image
-    src="/assets/contact-us-shadow.png"
-    alt="logo"
-    width={2000}
-    height={500}
-    className="absolute -top-[25%] -right-[60%] z-30 h-[600px] w-[2000px]"
-  /> */}
       <GlassMorphism
         variant={'light'}
         className="invisible md:visible w-full rounded-2xl z-40 border border-gray-700"
@@ -87,7 +66,7 @@ function ContactUs() {
               <Message2 className="w-14 h-14 md:w-20 md:h-20" />
             </GlassMorphism>
 
-            <div className=" w-full md:w-fit mt-5 md:mt-0 md:px-4">
+            <div className="w-full md:w-fit mt-5 md:mt-0 md:px-4">
               <span className="text-2xl md:text-4xl font-bold block md:leading-normal">
                 Get a free consultancy from our expert right now!
               </span>
@@ -98,246 +77,120 @@ function ContactUs() {
             </div>
           </div>
 
-          <GlassMorphism
-            variant="light"
-            className=" rounded-xl text-white w-full md:w-full p-4 md:hidden"
-          >
-            <form
-              onSubmit={handleSubmit1(onSubmit)}
-              className="grid grid-cols-1 gap-x-8"
-            >
-              <div className="h-fit w-full">
-                <Input
-                  text="Name (Required)"
-                  type="text"
-                  placeholder="i.e. John Brown"
-                  classNameDiv="bg-white rounded-lg p-0"
-                  classNameInput="text-black placeholder:font-light"
-                  classNameText="font-semibold"
-                  className="my-2"
-                  {...register1('name')}
-                />
-                {errors1 && (
-                  <p className={'text-red-500 text-xs'}>
-                    {errors1.name?.message}
-                  </p>
-                )}
-              </div>
+          <div className="w-full md:w-[70%] py-10 flex">
+            <form onSubmit={handleSubmit2(onSubmit)} className="w-full text-sm">
+              <div className="flex flex-col md:flex-row gap-x-8 md:gap-y-5 w-full">
+                <div className="w-full flex flex-col md:gap-5">
+                  <div className="h-fit w-full relative">
+                    <Input
+                      text="Name (Required)"
+                      type="text"
+                      placeholder="i.e. John Brown"
+                      classNameDiv="bg-white rounded-lg p-0"
+                      classNameInput="text-black placeholder:font-light"
+                      classNameText="font-semibold"
+                      className="my-2"
+                      {...register2('name')}
+                    />
+                    {errors2.name && (
+                      <p className={'text-red-500 text-sm absolute -bottom-4 left-0'}>
+                        {errors2.name?.message}
+                      </p>
+                    )}
+                  </div>
 
-              <div className="h-fit w-full">
-                <Input
-                  text="Email (Required)"
-                  type="email"
-                  placeholder="i.e. Johnbrown@mail.com"
-                  classNameDiv="bg-white rounded-lg p-0"
-                  classNameInput="text-black placeholder:font-light"
-                  classNameText="font-semibold"
-                  className="my-2"
-                  {...register1('email')}
-                />
-                {errors1 && (
-                  <p className={'text-red-500 text-xs'}>
-                    {errors1.email?.message}
-                  </p>
-                )}
-              </div>
+                  <div className="h-fit w-full relative">
+                    <Input
+                      text="Email (Required)"
+                      type="email"
+                      placeholder="i.e. Johnbrown@mail.com"
+                      classNameDiv="bg-white rounded-lg p-0"
+                      classNameInput="text-black placeholder:font-light"
+                      classNameText="font-semibold"
+                      className="my-2"
+                      {...register2('email')}
+                    />
+                    {errors2.email && (
+                      <p className={'text-red-500 text-sm absolute -bottom-4 left-0'}>
+                        {errors2.email?.message}
+                      </p>
+                    )}
+                  </div>
 
-              <div className="h-fit w-full">
-                <Input
-                  text="Phone"
-                  type="text"
-                  placeholder="i.e. +1(524)278-0381"
-                  classNameDiv="bg-white rounded-lg p-0"
-                  classNameInput="text-black placeholder:font-light"
-                  classNameText="font-semibold"
-                  className="my-2"
-                  {...register1('phone')}
-                />
-                {errors1 && (
-                  <p className={'text-red-500 text-xs'}>
-                    {errors1.phone?.message}
-                  </p>
-                )}
-              </div>
+                  <div className="h-fit w-full">
+                    <Input
+                      text="Phone"
+                      type="text"
+                      placeholder="i.e. +1(524)278-0381"
+                      classNameDiv="bg-white rounded-lg p-0"
+                      classNameInput="text-black placeholder:font-light"
+                      classNameText="font-semibold"
+                      className="my-2"
+                      {...register2('phone')}
+                    />
+                    {errors2.phone && (
+                      <p className={'text-red-500 text-sm'}>
+                        {errors2.phone?.message}
+                      </p>
+                    )}
+                  </div>
+                </div>
 
-              <div className="h-fit w-full">
-                <Input
-                  text="Company Socials (LinkedIn, Instagram)"
-                  type="text"
-                  placeholder="Please provide a link"
-                  classNameDiv="bg-white rounded-lg p-0"
-                  classNameInput="text-black placeholder:font-light"
-                  classNameText="font-semibold"
-                  className="my-2"
-                  {...register1('social')}
-                />
-                {errors1 && (
-                  <p className={'text-red-500 text-xs'}>
-                    {errors1.social?.message}
-                  </p>
-                )}
-              </div>
+                <div className="w-full flex flex-col md:gap-5">
+                  <div className="h-fit w-full">
+                    <Input
+                      text="Company Socials (LinkedIn, Instagram)"
+                      type="text"
+                      placeholder="Please provide a link"
+                      classNameDiv="bg-white rounded-lg p-0"
+                      classNameInput="text-black placeholder:font-light"
+                      classNameText="font-semibold"
+                      className="my-2"
+                      {...register2('social')}
+                    />
+                    {errors2.social && (
+                      <p className={'text-red-500 text-sm'}>
+                        {errors2.social?.message}
+                      </p>
+                    )}
+                  </div>
 
-              <div className="h-fit w-full">
-                <Input
-                  text="Company Website"
-                  type="text"
-                  placeholder="Please provide us a link"
-                  classNameDiv="bg-white rounded-lg p-0"
-                  classNameInput="text-black placeholder:font-light"
-                  classNameText="font-semibold"
-                  className="my-2"
-                  {...register1('website')}
-                />
-                {errors1 && (
-                  <p className={'text-red-500 text-xs'}>
-                    {errors1.website?.message}
-                  </p>
-                )}
-              </div>
+                  <div className="h-fit w-full">
+                    <Input
+                      text="Company Website"
+                      type="text"
+                      placeholder="Please provide us a link"
+                      classNameDiv="bg-white rounded-lg p-0"
+                      classNameInput="text-black placeholder:font-light"
+                      classNameText="font-semibold"
+                      className="my-2"
+                      {...register2('website')}
+                    />
+                    {errors2.website && (
+                      <p className={'text-red-500 text-sm'}>
+                        {errors2.website?.message}
+                      </p>
+                    )}
+                  </div>
 
-              <div className="h-fit w-full">
-                <Input
-                  text="Message to the team"
-                  type="text"
-                  placeholder="Enter your message"
-                  classNameDiv="bg-white rounded-lg p-0"
-                  classNameInput="text-black placeholder:font-light"
-                  classNameText="font-semibold"
-                  className="my-2"
-                  {...register1('messageToTeam')}
-                />
-                {errors1 && (
-                  <p className={'text-red-500 text-xs'}>
-                    {errors1.messageToTeam?.message}
-                  </p>
-                )}
-              </div>
-
-              <Button
-                variant="primary"
-                isSubmitting={isSubmitting1}
-                className={`font-semibold w-full rounded-md mt-8 active:opacity-90 ${
-                  isSubmitting1 && 'opacity-90'
-                }`}
-              >
-                {' '}
-                {isSubmitting1 ? 'Submitting...' : 'Get Free Consultancy'}
-              </Button>
-            </form>
-          </GlassMorphism>
-
-          <div className="w-[70%] py-10 hidden md:flex">
-            <form
-              onSubmit={handleSubmit2(onSubmit)}
-              className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-5 w-full text-sm"
-            >
-              <div className="h-fit w-full">
-                <Input
-                  text="Name (Required)"
-                  type="text"
-                  placeholder="i.e. John Brown"
-                  classNameDiv="bg-white rounded-lg p-0"
-                  classNameInput="text-black placeholder:font-light"
-                  classNameText="font-semibold"
-                  className="my-2"
-                  {...register2('name')}
-                />
-                {errors2 && (
-                  <p className={'text-red-500 text-sm'}>
-                    {errors2.name?.message}
-                  </p>
-                )}
-              </div>
-
-              <div className="h-fit w-full">
-                <Input
-                  text="Company Socials (LinkedIn, Instagram)"
-                  type="text"
-                  placeholder="Please provide a link"
-                  classNameDiv="bg-white rounded-lg p-0"
-                  classNameInput="text-black placeholder:font-light"
-                  classNameText="font-semibold"
-                  className="my-2"
-                  {...register2('social')}
-                />
-                {errors2 && (
-                  <p className={'text-red-500 text-sm'}>
-                    {errors2.social?.message}
-                  </p>
-                )}
-              </div>
-
-              <div className="h-fit w-full">
-                <Input
-                  text="Email (Required)"
-                  type="email"
-                  placeholder="i.e. Johnbrown@mail.com"
-                  classNameDiv="bg-white rounded-lg p-0"
-                  classNameInput="text-black placeholder:font-light"
-                  classNameText="font-semibold"
-                  className="my-2"
-                  {...register2('email')}
-                />
-                {errors2 && (
-                  <p className={'text-red-500 text-sm'}>
-                    {errors2.email?.message}
-                  </p>
-                )}
-              </div>
-
-              <div className="h-fit w-full">
-                <Input
-                  text="Company Website"
-                  type="text"
-                  placeholder="Please provide us a link"
-                  classNameDiv="bg-white rounded-lg p-0"
-                  classNameInput="text-black placeholder:font-light"
-                  classNameText="font-semibold"
-                  className="my-2"
-                  {...register2('website')}
-                />
-                {errors2 && (
-                  <p className={'text-red-500 text-sm'}>
-                    {errors2.website?.message}
-                  </p>
-                )}
-              </div>
-
-              <div className="h-fit w-full">
-                <Input
-                  text="Phone"
-                  type="text"
-                  placeholder="i.e. +1(524)278-0381"
-                  classNameDiv="bg-white rounded-lg p-0"
-                  classNameInput="text-black placeholder:font-light"
-                  classNameText="font-semibold"
-                  className="my-2"
-                  {...register2('phone')}
-                />
-                {errors2 && (
-                  <p className={'text-red-500 text-sm'}>
-                    {errors2.phone?.message}
-                  </p>
-                )}
-              </div>
-
-              <div className="h-fit w-full">
-                <Input
-                  text="Message to the team"
-                  type="text"
-                  placeholder="Enter your message"
-                  classNameDiv="bg-white rounded-lg p-0"
-                  classNameInput="text-black placeholder:font-light"
-                  classNameText="font-semibold"
-                  className="my-2"
-                  {...register2('messageToTeam')}
-                />
-                {errors2 && (
-                  <p className={'text-red-500 text-sm'}>
-                    {errors2.messageToTeam?.message}
-                  </p>
-                )}
+                  <div className="h-fit w-full">
+                    <Input
+                      text="Message to the team"
+                      type="text"
+                      placeholder="Enter your message"
+                      classNameDiv="bg-white rounded-lg p-0"
+                      classNameInput="text-black placeholder:font-light"
+                      classNameText="font-semibold"
+                      className="my-2"
+                      {...register2('messageToTeam')}
+                    />
+                    {errors2.messageToTeam && (
+                      <p className={'text-red-500 text-sm'}>
+                        {errors2.messageToTeam?.message}
+                      </p>
+                    )}
+                  </div>
+                </div>
               </div>
 
               <div className="flex items-center justify-center col-span-2">

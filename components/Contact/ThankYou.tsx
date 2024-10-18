@@ -71,20 +71,14 @@ const ThankYou = () => {
             </div>
             <div className="flex gap-5 justify-start mt-2 md:mt-5 text-base md:text-xl">
               <p>Mail:</p>
-              <a href="mailto:hello@thesquirrels.ca" className="underline">
-                hello@thesquirrels.ca
-              </a>
+              <a href="mailto:hello@thesquirrels.ca">hello@thesquirrels.ca</a>
             </div>
             <div className="flex gap-5 justify-start mt-2 md:mt-5 text-base md:text-xl">
               <p>Call:</p>
               <div>
-                <a href="tel:+15879623062" className="underline">
-                  +1(587)962-3062
-                </a>
+                <a href="tel:+15879623062">+1(587)962-3062</a>
                 <br />
-                <a href="tel:+15879623182" className="underline">
-                  +1(587)962-3182
-                </a>
+                <a href="tel:+15879623182">+1(587)962-3182</a>
               </div>
             </div>
           </div>
@@ -109,15 +103,11 @@ const ThankYou = () => {
             </div>
             <div className="flex gap-5 justify-start mt-2 md:mt-5 text-base md:text-xl">
               <p>Mail:</p>
-              <a href="mailto:hello@thesquirrels.ca" className="underline">
-                hello@thesquirrels.ca
-              </a>
+              <a href="mailto:hello@thesquirrels.ca">hello@thesquirrels.ca</a>
             </div>
             <div className="flex gap-5 justify-start items-center mt-2 md:mt-5 text-base md:text-xl">
               <p>Call:</p>
-              <a href="tel:+919122823474" className="underline">
-                +91 9122823474
-              </a>
+              <a href="tel:+919122823474">+91 9122823474</a>
             </div>
           </div>
         </div>

@@ -137,7 +137,7 @@ const MarqueeSlide = () => {
             </div>
             <div className="text-center text-base md:text-4xl px-5">
               Here are some of names in our{' '}
-              <span className="text-[#7B61FF]">clients</span>
+              <span className="text-[#7B61FF]">clientele</span>
             </div>
           </div>
 
