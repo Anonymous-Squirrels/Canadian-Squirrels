@@ -5,12 +5,12 @@ import GlassMorphism from '../ui/GlassMorphism';
 
 function Branding() {
   const images = [
-    { src: '/dental/firm1.png', alt: 'Image 1' },
-    { src: '/dental/firm2.png', alt: 'Image 2' },
-    { src: '/dental/firm3.png', alt: 'Image 3' },
-    { src: '/dental/firm4.png', alt: 'Image 4' },
-    { src: '/dental/firm5.png', alt: 'Image 5' },
-    { src: '/dental/firm6.png', alt: 'Image 6' },
+    { src: '/dental/firm7.png', alt: 'Image 1' },
+    { src: '/dental/firm8.png', alt: 'Image 2' },
+    { src: '/dental/firm9.png', alt: 'Image 3' },
+    { src: '/dental/firm10.png', alt: 'Image 4' },
+    { src: '/dental/firm11.png', alt: 'Image 5' },
+    { src: '/dental/firm12.png', alt: 'Image 6' },
   ];
 
   return (
