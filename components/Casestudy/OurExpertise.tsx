@@ -31,14 +31,14 @@ const OurExpertise = () => {
         <div className="text-white flex flex-col gap-5 lg:gap-10 text-center md:text-start">
           <h1 className="text-3xl lg:text-6xl font-bold">OUR EXPERTISE</h1>
           <div className="text-sm lg:text-lg xl:text-2xl">
-            We have been working in the Dental and Healthcare Industry for the
+            We have been working in the <span className='text-yellow-400 font-medium'>Dental and Healthcare</span> Industry for the
             last 5 years. Our team is an expert in generating leads and building
             an overall brand for our clients and have achieved significant
-            results, as 6.5M+Impressions, 200+ Call leads and 15,000+ Clicks in
+            results, as <span className='text-yellow-400 font-medium'>6.5M+</span> Impressions, <span className='text-yellow-400 font-medium'>200+</span> Call leads and <span className='text-yellow-400 font-medium'>15,000+</span> Clicks in
             less than 15 days for our clients.
           </div>
           <div className="text-sm lg:text-lg xl:text-2xl">
-            Allow us to elevate the online presence of your clinic and revamp
+            Allow us to elevate the online presence of your <span className='text-yellow-400 font-medium'>clinic</span> and revamp
             your business.
           </div>
         </div>

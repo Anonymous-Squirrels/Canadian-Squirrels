@@ -11,9 +11,9 @@ export const BentoItems = [
     content: (
       <Image
         src="/assets/boostingbusiness.png"
-        width={400}
-        height={400}
-        className="rounded-xl object-cover h-full"
+        width={450}
+        height={500}
+        className="rounded-xl"
         alt="boostingbusiness"
       />
     ),
