@@ -5,7 +5,7 @@ import { NavLinks } from '@/constants/Navbar';
 import { Logo } from '@/constants/Icons';
 import { FiMenu } from 'react-icons/fi';
 import { IoMdClose } from 'react-icons/io';
-import { HiOutlineSun, HiOutlineMoon } from 'react-icons/hi'; // Stylish icons
+import { HiOutlineSun, HiOutlineMoon } from 'react-icons/hi';
 import React, { useState, useEffect } from 'react';
 
 function NavBar() {
@@ -78,13 +78,30 @@ function NavBar() {
                   </Link>
                 ))}
               </ul>
-
+           <div className='flex items-center space-x-2 md:hidden'>
+              <button
+            title='toggle' 
+              onClick={toggleDarkMode}
+              className="m p-2 rounded-full md:hidden transition-all duration-500"
+            >
+              <div className="relative h-8 w-8">
+                <HiOutlineSun
+                  className={`absolute h-full w-full transition-transform duration-500 ${darkMode ? 'rotate-180 scale-0' : 'scale-100'
+                    }`}
+                />
+                <HiOutlineMoon
+                  className={`absolute h-full w-full text-gray-300 transition-transform duration-500 ${darkMode ? 'scale-100' : 'scale-0 rotate-180'
+                    }`}
+                />
+              </div>
+            </button>
               <div onClick={() => setIsOpen(!isOpen)} className="md:hidden">
                 {!isOpen ? (
                   <FiMenu className="h-8 w-8" />
                 ) : (
                   <IoMdClose className="h-8 w-8" />
                 )}
+              </div>
               </div>
             </div>
             {isOpen && (
@@ -105,7 +122,7 @@ function NavBar() {
             <button
             title='toggle'
               onClick={toggleDarkMode}
-              className="mx-4 p-2 rounded-full transition-all duration-500"
+              className="mx-4 p-2 rounded-full md:block hidden transition-all duration-500"
             >
               <div className="relative h-8 w-8">
                 <HiOutlineSun
