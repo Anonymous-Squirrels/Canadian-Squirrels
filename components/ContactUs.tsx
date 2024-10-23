@@ -44,7 +44,7 @@ function ContactUs() {
   return (
     <div
       id="contact"
-      className="relative bg-black bg-center bg-cover flex flex-col items-center text-white pb-4 md:pb-14 md:pt-32 md:px-8 lg:px-36"
+      className="relative dark:bg-black bg-light-purple bg-center bg-cover flex flex-col items-center dark:text-white text-black  pb-4 md:pb-14 md:pt-32 md:px-8 lg:px-36"
     >
       <Image
         src="/assets/contact-us-shadow.png"
@@ -53,19 +53,30 @@ function ContactUs() {
         height={500}
         className="absolute -bottom-[15%] -left-[60%] z-10 h-[500px] w-[2000px]"
       />
+      {/* dark theme */}
       <GlassMorphism
         variant={'light'}
         className="invisible md:visible w-full rounded-2xl z-40 border border-gray-700"
       >
         <div className="flex flex-col items-center justify-between md:justify-around gap-y-6 md:gap-y-0 w-full visible md:mt-6">
           <div className="md:w-full px-4 md:px-0 flex flex-col md:flex-row items-center gap-x-4">
-            <GlassMorphism
+          {/* dark theme */}
+      <div className='dark:block hidden'>
+      <GlassMorphism
               variant="light"
-              className="rounded-full p-0 text-white w-fit h-fit self-start md:self-auto hidden md:flex"
+              className="rounded-full p-0 w-fit h-fit self-start md:self-auto hidden md:flex"
             >
               <Message2 className="w-14 h-14 md:w-20 md:h-20" />
             </GlassMorphism>
-
+      </div>
+          {/* light theme */}
+         <div className='dark:hidden block'>   <GlassMorphism
+              variant="dark"
+              className="rounded-full p-0 w-fit h-fit self-start md:self-auto hidden md:flex"
+            >
+              <Message2 className="w-14 h-14 md:w-20 md:h-20" />
+            </GlassMorphism>
+            </div>
             <div className="w-full md:w-fit mt-5 md:mt-0 md:px-4">
               <span className="text-2xl md:text-4xl font-bold block md:leading-normal">
                 Get a free consultancy from our expert right now!
