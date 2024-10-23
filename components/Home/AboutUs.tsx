@@ -1,12 +1,12 @@
 import React from 'react';
 import Button from '../ui/Button';
 import Image from 'next/image';
-import { ArrowRight } from '@/constants/Icons';
+import { LightArrowRight, DarkArrowRight, DarkTextLogo } from '@/constants/Icons';
 import Link from 'next/link';
 
 function AboutUs() {
   return (
-    <div id={'about-us'} className=" bg-black text-white">
+    <div id={'about-us'} className=" dark:bg-black bg-light-purple text-black dark:text-white">
       <div className="flex pt-7 px-7 p-7 md:p-14 md:pt-10">
         <span className="uppercase text-5xl md:text-8xl font-bold mx-auto  bg-gradient-to-r from-[#A998FF] via-[#7B61FF] to-[#5237D8] inline-block text-transparent bg-clip-text">
           About Us
@@ -44,10 +44,13 @@ function AboutUs() {
             <Link href={'/about'}>
               <Button
                 variant="secondary"
-                className="text-white flex items-center gap-3 group"
+          
+                className="dark:text-white text-dark-purple hover:text-white flex items-center gap-3 group"
               >
                 Know More
-                <ArrowRight className="group-active:rotate-45 md:group-hover:rotate-45 transition-all duration-300" />
+                <LightArrowRight className=" text-black dark:text-white hidden dark:block group-active:rotate-45 md:group-hover:rotate-45 transition-all duration-300" />
+                <DarkArrowRight className=" text-black dark:text-white block dark:hidden group-active:rotate-45 md:group-hover:rotate-45 transition-all duration-300" />
+
               </Button>
             </Link>
           </div>
