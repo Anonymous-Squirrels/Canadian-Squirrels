@@ -3,7 +3,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div className="bg-[#0F0F0F] text-white md:px-20 pt-12 pb-10 cursor-default text-center">
+    <div className="dark:bg-[#0F0F0F] bg-[#DDD6E5] text-black dark:text-white md:px-20 pt-12 pb-10 cursor-default text-center">
       <div className="flex flex-col lg:flex-row items-center justify-between md:pb-5 border-b border-[#333333] mb-5 gap-y-5 md:px-10">
         <div className=" flex items-center gap-2 mb-5 text-center m-2">
           <Image
@@ -13,7 +13,7 @@ function Footer() {
             height={112}
             className="w-10 h-fit md:w-28"
           />
-          <span className="text-lg md:text-2xl">Anonymous Squirrels</span>
+          <span className="text-lg text-dark-purple dark:text-white md:text-2xl">Anonymous Squirrels</span>
         </div>
         <div>
           <Image
@@ -25,10 +25,10 @@ function Footer() {
           />
         </div>
         <div className=" flex flex-col items-center justify-center">
-          <div className="text-[#B9B3B3] text-center">
+          <div className="dark:text-[#B9B3B3] text-black  text-center">
             <span className="font-thin text-lg">We help build brands.</span>
             <br />
-            <span className="font-medium md:text-lg">
+            <span className="font-medium text-dark-purple dark:text-[#B9B3B3] md:text-lg">
               Connect. Promote. Engage. Grow.
             </span>
             <br className="md:hidden" />
@@ -101,7 +101,7 @@ function Footer() {
       <p className="w-fit text-center text-sm mx-auto mb-1">
         Made with 💜 by team Squirrels
       </p>
-      <div className="w-full text-center text-sm font-thin px-4">
+      <div className="w-full text-center text-black dark:text-gray-300 text-sm px-4">
         &copy; Copyright {new Date().getFullYear()}, All Rights Reserved by
         Anonymous Squirrels
       </div>
