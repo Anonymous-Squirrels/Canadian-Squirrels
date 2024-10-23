@@ -3,7 +3,7 @@ import React from 'react';
 
 function HeroSection() {
   return (
-    <div className="dark:bg-black bg-light-purple h-screen md:h-[100vh] w-full grid place-items-center dark:text-white text-black relative px-10 overflow-hidden">
+    <div className="dark:bg-black bg-light-purple h-screen md:h-[100vh] w-full grid place-items-center dark:text-white text-dark-purple relative px-10 overflow-hidden">
       <LightTextLogo
        className="absolute -left-16 hidden dark:block md:left-0 h-96 w-96 top-24 md:top-0" />  
           <DarkTextLogo
