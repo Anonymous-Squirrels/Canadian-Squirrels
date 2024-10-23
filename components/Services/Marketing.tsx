@@ -4,7 +4,7 @@ import { Tick } from '@/constants/Icons';
 
 function Marketing() {
   return (
-    <div className="w-[100%] py-10 bg-[#F0E9FB] grid md:gap-y-8 place-items-center">
+    <div className="w-[100%] py-10 dark:bg-[#F0E9FB] bg-white grid md:gap-y-8 place-items-center">
       <FAB variant="secondary" className="self-start select-none">
         Marketing
       </FAB>
