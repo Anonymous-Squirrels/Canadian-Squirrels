@@ -82,7 +82,7 @@ function NavBar() {
               <button
             title='toggle' 
               onClick={toggleDarkMode}
-              className="m p-2 rounded-full md:hidden transition-all duration-500"
+              className="m p-2 rounded-full transition-all duration-500"
             >
               <div className="relative h-8 w-8">
                 <HiOutlineSun
