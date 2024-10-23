@@ -13,7 +13,7 @@ const OurExpertise = () => {
           objectPosition="center"
         />
       </div>
-      <div className="border-2 rounded-bl-[50px] rounded-tr-[50px] relative py-8 px-6 flex md:flex-row flex-col items-center lg:items-start gap-7 md:gap-14">
+      <div className="border-2 rounded-bl-[50px] rounded-tr-[50px] border-white relative py-8 px-6 flex md:flex-row flex-col items-center lg:items-start gap-7 md:gap-14">
         <Image
           src="/assets/ourexpertise.png"
           alt="logo"
