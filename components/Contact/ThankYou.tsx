@@ -37,19 +37,19 @@ const ThankYou = () => {
   }, []);
 
   return (
-    <div className="w-full md:mt-10 mt-5">
+    <div className="w-full bg-light-purple dark:bg-black md:mt-10 mt-5">
       <div className="p-5">
         <div className="flex items-center gap-3 md:mt-4 ml-2 justify-center">
-          <div className="w-5 md:w-28 h-[4px] bg-white"></div>
+          <div className="w-5 md:w-28 h-[4px] dark:bg-white bg-black"></div>
           <div className="text-3xl font-bold md:text-5xl text-[#5237D8]">
             THANK YOU
           </div>
-          <div className="w-5 md:w-28 h-[4px] bg-white"></div>
+          <div className="w-5 md:w-28 h-[4px] dark:bg-white bg-black"></div>
         </div>
-        <p className="text-white text-center font-bold text-lg md:text-2xl mt-2">
+        <p className="dark:text-white text-black text-center font-bold text-lg md:text-2xl mt-2">
           Let us Keep in touch
         </p>
-        <div className="mt-10 md:mt-20 flex flex-col lg:flex-row justify-between gap-5 text-white max-w-5xl mx-auto">
+        <div className="mt-10 md:mt-20 flex flex-col lg:flex-row justify-between gap-5 dark:text-white text-black max-w-5xl mx-auto">
           {/* Canada Section */}
           <div className="">
             <div className="flex justify-between gap-10">
@@ -66,7 +66,7 @@ const ThankYou = () => {
               />
             </div>
             <div className="flex gap-5 justify-start items-center text-base mt-2 md:mt-5 md:text-xl">
-              <FaLocationDot className="text-base md:text-2xl text-white" />
+              <FaLocationDot className="text-base md:text-2xl dark:text-white text-black" />
               <p>Calgary</p>
             </div>
             <div className="flex gap-5 justify-start mt-2 md:mt-5 text-base md:text-xl">
@@ -98,7 +98,7 @@ const ThankYou = () => {
               />
             </div>
             <div className="flex gap-5 justify-start items-center mt-2 md:mt-5 text-base md:text-xl">
-              <FaLocationDot className="text-base md:text-2xl text-white" />
+              <FaLocationDot className="text-base md:text-2xl dark:text-white text-black" />
               <p>Hyderabad, Kolkata & Ranchi</p>
             </div>
             <div className="flex gap-5 justify-start mt-2 md:mt-5 text-base md:text-xl">
@@ -113,7 +113,7 @@ const ThankYou = () => {
         </div>
       </div>
 
-      <div className="px-6 md:px-48 flex flex-col xl:flex-row items-center justify-between text-center py-5 md:py-10 bg-white">
+      <div className="px-6 md:px-48 flex flex-col xl:flex-row items-center justify-between text-center py-5 md:py-10 bg-black dark:bg-white">
         <div>
           <div className="text-xl md:text-3xl font-semibold">
             <span className="">View our portfolio and</span>{' '}
