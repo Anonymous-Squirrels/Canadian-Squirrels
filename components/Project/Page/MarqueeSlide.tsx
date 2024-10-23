@@ -73,11 +73,11 @@ const MarqueeSlide = () => {
   }, [country, intersecting]);
 
   return (
-    <div className="bg-black text-white w-full h-fit" ref={divRef}>
+    <div className="dark:bg-black bg-light-purple bg-lig dark:text-white text-black w-full h-fit" ref={divRef}>
       <div className=" max-w-[1400px] mx-auto">
         <div className="flex flex-col gap-10">
           <div>
-            <h2 className="text-xl md:text-4xl font-semibold text-white text-center mb-5">
+            <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
               <span>HEALTH</span>
               <span className="text-[#9747FF] ml-2">CARE</span>
             </h2>
@@ -143,7 +143,7 @@ const MarqueeSlide = () => {
 
           <div className="flex flex-col md:flex-row gap-10 justify-between">
             <div className="md:w-[55%]">
-              <h2 className="text-xl md:text-4xl font-semibold text-white text-center mb-5">
+              <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
                 <span>BF</span>
                 <span className="text-[#9747FF]">SI</span>
               </h2>
@@ -166,7 +166,7 @@ const MarqueeSlide = () => {
               </GlassMorphism>
             </div>
             <div className="md:w-[40%]">
-              <h2 className="text-xl md:text-4xl font-semibold text-white text-center mb-5">
+              <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
                 <span>AUTO</span>
                 <span className="text-[#9747FF] ml-2">MOBILE</span>
               </h2>
@@ -192,7 +192,7 @@ const MarqueeSlide = () => {
 
           <div className="flex flex-col md:flex-row gap-10 justify-between">
             <div className="md:w-[55%]">
-              <h2 className="text-xl md:text-4xl font-semibold text-white text-center mb-5">
+              <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
                 <span>REAL</span>
                 <span className="text-[#9747FF] ml-2">ESTATE</span>
               </h2>
@@ -215,7 +215,7 @@ const MarqueeSlide = () => {
               </GlassMorphism>
             </div>
             <div className="md:w-[40%]">
-              <h2 className="text-xl md:text-4xl font-semibold text-white text-center mb-5">
+              <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
                 <span>Ed</span>
                 <span className="text-[#9747FF]">TECH</span>
               </h2>
@@ -240,7 +240,7 @@ const MarqueeSlide = () => {
           </div>
 
           <div>
-            <h2 className="text-xl md:text-4xl font-semibold text-white text-center mb-5">
+            <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
               <span className="text-[#9747FF]">SERVICES</span>
               <span className="ml-2">and</span>
               <span className="text-[#9747FF] ml-2">D2C</span>
@@ -267,7 +267,7 @@ const MarqueeSlide = () => {
           </div>
 
           <div className="mb-10">
-            <h2 className="text-xl md:text-4xl font-semibold text-white text-center mb-5">
+            <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
               <span className="text-[#9747FF]">HO</span>
               <span className="ml-2">-RE-</span>
               <span className="text-[#9747FF] ml-2">CA</span>
@@ -295,7 +295,7 @@ const MarqueeSlide = () => {
         </div>
 
         <div className="pb-10 hidden md:block">
-          <h2 className="text-xl md:text-4xl font-semibold text-white text-center mb-5">
+          <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
             <span className="text-[#9747FF]">DRIVING</span>
             <span className="ml-2"> RESULTS</span>
             <br />
@@ -341,7 +341,7 @@ const MarqueeSlide = () => {
         </div>
 
         <div className="w-full h-fit pb-5 block md:hidden">
-          <h2 className="text-xl md:text-4xl font-semibold text-white text-center">
+          <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center">
             <span className="text-[#9747FF]">DRIVING</span>
             <span className="ml-2"> RESULTS</span>
             <br />
