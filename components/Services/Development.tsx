@@ -5,7 +5,7 @@ import AppDevelopment from './AppDevelopment';
 
 const Development = () => {
   return (
-    <div className="w-full p-4 md:p-10 bg-black flex flex-col justify-center gap-5 items-center">
+    <div className="w-full p-4 md:p-10 dark:bg-black bg-light-purple flex flex-col justify-center gap-5 items-center">
       <FAB variant="secondary" className="self-center select-none">
         Development
       </FAB>
