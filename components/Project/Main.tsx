@@ -33,7 +33,7 @@ function Main({ section }: { section: string }) {
   }, [expand]);
 
   return (
-    <div className="bg-black text-white grid grid-cols-1 md:grid-cols-2 pb-7 pt-16 md:py-16 overflow-x-hidden relative">
+    <div className="dark:bg-black bg-light-purple dark:text-white text-black grid grid-cols-1 md:grid-cols-2 pb-7 pt-16 md:py-16 overflow-x-hidden relative">
       {projectArray
         .filter((i) => section === 'All' || i.tags?.includes(section))
         .map((i, index) => (
