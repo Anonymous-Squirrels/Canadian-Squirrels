@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useRef, useState } from 'react';
 import Button from '@/components/ui/Button';
-import { ArrowRight } from '@/constants/Icons';
+import { LightArrowRight } from '@/constants/Icons';
 
 interface projectTypes {
   name: string;
@@ -163,7 +163,7 @@ function Main({ section }: { section: string }) {
                 onClick={() => setExpand((prevState) => !prevState)}
               >
                 {!expand ? 'View More' : 'View Less'}
-                <ArrowRight className="group-active:rotate-45 md:group-hover:rotate-45 transition-all duration-300 h-5 w-5 md:h-fit md:w-fit" />
+                <LightArrowRight className="group-active:rotate-45 md:group-hover:rotate-45 transition-all duration-300 h-5 w-5 md:h-fit md:w-fit" />
               </Button>
             )}
           </>
