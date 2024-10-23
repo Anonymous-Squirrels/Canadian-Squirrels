@@ -10,13 +10,15 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: ["class", "class"],
+  darkMode:"class",
   theme: {
   	extend: {
   		colors: {
   			'sq-violet': '#7B61FF',
   			'dim-gray': '#828282',
   			'button-color': '#5237D8',
+			'light-purple':'#EDE7FF', //light mode
+			'dark-purple':"#5C3095",  //light mode
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
