@@ -1,10 +1,14 @@
-import { Blob, DownArrow, TextLogo } from '@/constants/Icons';
+import { Blob, DownArrow, LightTextLogo, DarkTextLogo } from '@/constants/Icons';
 import React from 'react';
 
 function HeroSection() {
   return (
-    <div className="bg-black h-screen md:h-[100vh] w-full grid place-items-center text-white relative px-10 overflow-hidden">
-      <TextLogo className="absolute -left-16 md:left-0 h-96 w-96 top-24 md:top-0" />
+    <div className="dark:bg-black bg-light-purple h-screen md:h-[100vh] w-full grid place-items-center dark:text-white text-black relative px-10 overflow-hidden">
+      <LightTextLogo
+       className="absolute -left-16 hidden dark:block md:left-0 h-96 w-96 top-24 md:top-0" />  
+          <DarkTextLogo
+       className="absolute -left-16 md:left-0 dark:hidden block h-96 w-96 top-24 md:top-0" />  
+
       <div className="absolute md:hidden -left-64 -translate-x-1/2 overflow-hidden -top-[430px]">
         <Blob variant="violet" />
       </div>
@@ -23,7 +27,11 @@ function HeroSection() {
       <div className="absolute bottom-10 z-20 ">
         <DownArrow
           color="white"
-          className="animate-bounce h-11 w-11 md:w-14 md:h-14"
+          className="animate-bounce dark:block hidden h-11 w-11 md:w-14 md:h-14"
+        />
+           <DownArrow
+          color="black"
+          className="animate-bounce dark:hidden block h-11 w-11 md:w-14 md:h-14"
         />
       </div>
     </div>
