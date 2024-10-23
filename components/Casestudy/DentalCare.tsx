@@ -24,7 +24,7 @@ const DentalCare: React.FC<DentalCareProps> = ({
   Title,
 }) => {
   return (
-    <div className="p-7 flex flex-col gap-4 md:gap-10 bg-[#DAD9FF]">
+    <div className="p-7 flex flex-col gap-4 md:gap-10 dark:bg-[#0E0E0E] bg-[#DAD9FF]">
       <h1 className="text-center bg-[#C1B6FD] text-[#522987] font-semibold text-sm md:text-3xl py-2 px-4 md:px-10 rounded-sm w-fit mx-auto">
         {Title}
       </h1>
@@ -44,10 +44,10 @@ const DentalCare: React.FC<DentalCareProps> = ({
       {(Title === 'ALL SMILES DENTAL CARE' || Title === 'BOW RIVER DENTAL') && (
         <div>
           <div className="text-[#5E49C8] text-2xl md:text-4xl font-medium  max-w-[700px] text-center mb-4 md:mb-10 mx-auto">
-            We <span className="text-[#3A2896] font-bold">Achieved </span>All
+            We <span className="text-[#3A2896] dark:text-white font-bold">Achieved </span>All
             This Within{' '}
-            <span className="text-[#3A2896] font-bold">15 DAYS </span> Of Their{' '}
-            <span className="text-[#3A2896] font-bold">
+            <span className="text-[#3A2896] dark:text-white font-bold">15 DAYS </span> Of Their{' '}
+            <span className="text-[#3A2896] dark:text-white font-bold">
               Marketing Campaign{' '}
             </span>
           </div>
