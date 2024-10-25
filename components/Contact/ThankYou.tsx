@@ -113,7 +113,7 @@ const ThankYou = () => {
         </div>
       </div>
 
-      <div className="px-6 md:px-48 flex flex-col xl:flex-row items-center justify-between text-center py-5 md:py-10 bg-black dark:bg-white">
+      <div className="px-6 md:px-48 flex flex-col xl:flex-row items-center justify-between text-center py-5 md:py-10 bg-white">
         <div>
           <div className="text-xl md:text-3xl font-semibold">
             <span className="">View our portfolio and</span>{' '}
@@ -123,7 +123,7 @@ const ThankYou = () => {
         <a href="/Brochure.pdf" target="_blank" rel="noopener noreferrer">
           <Button
             variant="primary"
-            className="mt-4 px-6 rounded-lg bg-[#444BD3] hover:border-[#444BD3] hover:bg-transparent dark:hover:text-black hover:text-white border-transparent border"
+            className="mt-4 px-6 rounded-lg bg-[#444BD3] hover:border-[#444BD3] hover:bg-transparent hover:text-black border-transparent border"
           >
             Our Brochure
           </Button>
