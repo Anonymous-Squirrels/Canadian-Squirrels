@@ -5,7 +5,7 @@ const Google = () => {
     <div className="flex flex-col md:flex-row gap-10 md:gap-20 justify-center items-center p-5 bg-light-purple dark:bg-black">
       <div className="flex-shrink-0">
         <Image
-          src="/assets/Google.jpg"
+          src="/assets/googlePartner.png"
           alt="google"
           width={350}
           height={350}
