@@ -111,7 +111,13 @@ function Branding() {
                 />
                 <GlassMorphism
                   variant="light"
-                  className="border border-white/25 overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+                  className="border border-white/25 dark:block overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+                >
+                  {' '}
+                </GlassMorphism>
+                <GlassMorphism
+                  variant="dark"
+                  className="border border-white/25 dark:hidden overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
                 >
                   {' '}
                 </GlassMorphism>
@@ -126,7 +132,13 @@ function Branding() {
                 />
                 <GlassMorphism
                   variant="light"
-                  className="border border-white/25 overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+                  className="border border-white/25 dark:block overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+                >
+                  {' '}
+                </GlassMorphism>
+                <GlassMorphism
+                  variant="dark"
+                  className="border border-white/25 dark:hidden overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
                 >
                   {' '}
                 </GlassMorphism>
@@ -139,9 +151,15 @@ function Branding() {
                   alt="Instagram Logo"
                   className="w-[72px] h-[72px] md:w-[170px] md:h-[170px]"
                 />
-                <GlassMorphism
+                   <GlassMorphism
                   variant="light"
-                  className="border border-white/25 overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+                  className="border border-white/25 dark:block overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+                >
+                  {' '}
+                </GlassMorphism>
+                <GlassMorphism
+                  variant="dark"
+                  className="border border-white/25 dark:hidden overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
                 >
                   {' '}
                 </GlassMorphism>
