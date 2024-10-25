@@ -2,7 +2,7 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { NavLinks } from '@/constants/Navbar';
-import { Logo } from '@/constants/Icons';
+import { LightLogo, Logo } from '@/constants/Icons';
 import { FiMenu } from 'react-icons/fi';
 import { IoMdClose } from 'react-icons/io';
 import { HiOutlineSun, HiOutlineMoon } from 'react-icons/hi';
@@ -49,14 +49,16 @@ function NavBar() {
             <div className="flex items-center justify-between w-full relative">
               <Link href="/" className="flex items-center gap-3 group">
                 <div className="h-fit w-fit hidden md:flex element z-20 -ml-5 px-5 py-4">
-                  <Logo className="h-9 md:h-fit" />
+                  <Logo className="h-9 md:h-fit dark:block hidden" />
+                  <LightLogo className="h-9 md:h-fit dark:hidden block" />
                 </div>
                 <div className="font-semibold text-lg hidden md:flex flex-col absolute z-10 group-hover:opacity-100 opacity-0 duration-300 group-hover:left-20 left-0">
                   <span>Anonymous</span>
                   <span>Squirrels</span>
                 </div>
                 <div className="h-fit w-fit flex md:hidden element z-20 -ml-5 px-5 ">
-                  <Logo className="h-8" />
+                  <Logo className="h-8 dark:block hidden" />
+                  <LightLogo className="h-8 dark:hidden block" />
                 </div>
                 <div className="font-semibold text-base flex flex-col md:hidden absolute z-10 left-14">
                   <span>Anonymous</span>
