@@ -123,7 +123,7 @@ const ThankYou = () => {
         <a href="/Brochure.pdf" target="_blank" rel="noopener noreferrer">
           <Button
             variant="primary"
-            className="mt-4 px-6 rounded-lg bg-[#444BD3] hover:border-[#444BD3] hover:bg-transparent hover:text-black border-transparent border"
+            className="mt-4 px-6 rounded-lg bg-[#444BD3] hover:border-[#444BD3] hover:bg-transparent dark:hover:text-black hover:text-white border-transparent border"
           >
             Our Brochure
           </Button>
