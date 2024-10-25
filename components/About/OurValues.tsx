@@ -8,7 +8,7 @@ import { FaHandshake } from 'react-icons/fa';
 
 function OurValues() {
   return (
-    <div className="bg-black text-white md:py-12 overflow-hidden">
+    <div className="dark:bg-black bg-[#dad9ff] dark:text-white text-black md:py-12 overflow-hidden">
       <div className=" w-full text-3xl py-9 px-7">
         <div className="w-fit flex items-center gap-x-3.5 justify-center md:absolute md:left-24">
           <Sparkle />{' '}
@@ -49,7 +49,7 @@ function OurValues() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default OurValues;
