@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 function ThreeStepProcess() {
   return (
-    <div className="h-fit md:h-fit bg-black text-white px-7 py-14 md:p-24 overflow-hidden">
+    <div className="h-fit md:h-fit dark:bg-black bg-[#dad9ff] dark:text-white text-black px-7 py-14 md:p-24 overflow-hidden">
       <div className="flex w-full text-2xl md:text-2xl gap-3.5 items-center justify-center md:justify-start z-20">
         <Sparkle />
         <span>OUR 3-STEP PROCESS</span>
