@@ -78,13 +78,13 @@ function NavBar() {
                   </Link>
                 ))}
               </ul>
-           <div className='flex items-center space-x-2 md:hidden'>
+           <div className='flex items-center space-x-4 md:hidden'>
               <button
             title='toggle' 
               onClick={toggleDarkMode}
-              className="m p-2 rounded-full transition-all duration-500"
+              className=" rounded-full transition-all duration-500"
             >
-              <div className="relative h-8 w-8">
+              <div className="relative h-7 w-7">
                 <HiOutlineSun
                   className={`absolute h-full w-full transition-transform duration-500 ${darkMode ? 'rotate-180 scale-0' : 'scale-100'
                     }`}
