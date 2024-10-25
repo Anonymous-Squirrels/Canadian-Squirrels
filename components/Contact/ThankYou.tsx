@@ -115,7 +115,7 @@ const ThankYou = () => {
 
       <div className="px-6 md:px-48 flex flex-col xl:flex-row items-center justify-between text-center py-5 md:py-10 bg-white">
         <div>
-          <div className="text-xl md:text-3xl font-semibold">
+          <div className="text-xl md:text-3xl text-black font-semibold">
             <span className="">View our portfolio and</span>{' '}
             <span className="text-[#444BD3]">services for more insights.</span>
           </div>
