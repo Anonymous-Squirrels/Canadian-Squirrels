@@ -30,7 +30,7 @@ const JoinTeam: React.FC<JoinTeamProps> = ({
       <Link href={link1}>
         <Button
           variant="primary"
-          className="mt-4 px-6 rounded-lg bg-[#444BD3] hover:border-[#444BD3] hover:bg-transparent hover:text-black border-transparent border"
+          className="mt-4 px-6 rounded-lg bg-[#444BD3] hover:border-[#444BD3] hover:bg-transparent hover:text-black dark:hover:text-white border-transparent border"
         >
           {button}
         </Button>
