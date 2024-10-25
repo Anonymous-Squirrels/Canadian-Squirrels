@@ -43,7 +43,7 @@ const DentalCare: React.FC<DentalCareProps> = ({
       </div>
       {(Title === 'ALL SMILES DENTAL CARE' || Title === 'BOW RIVER DENTAL') && (
         <div>
-          <div className="text-[#5E49C8] text-2xl md:text-4xl font-medium  max-w-[700px] text-center mb-4 md:mb-10 mx-auto">
+          <div className="text-[#5E49C8] dark:text-[#7B61FF] text-2xl md:text-4xl font-medium  max-w-[700px] text-center mb-4 md:mb-10 mx-auto">
             We <span className="text-[#3A2896] dark:text-white font-bold">Achieved </span>All
             This Within{' '}
             <span className="text-[#3A2896] dark:text-white font-bold">15 DAYS </span> Of Their{' '}
