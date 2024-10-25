@@ -17,7 +17,7 @@ function Footer() {
         </div>
         <div>
           <Image
-            src="/assets/Google.jpg"
+            src="/assets/googlePartner.png"
             alt="google"
             width={150}
             height={150}
