@@ -83,9 +83,28 @@ const MarqueeSlide = () => {
             </h2>
 
             <div>
+     {/* dark theme */}
               <GlassMorphism
                 variant="light"
-                className="border border-white/25 rounded-lg"
+                className="border border-white/25 hidden dark:block rounded-lg"
+              >
+                <Marquee className="w-full h-fit">
+                  {healthCare.map((item, index) => (
+                    <Image
+                      key={index}
+                      src={`/${item}`}
+                      alt={item.replace('marquee/', '')}
+                      height={250}
+                      width={250}
+                      className="mx-2 md:mx-7 w-[150px] h-[150px] md:w-[290px] md:h-[290px] rounded-md"
+                    />
+                  ))}
+                </Marquee>
+              </GlassMorphism>
+           {/* light theme */}
+              <GlassMorphism
+                variant="dark"
+                className="border border-white/25 dark:hidden block rounded-lg"
               >
                 <Marquee className="w-full h-fit">
                   {healthCare.map((item, index) => (
@@ -147,9 +166,28 @@ const MarqueeSlide = () => {
                 <span>BF</span>
                 <span className="text-[#9747FF]">SI</span>
               </h2>
+            {/* dark theme */}
               <GlassMorphism
                 variant="light"
-                className="border border-white/25 rounded-lg"
+                className="border border-white/25 rounded-lg hidden dark:block "
+              >
+                <Marquee className="w-full h-fit">
+                  {bfsi.map((item, index) => (
+                    <Image
+                      key={index}
+                      src={`/${item}`}
+                      alt={item.replace('marquee/', '')}
+                      height={180}
+                      width={180}
+                      className="m-2 w-[150px] h-[150px] md:w-[180px] md:h-[180px]"
+                    />
+                  ))}
+                </Marquee>
+              </GlassMorphism>
+            {/* light theme */}
+            <GlassMorphism
+                variant="dark"
+                className="border border-white/25 rounded-lg dark:hidden block "
               >
                 <Marquee className="w-full h-fit">
                   {bfsi.map((item, index) => (
@@ -170,9 +208,28 @@ const MarqueeSlide = () => {
                 <span>AUTO</span>
                 <span className="text-[#9747FF] ml-2">MOBILE</span>
               </h2>
+             {/* dark theme */}
               <GlassMorphism
                 variant="light"
-                className="border border-white/25 rounded-lg"
+                className="border border-white/25 rounded-lg dark:block hidden"
+              >
+                <Marquee className="w-full h-fit" direction={'right'}>
+                  {autoMobile.map((item, index) => (
+                    <Image
+                      key={index}
+                      src={`/${item}`}
+                      alt={item.replace('marquee/', '')}
+                      height={180}
+                      width={180}
+                      className="m-2 w-[150px] h-[150px] md:w-[180px] md:h-[180px]"
+                    />
+                  ))}
+                </Marquee>
+              </GlassMorphism>
+             {/* light theme */}
+              <GlassMorphism
+                variant="dark"
+                className="border border-white/25 rounded-lg dark:hidden block"
               >
                 <Marquee className="w-full h-fit" direction={'right'}>
                   {autoMobile.map((item, index) => (
@@ -196,9 +253,28 @@ const MarqueeSlide = () => {
                 <span>REAL</span>
                 <span className="text-[#9747FF] ml-2">ESTATE</span>
               </h2>
+              {/* dark theme */}
               <GlassMorphism
                 variant="light"
-                className="border border-white/25 rounded-lg"
+                className="border border-white/25 rounded-lg hidden dark:block"
+              >
+                <Marquee className="w-full h-fit" direction={'right'}>
+                  {realEstate.map((item, index) => (
+                    <Image
+                      key={index}
+                      src={`/${item}`}
+                      alt={item.replace('marquee/', '')}
+                      height={180}
+                      width={180}
+                      className="m-2 w-[150px] h-[150px] md:w-[180px] md:h-[180px]"
+                    />
+                  ))}
+                </Marquee>
+              </GlassMorphism>
+              {/* light theme */}
+              <GlassMorphism
+                variant="dark"
+                className="border border-white/25 rounded-lg dark:hidden block"
               >
                 <Marquee className="w-full h-fit" direction={'right'}>
                   {realEstate.map((item, index) => (
@@ -214,14 +290,34 @@ const MarqueeSlide = () => {
                 </Marquee>
               </GlassMorphism>
             </div>
+
             <div className="md:w-[40%]">
               <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
                 <span>Ed</span>
                 <span className="text-[#9747FF]">TECH</span>
               </h2>
+          {/* dark theme */}
               <GlassMorphism
                 variant="light"
-                className="border border-white/25 rounded-lg"
+                className="border border-white/25 rounded-lg dark:block hidden"
+              >
+                <Marquee className="w-full h-fit">
+                  {edTech.map((item, index) => (
+                    <Image
+                      key={index}
+                      src={`/${item}`}
+                      alt={item.replace('marquee/', '')}
+                      height={180}
+                      width={180}
+                      className="m-2 w-[150px] h-[150px] md:w-[180px] md:h-[180px]"
+                    />
+                  ))}
+                </Marquee>
+              </GlassMorphism>
+          {/* light theme */}
+              <GlassMorphism
+                variant="dark"
+                className="border border-white/25 rounded-lg dark:hidden block"
               >
                 <Marquee className="w-full h-fit">
                   {edTech.map((item, index) => (
@@ -246,9 +342,28 @@ const MarqueeSlide = () => {
               <span className="text-[#9747FF] ml-2">D2C</span>
             </h2>
             <div>
+              {/* dark theme */}
               <GlassMorphism
                 variant="light"
-                className="border border-white/25 rounded-lg"
+                className="border border-white/25 rounded-lg hidden dark:block"
+              >
+                <Marquee className="w-full h-fit">
+                  {services.map((item, index) => (
+                    <Image
+                      key={index}
+                      src={`/${item}`}
+                      alt={item.replace('marquee/', '')}
+                      height={250}
+                      width={250}
+                      className="mx-2 md:mx-7 w-[150px] h-[150px] md:w-[290px] md:h-[290px]"
+                    />
+                  ))}
+                </Marquee>
+              </GlassMorphism>
+              {/* light theme */}
+              <GlassMorphism
+                variant="dark"
+                className="border border-white/25 rounded-lg dark:hidden block"
               >
                 <Marquee className="w-full h-fit">
                   {services.map((item, index) => (
@@ -273,9 +388,28 @@ const MarqueeSlide = () => {
               <span className="text-[#9747FF] ml-2">CA</span>
             </h2>
             <div>
+              {/* dark theme */}
               <GlassMorphism
                 variant="light"
-                className="border border-white/25 rounded-lg"
+                className="border border-white/25 rounded-lg dark:block hidden"
+              >
+                <Marquee className="w-full h-fit" direction={'right'}>
+                  {horeca.map((item, index) => (
+                    <Image
+                      key={index}
+                      src={`/${item}`}
+                      alt={item.replace('marquee/', '')}
+                      height={250}
+                      width={250}
+                      className="mx-2 md:mx-7 w-[150px] h-[150px] md:w-[290px] md:h-[290px]"
+                    />
+                  ))}
+                </Marquee>
+              </GlassMorphism>
+              {/* light theme */}
+              <GlassMorphism
+                variant="dark"
+                className="border border-white/25 rounded-lg dark:hidden block"
               >
                 <Marquee className="w-full h-fit" direction={'right'}>
                   {horeca.map((item, index) => (
@@ -303,9 +437,10 @@ const MarqueeSlide = () => {
               Our Last 90-Day Recap
             </span>
           </h2>
+          {/* dark theme */}
           <GlassMorphism
             variant="light"
-            className="border border-white/25 rounded-lg"
+            className="border border-white/25 rounded-lg dark:block hidden"
           >
             <Marquee className="w-full h-fit">
               {row1Desktop.map((item, index) => (
@@ -321,9 +456,48 @@ const MarqueeSlide = () => {
             </Marquee>
           </GlassMorphism>
 
+          {/* light theme */}
+          <GlassMorphism
+            variant="dark"
+            className="border border-white/25 rounded-lg dark:hidden block"
+          >
+            <Marquee className="w-full h-fit">
+              {row1Desktop.map((item, index) => (
+                <Image
+                  key={index}
+                  src={`/${item}`}
+                  alt={item.replace('marquee/', '')}
+                  height={290}
+                  width={290}
+                  className="mx-7 rounded-md object-cover w-[200px] h-[200px]"
+                />
+              ))}
+            </Marquee>
+          </GlassMorphism>
+
+{/* dark theme */}
           <GlassMorphism
             variant="light"
-            className="border border-white/25 rounded-lg mt-7"
+            className="border border-white/25 rounded-lg mt-7 dark:block hidden"
+          >
+            <Marquee className="w-full h-fit" direction={'right'}>
+              {row2Desktop.map((item, index) => (
+                <Image
+                  key={index}
+                  src={`/${item}`}
+                  alt={item.replace('marquee/', '')}
+                  height={290}
+                  width={290}
+                  className="mx-7 rounded-md object-cover w-[200px] h-[200px]"
+                />
+              ))}
+            </Marquee>
+          </GlassMorphism>
+
+{/* light theme */}
+          <GlassMorphism
+            variant="dark"
+            className="border border-white/25 rounded-lg mt-7 dark:hidden block"
           >
             <Marquee className="w-full h-fit" direction={'right'}>
               {row2Desktop.map((item, index) => (
@@ -349,11 +523,31 @@ const MarqueeSlide = () => {
               Our Last 90-Day Recap
             </span>
           </h2>
+          {/* dark them */}
           <GlassMorphism
             variant="light"
-            className="border border-white/25 rounded-lg"
+            className="border border-white/25 rounded-lg hidden dark:block"
           >
             <Marquee className="w-full h-fit">
+              {rowMobile.map((item, index) => (
+                <Image
+                  key={index}
+                  src={`/${item}`}
+                  alt={item.replace('marquee/', '')}
+                  height={150}
+                  width={150}
+                  className="m-4 rounded-md"
+                />
+              ))}
+            </Marquee>
+          </GlassMorphism>
+
+          {/* light theme */}
+          <GlassMorphism
+            variant="dark"
+            className="border border-white/25 rounded-lg dark:hidden block"
+          >
+            <Marquee className="w-full h-fit" direction={'right'}>
               {rowMobile.map((item, index) => (
                 <Image
                   key={index}
