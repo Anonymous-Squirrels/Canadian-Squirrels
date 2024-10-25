@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 export function Blob({
@@ -299,6 +300,17 @@ export function Logo({ className }: { className?: string }) {
         fill="white"
       />
     </svg>
+  );
+}
+export function LightLogo ({ className }: { className?: string }) {
+  return (
+    <Image
+      src="/logo/ASlightLogo.png"
+      alt="logo"
+      width={50}
+      height={37}
+      className={className}
+    />
   );
 }
 
