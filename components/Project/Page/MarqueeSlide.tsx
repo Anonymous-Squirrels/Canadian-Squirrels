@@ -74,7 +74,7 @@ const MarqueeSlide = () => {
 
   return (
     <div className="dark:bg-black bg-light-purple bg-lig dark:text-white text-black w-full h-fit" ref={divRef}>
-      <div className=" max-w-[1400px] mx-auto">
+      <div className=" px-10 px-5 mx-auto">
         <div className="flex flex-col gap-10">
           <div>
             <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
@@ -123,8 +123,8 @@ const MarqueeSlide = () => {
           </div>
 
           <div className="flex flex-col items-center gap-y-10 md:gap-y-16 font-bold md:my-10">
-            <div className="w-full md:px-56">
-              <span className="text-base md:text-4xl px-5 text-center md:px-56 inline-block w-full">
+            <div className="w-full 2xl:px-56">
+              <span className="text-base md:text-4xl px-5 text-center lg:px-56 inline-block w-full">
                 We have also <span className="text-[#7B61FF]">worked with</span>
               </span>
             </div>
