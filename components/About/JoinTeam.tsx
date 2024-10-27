@@ -19,7 +19,7 @@ const JoinTeam: React.FC<JoinTeamProps> = ({
   button,
 }) => {
   return (
-    <div className="mx-6 md:mx-48 flex flex-col xl:flex-row items-center justify-between text-center my-5 md:my-10">
+    <div className="px-6 bg-white md:px-48 flex flex-col xl:flex-row items-center text-black justify-between text-center py-5 md:py-10">
       <div>
         <div className="text-xl md:text-3xl font-semibold">
           <span>{content1}</span>{' '}
@@ -30,7 +30,7 @@ const JoinTeam: React.FC<JoinTeamProps> = ({
       <Link href={link1}>
         <Button
           variant="primary"
-          className="mt-4 px-6 rounded-lg bg-[#444BD3] hover:border-[#444BD3] hover:bg-transparent hover:text-black dark:hover:text-white border-transparent border"
+          className="mt-4 px-6 rounded-lg bg-[#444BD3] hover:border-[#444BD3] hover:bg-transparent hover:text-black border-transparent border"
         >
           {button}
         </Button>
