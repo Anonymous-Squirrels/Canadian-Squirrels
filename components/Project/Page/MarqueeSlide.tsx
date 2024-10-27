@@ -74,7 +74,7 @@ const MarqueeSlide = () => {
 
   return (
     <div className="dark:bg-black bg-light-purple bg-lig dark:text-white text-black w-full h-fit" ref={divRef}>
-      <div className=" px-10 px-5 mx-auto">
+      <div className=" sm:px-10 px-5 mx-auto">
         <div className="flex flex-col gap-10">
           <div>
             <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
