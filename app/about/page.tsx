@@ -7,6 +7,7 @@ import React from 'react';
 import { Blob } from '@/constants/Icons';
 import ContactBackground from '@/components/Contact/ContactBackground';
 import Google from '@/components/About/Google';
+import LightContactBackground from '@/components/Contact/LightContactBackground';
 
 function Page() {
   return (
@@ -27,8 +28,13 @@ function Page() {
       <OurValues />
       <div className="w-full relative overflow-hidden">
         <ThreeStepProcess />
-        <ContactBackground />
-        <JoinTeam
+        <div className='hidden dark:block'>
+      <ContactBackground />
+
+      </div>
+      <div className='dark:hidden block'>
+  <LightContactBackground/>
+</div>        <JoinTeam
           content1="Become a Squirrel."
           content2="Join our Team."
           detail="We are looking for individuals with skills who could join our family of squirrels."
