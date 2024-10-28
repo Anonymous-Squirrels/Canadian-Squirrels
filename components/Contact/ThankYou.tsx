@@ -58,11 +58,18 @@ const ThankYou = () => {
                 <p className="mt-2 text-xl md:text-3xl">{calgaryTime}</p>
               </div>
               <Image
-                src="/assets/calgary.png"
+                src="/assets/calgary1.png"   // Change in light theme
                 alt="Canada logo"
                 width={112}
                 height={112}
-                className=" w-fit h-16 sm:h-28"
+                className=" w-fit h-16 dark:hidden block sm:h-28"
+              />
+                  <Image
+                src="/assets/calgary.png"          // change in dark theme
+                alt="Canada logo"
+                width={112}
+                height={112}
+                className=" w-fit h-16 dark:block hidden sm:h-28"
               />
             </div>
             <div className="flex gap-5 justify-start items-center text-base mt-2 md:mt-5 md:text-xl">
