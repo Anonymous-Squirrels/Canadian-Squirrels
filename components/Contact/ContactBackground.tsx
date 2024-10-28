@@ -12,9 +12,9 @@ const ContactBackground = () => {
   return (
     <div className="relative h[70vh] xl:h-screen w-full overflow-x-hidden">
       {/* Top shadow for 100px height */}
-      <div className="absolute top-0 left-0 w-full h-[100px] bg-gradient-to-b from-black/80 to-transparent z-10 hidden md:flex"></div>
+      <div className="absolute top-0 left-0 w-full h-[100px] bg-gradient-to-b from-black/90 to-transparent z-10 hidden md:flex"></div>
       {/* Bottom shadow */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/30 md:from-black to-transparent z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/30 md:from-black/40 to-transparent z-10"></div>
 
       <Link href="/contact">
         <div className="absolute bottom-5 left-5 text-white text-3xl md:text-6xl z-20 group hover:cursor-pointer">
