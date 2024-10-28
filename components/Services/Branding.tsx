@@ -40,7 +40,7 @@ function Branding() {
               />
             </div>
 
-            <p className="text-sm md:text-lg dark:text-gray-200 text-black  font-thin mx-auto my-4 md:leading-loose text-center md:text-start">
+            <p className="text-sm md:text-lg dark:text-gray-200 text-black  font-light mx-auto my-4 md:leading-loose text-center md:text-start">
               From Crafting A{' '}
               <span className=" dark:text-white text-black  font-extrabold">Memorable Logo</span>{' '}
               To Developing A Cohesive{' '}
