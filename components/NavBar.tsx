@@ -7,13 +7,15 @@ import { FiMenu } from 'react-icons/fi';
 import { IoMdClose } from 'react-icons/io';
 import { HiOutlineSun, HiOutlineMoon } from 'react-icons/hi';
 import React, { useState, useEffect } from 'react';
-
+import Image from 'next/image';
 function NavBar() {
   const path = usePathname();
   const [isOpen, setIsOpen] = useState(false);
 
   // Dark mode state
   const [darkMode, setDarkMode] = useState(false);
+
+  const [showSwitchMode, setShowSwitchMode] = useState(true);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
@@ -24,6 +26,13 @@ function NavBar() {
       setDarkMode(false);
       document.documentElement.classList.remove('dark');
     }
+
+    // Hide the switch mode text after 20 seconds
+    const timer = setTimeout(() => {
+      setShowSwitchMode(false);
+    }, 20000);
+
+    return () => clearTimeout(timer);
   }, []);
 
   // Toggle dark mode in localStorage
@@ -46,7 +55,7 @@ function NavBar() {
             className={`dark:text-white text-black rounded-lg md:px-8 min-h-16 md:h-20 w-full p-2 pt-3 dark:bg-[#282828] bg-white
             ${!isOpen ? 'flex items-center' : ''}`}
           >
-            <div className="flex items-center justify-between w-full relative">
+            <div className="flex items-center justify-between xl:px-5 w-full relative">
               <Link href="/" className="flex items-center gap-3 group">
                 <div className="h-fit w-fit hidden md:flex element z-20 -ml-5 px-5 py-4">
                   <Logo className="h-9 md:h-fit dark:block hidden" />
@@ -65,45 +74,74 @@ function NavBar() {
                   <span>Squirrels</span>
                 </div>
               </Link>
-              <ul className="hidden md:flex items-center gap-9 group text-lg">
-                {NavLinks.map((item) => (
-                  <Link
-                    href={item.path}
-                    key={item.tag}
-                    className={`${
-                      path === item.path &&
-                      'text-sq-violet group-hover:text-black dark:group-hover:text-white'
-                    }
-             hover:text-sq-violet  transition-all duration-300`}
+              <div className="hidden md:flex items-center gap-5">
+                <ul className="flex items-center gap-9 group text-lg">
+                  {NavLinks.map((item) => (
+                    <Link
+                      href={item.path}
+                      key={item.tag}
+                      className={`${item.tag === 'Contact' ? 'bg-black dark:bg-white text-white dark:text-black hover:bg-transparent dark:hover:bg-transparent hover:text-black dark:hover:text-white border border-black dark:border-white px-4 py-1 rounded-sm' :
+                          (path === item.path ? 'text-sq-violet group-hover:text-black dark:group-hover:text-white' : '') + ' hover:text-sq-violet transition-all duration-300'
+                        }`}
+                    >
+                      {item.tag}
+                    </Link>
+                  ))}
+                </ul>
+                <div className="relative">
+                  {showSwitchMode && (
+                    <div className="absolute right-[66px] whitespace-nowrap text-sm dark:text-white text-black flex items-center">
+                      <div className="mt-4 font-bold text-base flex flex-col" style={{ top: '43px', position: 'relative' }}>
+                        <span>Switch</span><span>Mode</span>
+                      </div>
+                      <Image src="/assets/arrowTogglenew.png" alt="switch mode" width={60} height={60} className='inline-block top-8 relative' />
+                    </div>
+                  )}
+                  <button
+                    title='toggle'
+                    onClick={toggleDarkMode}
+                    className="p-1 rounded-full transition-all duration-500"
                   >
-                    {item.tag}
-                  </Link>
-                ))}
-              </ul>
-           <div className='flex items-center space-x-4 md:hidden'>
-              <button
-            title='toggle' 
-              onClick={toggleDarkMode}
-              className=" rounded-full transition-all duration-500"
-            >
-              <div className="relative h-7 w-7">
-                <HiOutlineSun
-                  className={`absolute h-full w-full transition-transform duration-500 ${darkMode ? 'rotate-180 scale-0' : 'scale-100'
-                    }`}
-                />
-                <HiOutlineMoon
-                  className={`absolute h-full w-full text-gray-300 transition-transform duration-500 ${darkMode ? 'scale-100' : 'scale-0 rotate-180'
-                    }`}
-                />
+                    <div className="relative h-8 w-8">
+                      <HiOutlineSun
+                        className={`absolute h-full w-full transition-transform duration-500 ${darkMode ? 'rotate-180 scale-0' : 'scale-100'
+                          }`}
+                      />
+                      <HiOutlineMoon
+                        className={`absolute h-full w-full text-gray-300 transition-transform duration-500 ${darkMode ? 'scale-100' : 'scale-0 rotate-180'
+                          }`}
+                      />
+                    </div>
+                  </button>
+                </div>
               </div>
-            </button>
-              <div onClick={() => setIsOpen(!isOpen)} className="md:hidden">
-                {!isOpen ? (
-                  <FiMenu className="h-8 w-8" />
-                ) : (
-                  <IoMdClose className="h-8 w-8" />
-                )}
-              </div>
+              <div className='flex items-center space-x-4 md:hidden'>
+                <div className="relative">
+                  {/* we can implement the text and arrow here also  */}
+                  <button
+                    title='toggle'
+                    onClick={toggleDarkMode}
+                    className="rounded-full transition-all duration-500"
+                  >
+                    <div className="relative h-7 w-7">
+                      <HiOutlineSun
+                        className={`absolute h-full w-full transition-transform duration-500 ${darkMode ? 'rotate-180 scale-0' : 'scale-100'
+                          }`}
+                      />
+                      <HiOutlineMoon
+                        className={`absolute h-full w-full text-gray-300 transition-transform duration-500 ${darkMode ? 'scale-100' : 'scale-0 rotate-180'
+                          }`}
+                      />
+                    </div>
+                  </button>
+                </div>
+                <div onClick={() => setIsOpen(!isOpen)} className="md:hidden">
+                  {!isOpen ? (
+                    <FiMenu className="h-8 w-8" />
+                  ) : (
+                    <IoMdClose className="h-8 w-8" />
+                  )}
+                </div>
               </div>
             </div>
             {isOpen && (
@@ -120,23 +158,6 @@ function NavBar() {
                 ))}
               </div>
             )}
-            {/* dark toggle button  */}
-            <button
-            title='toggle'
-              onClick={toggleDarkMode}
-              className="mx-4 p-2 rounded-full md:block hidden transition-all duration-500"
-            >
-              <div className="relative h-8 w-8">
-                <HiOutlineSun
-                  className={`absolute h-full w-full transition-transform duration-500 ${darkMode ? 'rotate-180 scale-0' : 'scale-100'
-                    }`}
-                />
-                <HiOutlineMoon
-                  className={`absolute h-full w-full text-gray-300 transition-transform duration-500 ${darkMode ? 'scale-100' : 'scale-0 rotate-180'
-                    }`}
-                />
-              </div>
-            </button>
           </div>
         </div>
       </div>
