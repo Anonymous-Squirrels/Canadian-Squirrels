@@ -108,15 +108,15 @@ function NavBar() {
                   <button
                     title='toggle'
                     onClick={toggleDarkMode}
-                    className="p-1 rounded-full transition-all duration-500"
+                    className="p-1 rounded-full transition-all duration-1000"
                   >
                     <div className="relative h-8 w-8">
                       <HiOutlineSun
-                        className={`absolute h-full w-full transition-transform duration-500 ${darkMode ? 'rotate-180 scale-0' : 'scale-100'
+                        className={`absolute h-full w-full transition-transform duration-1000 ${darkMode ? 'rotate-180 scale-0' : 'scale-100'
                           }`}
                       />
                       <HiOutlineMoon
-                        className={`absolute h-full w-full text-gray-300 transition-transform duration-500 ${darkMode ? 'scale-100' : 'scale-0 rotate-180'
+                        className={`absolute h-full w-full text-gray-300 transition-transform duration-1000 ${darkMode ? 'scale-100' : 'scale-0 rotate-180'
                           }`}
                       />
                     </div>
@@ -129,15 +129,15 @@ function NavBar() {
                   <button
                     title='toggle'
                     onClick={toggleDarkMode}
-                    className="rounded-full transition-all duration-500"
+                    className="rounded-full transition-all duration-1000"
                   >
                     <div className="relative h-7 w-7">
                       <HiOutlineSun
-                        className={`absolute h-full w-full transition-transform duration-500 ${darkMode ? 'rotate-180 scale-0' : 'scale-100'
+                        className={`absolute h-full w-full transition-transform duration-1000 ${darkMode ? 'rotate-180 scale-0' : 'scale-100'
                           }`}
                       />
                       <HiOutlineMoon
-                        className={`absolute h-full w-full text-gray-300 transition-transform duration-500 ${darkMode ? 'scale-100' : 'scale-0 rotate-180'
+                        className={`absolute h-full w-full text-gray-300 transition-transform duration-1000 ${darkMode ? 'scale-100' : 'scale-0 rotate-180'
                           }`}
                       />
                     </div>
