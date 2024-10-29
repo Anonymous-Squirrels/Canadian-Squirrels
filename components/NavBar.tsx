@@ -15,7 +15,7 @@ function NavBar() {
   // Dark mode state
   const [darkMode, setDarkMode] = useState(false);
 
-  const [showSwitchMode, setShowSwitchMode] = useState(true);
+  const [showSwitchMode, setShowSwitchMode] = useState(false);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
@@ -27,12 +27,19 @@ function NavBar() {
       document.documentElement.classList.remove('dark');
     }
 
-    // Hide the switch mode text after 20 seconds
-    const timer = setTimeout(() => {
-      setShowSwitchMode(false);
-    }, 10000);
+    // Delay 
+    const delayTimer = setTimeout(() => {
+      setShowSwitchMode(true);
 
-    return () => clearTimeout(timer);
+      // Hide
+      const hideTimer = setTimeout(() => {
+        setShowSwitchMode(false);
+      }, 10000);
+
+      return () => clearTimeout(hideTimer);
+    }, 3000);
+
+    return () => clearTimeout(delayTimer);
   }, []);
 
   // Toggle dark mode in localStorage
