@@ -30,7 +30,7 @@ function NavBar() {
     // Hide the switch mode text after 20 seconds
     const timer = setTimeout(() => {
       setShowSwitchMode(false);
-    }, 20000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -80,7 +80,8 @@ function NavBar() {
                     <Link
                       href={item.path}
                       key={item.tag}
-                      className={`${item.tag === 'Contact' ? 'bg-black dark:bg-white text-white dark:text-black hover:bg-transparent dark:hover:bg-transparent hover:text-black dark:hover:text-white border border-black dark:border-white px-4 py-1 rounded-sm' :
+                      className={`${item.tag === 'Contact' && path === item.path ? 'text-black dark:text-white hover:bg-transparent dark:hover:bg-transparent hover:text-black dark:hover:text-white border border-black dark:border-white px-4 py-1 rounded-sm' :
+                          item.tag === 'Contact' ? 'bg-black dark:bg-white text-white dark:text-black hover:bg-transparent dark:hover:bg-transparent hover:text-black dark:hover:text-white border border-black dark:border-white px-4 py-1 rounded-sm' :
                           (path === item.path ? 'text-sq-violet group-hover:text-black dark:group-hover:text-white' : '') + ' hover:text-sq-violet transition-all duration-300'
                         }`}
                     >
