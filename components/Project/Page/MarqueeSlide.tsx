@@ -17,6 +17,7 @@ import {
 import Image from 'next/image';
 import GlassMorphism from '@/components/ui/GlassMorphism';
 import { useEffect, useRef, useState } from 'react';
+import RollingCount from './RollingCount';
 
 const MarqueeSlide = () => {
   const [brand, setBrand] = useState<number>(0);
@@ -128,32 +129,7 @@ const MarqueeSlide = () => {
                 We have also <span className="dark:text-[#7B61FF] text-[#5c3095]">worked with</span>
               </span>
             </div>
-            <div className="flex w-full items-center justify-between md:justify-center gap-x-5 md:gap-20 px-7">
-              <div className="border-b-4 md:border-b-8 dark:border-[#7B61FF] border-[#5c3095] text-center pb-8 md:w-44 w-24">
-                <span className="dark:text-[#7B61FF] text-[#5c3095] text-4xl md:text-7xl">
-                  54+
-                </span>
-                <br />
-                {/* <span>Brands</span> */}
-                <span className="text-xl">Brand</span>
-              </div>
-              <div className="border-b-4 md:border-b-8 dark:border-[#7B61FF] border-[#5c3095] text-center pb-8 md:w-44 w-24">
-                <span className="dark:text-[#7B61FF] text-[#5c3095] text-4xl md:text-7xl">
-                  20+
-                </span>
-                <br />
-                {/* <span>Domains</span> */}
-                <span className="text-xl">Industries</span>
-              </div>
-              <div className="border-b-4 md:border-b-8 dark:border-[#7B61FF] border-[#5c3095] text-center pb-8 md:w-44 w-24">
-                <span className="dark:text-[#7B61FF] text-[#5c3095] text-4xl md:text-7xl">
-                  4+
-                </span>
-                <br />
-                {/* <span>Countries</span> */}
-                <span className="text-xl">Countries</span>
-              </div>
-            </div>
+     <RollingCount/>
             <div className="text-center text-base md:text-4xl px-5">
               Here are some of names in our{' '}
               <span className="dark:text-[#7B61FF] text-[#5c3095]">clientele</span>
