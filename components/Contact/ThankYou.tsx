@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import { FaLocationDot } from 'react-icons/fa6';
+import { FaLocationDot, FaEnvelope, FaPhone } from 'react-icons/fa6';
 import { format, toZonedTime } from 'date-fns-tz';
 import Image from 'next/image';
 import Button from '../ui/Button';
@@ -49,7 +49,7 @@ const ThankYou = () => {
         <p className="dark:text-white text-black text-center font-bold text-lg md:text-2xl mt-2">
           Let us Keep in touch
         </p>
-        <div className="mt-10 md:mt-20 flex flex-col lg:flex-row justify-between gap-5 dark:text-white text-black max-w-5xl mx-auto">
+        <div className="mt-10 md:mt-20 flex flex-col lg:flex-row justify-between gap-10 dark:text-white text-black max-w-6xl mx-auto">
           {/* Canada Section */}
           <div className="">
             <div className="flex justify-between gap-10">
@@ -73,47 +73,65 @@ const ThankYou = () => {
               />
             </div>
             <div className="flex gap-5 justify-start items-center text-base mt-2 md:mt-5 md:text-xl">
-              <FaLocationDot className="text-base md:text-2xl dark:text-white text-black" />
+              <FaLocationDot className="text-base md:text-2xl text-red-600" />
               <p>Calgary</p>
             </div>
-            <div className="flex gap-5 justify-start mt-2 md:mt-5 text-base md:text-xl">
-              <p>Mail:</p>
-              <a href="mailto:hello@thesquirrels.ca">hello@thesquirrels.ca</a>
+            <div className="flex gap-5 items-center mt-2 md:mt-5 text-base md:text-xl">
+              <p>820 26 St NE Calgary AB, T2A 2M4, Canada</p>
             </div>
-            <div className="flex gap-5 justify-start mt-2 md:mt-5 text-base md:text-xl">
-              <p>Call:</p>
-              <div>
-                <a href="tel:+15879623062">+1(587)962-3062</a>
-                <br />
-                <a href="tel:+15879623182">+1(587)962-3182</a>
+            <div className="space-y-2 md:space-y-5">
+              <div className="flex gap-5 items-center mt-4 text-base md:text-xl">
+                <FaEnvelope className="text-lg md:text-2xl" />
+                <a href="mailto:hello@thesquirrels.ca">hello@thesquirrels.ca</a>
+              </div>
+              <div className="flex gap-5 items-center text-base md:text-xl">
+                <FaPhone className="text-lg md:text-2xl" />
+                <div>
+                  <a href="tel:+15879623062">+1(587)962-3062</a>
+                  <br />
+                  <a href="tel:+15879623182">+1(587)962-3182</a>
+                </div>
               </div>
             </div>
           </div>
           {/* India Section */}
-          <div className="">
+          <div className="space-y-5 w-96">
             <div className="flex justify-between gap-10">
               <div className="">
                 <p className="text-3xl md:text-6xl font-bold">INDIA</p>
                 <p className="mt-2 text-xl md:text-3xl">{indiaTime}</p>
               </div>
               <Image
+                src="/assets/indian.png"
+                alt="India logo"
+                width={112}
+                height={112}
+                className="w-fit h-16 sm:h-28 dark:hidden block"
+              />
+              <Image
                 src="/assets/india.png"
                 alt="India logo"
                 width={112}
                 height={112}
-                className=" w-fit h-16 sm:h-28"
+                className="w-fit h-16 sm:h-28 dark:block hidden"
               />
             </div>
-            <div className="flex gap-5 justify-start items-center mt-2 md:mt-5 text-base md:text-xl">
-              <FaLocationDot className="text-base md:text-2xl dark:text-white text-black" />
+            <div className="flex gap-5 items-center mt-2 md:mt-5 text-base md:text-xl">
+              <FaLocationDot className="text-base md:text-2xl text-red-600" />
               <p>Hyderabad, Kolkata & Ranchi</p>
             </div>
-            <div className="flex gap-5 justify-start mt-2 md:mt-5 text-base md:text-xl">
-              <p>Mail:</p>
+            <div className="flex gap-5 items-center mt-2 md:mt-5 text-base md:text-xl">
+              <p>Off No 208, Balaji Tower C, Miyapur X Roads, Hyderabad, Telengana, India</p>
+            </div>
+            <div className="flex gap-5 items-center mt-2 md:mt-5 text-base md:text-xl">
+              <p>4th Floor, Brojodham Tower, Airport Gate No 1, Dumdum, Kolkata, India</p>
+            </div>
+            <div className="flex gap-5 items-center mt-2 md:mt-5 text-base md:text-xl">
+              <FaEnvelope className="text-lg md:text-2xl" />
               <a href="mailto:hello@thesquirrels.ca">hello@thesquirrels.ca</a>
             </div>
-            <div className="flex gap-5 justify-start items-center mt-2 md:mt-5 text-base md:text-xl">
-              <p>Call:</p>
+            <div className="flex gap-5 items-center mt-2 md:mt-5 text-base md:text-xl">
+              <FaPhone className="text-lg md:text-2xl" />
               <a href="tel:+919122823474">+91 9122823474</a>
             </div>
           </div>
