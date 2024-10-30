@@ -59,14 +59,14 @@ const ThankYou = () => {
               </div>
               <Image
                 src="/assets/calgary1.png"   // Change in light theme
-                alt="Canada logo"
+                alt="Canada light logo"
                 width={112}
                 height={112}
                 className=" w-fit h-16 dark:hidden block sm:h-28"
               />
                   <Image
                 src="/assets/calgary.png"          // change in dark theme
-                alt="Canada logo"
+                alt="Canada dark logo"
                 width={112}
                 height={112}
                 className=" w-fit h-16 dark:block hidden sm:h-28"
