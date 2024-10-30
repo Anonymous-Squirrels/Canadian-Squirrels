@@ -22,9 +22,9 @@ function Branding() {
         <div className="w-full flex flex-col xl:flex-row items-center md:items-stretch justify-around md:gap-14">
           <div className="w-full xl:w-2/5 p-5 xl:p-0">
             <div className="mb-10 flex flex-col gap-3 w-full text-center">
-              <span className="text-[#5237D8] text-2xl md:text-4xl font-bold">
+              <span className="dark:text-[#5237D8] text-[#5c3095] text-2xl md:text-4xl font-bold">
                 BRAND
-              </span>
+              </span> 
               <span className="dark:text-white text-black text-3xl md:text-5xl font-bold">
                 IDENTITY
               </span>
@@ -80,7 +80,7 @@ function Branding() {
               <span className="dark:text-white text-black  text-2xl md:text-4xl font-bold">
                 PERSONAL
               </span>
-              <span className="text-[#5237D8] text-3xl md:text-5xl font-bold">
+              <span className="text-[#5c3095] dark:text-[#5237D8]  text-3xl md:text-5xl font-bold">
                 BRANDING
               </span>
             </div>
