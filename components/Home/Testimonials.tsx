@@ -25,13 +25,13 @@ function Testimonials() {
       <div className="text-center grid place-items-center">
         <Button
           variant="secondary"
-          className="flex items-center gap-3 border-[#B897FF] border-[2px]  text-black dark:text-white hover:text-white"
+          className="flex items-center gap-3 border-[#B897FF] dark:border-[#7d4ce5] border-[2px]  text-black dark:text-white hover:text-white"
         >
           <Message /> Testimonials
         </Button>
 
-        <div className="text-3xl md:text-6xl mx-[6px] py-3  text-black dark:text-white  md:py-8">
-          Our Success <span className="text-[#7B61FF]">Stories</span>
+        <div className="text-3xl md:text-6xl mx-[6px] py-3 font-semibold text-black dark:text-white  md:py-8">
+          Our Success <span className="dark:text-[#7B61FF] text-[#5c3095]">Stories</span>
         </div>
         <div className="text-sm  text-black dark:text-white  md:text-xl md:font-bold w-11/12 mb-5">
           Thank you for your trust in Anonymous Squirrels! We are grateful for
