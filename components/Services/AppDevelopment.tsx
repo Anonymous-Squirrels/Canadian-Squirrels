@@ -39,7 +39,7 @@ const AppDevelopment = () => {
     <section className="p-4 lg:w-1/2 col-span-1">
       <header className="text-xl md:text-4xl font-semibold text-black dark:text-white text-center mb-5 md:mb-10 lg:mb-28">
         <h1>
-          APP<span className="text-[#9747FF] ml-2">DEVELOPMENT</span>
+          APP<span className=" text-[#5c3095] dark:text-[#9747FF] ml-2">DEVELOPMENT</span>
         </h1>
       </header>
 
