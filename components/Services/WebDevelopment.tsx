@@ -8,7 +8,7 @@ const WebDevelopment = () => {
     <div className="p-4 lg:w-1/2 col-span-1">
       <div className="text-xl md:text-4xl font-semibold dark:text-white text-center mb-5">
         <span>WEB</span>
-        <span className="text-[#9747FF] ml-2">DEVELOPMENT</span>
+        <span className="text-[#5c3095] dark:text-[#9747FF] ml-2">DEVELOPMENT</span>
       </div>
 
       <div className="flex flex-col gap-7 items-center justify-center">
