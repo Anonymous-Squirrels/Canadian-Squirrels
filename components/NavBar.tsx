@@ -17,6 +17,8 @@ function NavBar() {
 
   const [showSwitchMode, setShowSwitchMode] = useState(false);
 
+  const [showText, setShowText] = useState(false);
+
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
     if (storedTheme === 'dark') {
@@ -31,12 +33,21 @@ function NavBar() {
     const delayTimer = setTimeout(() => {
       setShowSwitchMode(true);
 
-      // Hide
+      // Delay for text appearance
+      const textTimer = setTimeout(() => {
+        setShowText(true);
+      }, 1000);
+
+      // Hide both after 10 seconds
       const hideTimer = setTimeout(() => {
         setShowSwitchMode(false);
+        setShowText(false);
       }, 10000);
 
-      return () => clearTimeout(hideTimer);
+      return () => {
+        clearTimeout(hideTimer);
+        clearTimeout(textTimer);
+      };
     }, 3000);
 
     return () => clearTimeout(delayTimer);
@@ -97,14 +108,12 @@ function NavBar() {
                   ))}
                 </ul>
                 <div className="relative">
-                  {showSwitchMode && (
-                    <div className="absolute right-[66px] whitespace-nowrap text-sm dark:text-white text-black flex items-center">
-                      <div className="mt-4 font-bold text-base flex flex-col" style={{ top: '43px', position: 'relative' }}>
-                        <span>Switch</span><span>Mode</span>
-                      </div>
-                      <Image src="/assets/arrowTogglenew.png" alt="switch mode" width={60} height={60} className='inline-block top-8 relative' />
+                  <div className={`absolute right-[66px] whitespace-nowrap text-sm dark:text-white text-black flex items-center transition-opacity duration-1000 ${showSwitchMode ? 'opacity-100' : 'opacity-0'}`}>
+                    <div className={`mt-4 font-bold text-base flex flex-col transition-opacity duration-1000 ${showText ? 'opacity-100' : 'opacity-0'}`} style={{ top: '43px', position: 'relative' }}>
+                      <span>Switch</span><span>Mode</span>
                     </div>
-                  )}
+                    <Image src="/assets/arrowTogglenew.png" alt="switch mode" width={60} height={60} className='inline-block top-8 relative' />
+                  </div>
                   <button
                     title='toggle'
                     onClick={toggleDarkMode}
