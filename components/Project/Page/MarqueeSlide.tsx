@@ -79,7 +79,7 @@ const MarqueeSlide = () => {
           <div>
             <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
               <span>HEALTH</span>
-              <span className="text-[#9747FF] ml-2">CARE</span>
+              <span className=" text-[#5c3095] dark:text-[#9747FF] ml-2">CARE</span>
             </h2>
 
             <div>
@@ -125,28 +125,28 @@ const MarqueeSlide = () => {
           <div className="flex flex-col items-center gap-y-10 md:gap-y-16 font-bold md:my-10">
             <div className="w-full 2xl:px-56">
               <span className="text-base md:text-4xl px-5 text-center lg:px-56 inline-block w-full">
-                We have also <span className="text-[#7B61FF]">worked with</span>
+                We have also <span className="dark:text-[#7B61FF] text-[#5c3095]">worked with</span>
               </span>
             </div>
             <div className="flex w-full items-center justify-between md:justify-center gap-x-5 md:gap-20 px-7">
-              <div className="border-b-4 md:border-b-8 border-[#7B61FF] text-center pb-8 md:w-44 w-24">
-                <span className="text-[#7B61FF] text-4xl md:text-7xl">
+              <div className="border-b-4 md:border-b-8 dark:border-[#7B61FF] border-[#5c3095] text-center pb-8 md:w-44 w-24">
+                <span className="dark:text-[#7B61FF] text-[#5c3095] text-4xl md:text-7xl">
                   54+
                 </span>
                 <br />
                 {/* <span>Brands</span> */}
                 <span className="text-xl">Brand</span>
               </div>
-              <div className="border-b-4 md:border-b-8 border-[#7B61FF] text-center pb-8 md:w-44 w-24">
-                <span className="text-[#7B61FF] text-4xl md:text-7xl">
+              <div className="border-b-4 md:border-b-8 dark:border-[#7B61FF] border-[#5c3095] text-center pb-8 md:w-44 w-24">
+                <span className="dark:text-[#7B61FF] text-[#5c3095] text-4xl md:text-7xl">
                   20+
                 </span>
                 <br />
                 {/* <span>Domains</span> */}
                 <span className="text-xl">Industries</span>
               </div>
-              <div className="border-b-4 md:border-b-8 border-[#7B61FF] text-center pb-8 md:w-44 w-24">
-                <span className="text-[#7B61FF] text-4xl md:text-7xl">
+              <div className="border-b-4 md:border-b-8 dark:border-[#7B61FF] border-[#5c3095] text-center pb-8 md:w-44 w-24">
+                <span className="dark:text-[#7B61FF] text-[#5c3095] text-4xl md:text-7xl">
                   4+
                 </span>
                 <br />
@@ -156,7 +156,7 @@ const MarqueeSlide = () => {
             </div>
             <div className="text-center text-base md:text-4xl px-5">
               Here are some of names in our{' '}
-              <span className="text-[#7B61FF]">clientele</span>
+              <span className="dark:text-[#7B61FF] text-[#5c3095]">clientele</span>
             </div>
           </div>
 
@@ -164,7 +164,7 @@ const MarqueeSlide = () => {
             <div className="md:w-[55%]">
               <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
                 <span>BF</span>
-                <span className="text-[#9747FF]">SI</span>
+                <span className=" text-[#5c3095] dark:text-[#9747FF]">SI</span>
               </h2>
             {/* dark theme */}
               <GlassMorphism
@@ -206,7 +206,7 @@ const MarqueeSlide = () => {
             <div className="md:w-[40%]">
               <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
                 <span>AUTO</span>
-                <span className="text-[#9747FF] ml-2">MOBILE</span>
+                <span className=" text-[#5c3095] dark:text-[#9747FF] ml-2">MOBILE</span>
               </h2>
              {/* dark theme */}
               <GlassMorphism
@@ -251,7 +251,7 @@ const MarqueeSlide = () => {
             <div className="md:w-[55%]">
               <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
                 <span>REAL</span>
-                <span className="text-[#9747FF] ml-2">ESTATE</span>
+                <span className=" text-[#5c3095] dark:text-[#9747FF] ml-2">ESTATE</span>
               </h2>
               {/* dark theme */}
               <GlassMorphism
@@ -294,7 +294,7 @@ const MarqueeSlide = () => {
             <div className="md:w-[40%]">
               <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
                 <span>Ed</span>
-                <span className="text-[#9747FF]">TECH</span>
+                <span className=" text-[#5c3095] dark:text-[#9747FF]">TECH</span>
               </h2>
           {/* dark theme */}
               <GlassMorphism
@@ -337,9 +337,9 @@ const MarqueeSlide = () => {
 
           <div>
             <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
-              <span className="text-[#9747FF]">SERVICES</span>
+              <span className=" text-[#5c3095] dark:text-[#9747FF]">SERVICES</span>
               <span className="ml-2">and</span>
-              <span className="text-[#9747FF] ml-2">D2C</span>
+              <span className=" text-[#5c3095] dark:text-[#9747FF] ml-2">D2C</span>
             </h2>
             <div>
               {/* dark theme */}
@@ -383,9 +383,9 @@ const MarqueeSlide = () => {
 
           <div className="mb-10">
             <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
-              <span className="text-[#9747FF]">HO</span>
+              <span className=" text-[#5c3095] dark:text-[#9747FF]">HO</span>
               <span className="ml-2">-RE-</span>
-              <span className="text-[#9747FF] ml-2">CA</span>
+              <span className=" text-[#5c3095] dark:text-[#9747FF] ml-2">CA</span>
             </h2>
             <div>
               {/* dark theme */}
@@ -430,7 +430,7 @@ const MarqueeSlide = () => {
 
         <div className="pb-10 hidden md:block">
           <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center mb-5">
-            <span className="text-[#9747FF]">DRIVING</span>
+            <span className=" text-[#5c3095] dark:text-[#9747FF]">DRIVING</span>
             <span className="ml-2"> RESULTS</span>
             <br />
             <span className="text-[#828282] text-xl ml-2">
@@ -516,7 +516,7 @@ const MarqueeSlide = () => {
 
         <div className="w-full h-fit pb-5 block md:hidden">
           <h2 className="text-xl md:text-4xl font-semibold dark:text-white text-black text-center">
-            <span className="text-[#9747FF]">DRIVING</span>
+            <span className=" text-[#5c3095] dark:text-[#9747FF]">DRIVING</span>
             <span className="ml-2"> RESULTS</span>
             <br />
             <span className="text-[#828282] text-xl ml-2">
