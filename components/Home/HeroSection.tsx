@@ -6,7 +6,8 @@ import {
   GridFill,
   Laptop,
   PenRuler,
-  Squirrel,
+  DarkSquirrel,
+  LightSquirrel
 } from '@/constants/Icons';
 import React from 'react';
 import Image from 'next/image';
@@ -34,9 +35,9 @@ export default function Home() {
             <span className="hidden md:inline-flex">One at a time Promote and</span>{" "}
             <span className="text-sq-violet hidden md:inline-flex">Grow</span> */}
             <span>Elevate your </span>
-            <span className="text-sq-violet">healthcare </span>
+            <span className="dark:text-sq-violet text-dark-purple">healthcare </span>
             <span>and </span>
-            <span className="text-sq-violet">dental marketing </span>
+            <span className="dark:text-sq-violet text-dark-purple">dental marketing </span>
             <span>with our expert team.</span>
           </div>
           <div className="dark:text-white text-black text-lg md:text-2xl my-5">
@@ -45,7 +46,7 @@ export default function Home() {
             help you stand out in your industry.
           </div>
           <Link className={'w-fit h-fit'} href={'/services'}>
-            <button className="p-3 text-white rounded-md md:rounded-lg whitespace-nowrap bg-[#5237D8] active:opacity-8 hover:opacity-85">
+            <button className="p-3 text-white rounded-md md:rounded-lg whitespace-nowrap dark:bg-[#5237D8] bg-[#5C3095] active:opacity-8 hover:opacity-85">
               {/*<p className="w-full h-fit overflow-clip  text-sm md:text-xl ">
             <span className="scroll-text inline-block">
               Get a Free Consultation Get a Free Consultation Get a Free Consultation
@@ -57,7 +58,10 @@ export default function Home() {
         </div>
 
         <div className="relative order-first md:order-last">
-          <Squirrel className="lg:h-[500px] lg:w-[420px]" />
+          {/* dark theme */}
+          <DarkSquirrel className="lg:h-[500px] lg:w-[420px] dark:block hidden" />
+          {/* light theme */}
+          <LightSquirrel className="lg:h-[500px] lg:w-[420px] dark:hidden block" />
  {/* dark theme */}
           <GlassMorphism
             variant="light"
