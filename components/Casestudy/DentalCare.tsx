@@ -35,8 +35,8 @@ const DentalCare: React.FC<DentalCareProps> = ({
       </h1>
 
       {/* Location Section */}
-      <div className="text-center justify-center dark:text-white text-black space-x-4 flex font-normal md:text-lg items-center">
-        <Image src="/logo/Vector.png" alt="location-icon" width={30} height={30} className='w-5 md:w-8' />
+      <div className="text-center justify-center dark:text-white text-black space-x-4 flex font-normal text-sm sm:text-base lg:text-lg items-center">
+        <Image src="/logo/Vector.png" alt="location-icon" width={30} height={30} className='w-4 md:w-8' />
         <p>{location}</p>
       </div>
 
