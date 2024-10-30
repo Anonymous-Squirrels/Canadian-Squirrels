@@ -33,7 +33,7 @@ function Testimonials() {
         <div className="text-3xl md:text-6xl mx-[6px] py-3 font-semibold text-black dark:text-white  md:py-8">
           Our Success <span className="dark:text-[#7B61FF] text-[#5c3095]">Stories</span>
         </div>
-        <div className="text-sm  text-black dark:text-white  md:text-xl md:font-bold w-11/12 mb-5">
+        <div className="text-sm  text-black dark:text-white  md:text-xl md:font-semibold w-11/12 mb-5">
           Thank you for your trust in Anonymous Squirrels! We are grateful for
           your feedback and are committed to providing the best services. Read
           what our clients have to say about their experience with us.
