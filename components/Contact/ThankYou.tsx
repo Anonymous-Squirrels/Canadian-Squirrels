@@ -58,7 +58,7 @@ const ThankYou = () => {
                 <p className="mt-2 text-xl md:text-3xl">{calgaryTime}</p>
               </div>
               <Image
-                src="/assets/calgary1.png"   // Change in light theme
+                src="/assets/calgaryblack.png"   // Change in light theme
                 alt="Canada light logo"
                 width={112}
                 height={112}
