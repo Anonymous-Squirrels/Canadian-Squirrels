@@ -128,11 +128,11 @@ const ThankYou = () => {
             </div>
             <div className="flex gap-5 items-center mt-2 md:mt-5 text-base md:text-xl">
               <FaEnvelope className="text-lg md:text-2xl" />
-              <a href="mailto:hello@thesquirrels.ca">hello@thesquirrels.ca</a>
+              <a href="mailto:hello@thesquirrels.ca">hello@squirrels.co.in</a>
             </div>
             <div className="flex gap-5 items-center mt-2 md:mt-5 text-base md:text-xl">
-              <FaPhone className="text-lg md:text-2xl" />
-              <a href="tel:+919122823474">+91 9122823474</a>
+              <FaPhone className="text-lg md:text-2xl" /> +91-9122823474 
+              <a href="tel:+919122823474"></a>
             </div>
           </div>
         </div>
