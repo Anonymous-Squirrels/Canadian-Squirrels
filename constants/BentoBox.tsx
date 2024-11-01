@@ -21,7 +21,7 @@ export const BentoItems = [
   {
     title: 'Some of our Work.',
     description:
-      'Take the pain out of book keeping! Wave goodbye to mountains of paperwork and endless email reminders. We manage it all !!',
+      'We have worked with company across time zones and have a portfolio laden with companies from Healthcare to Dental, HoReCa to Automobile and more.',
     content: (
       <div className="w-fit h-fit">
         <Link href="/project">
