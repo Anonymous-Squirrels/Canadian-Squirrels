@@ -33,7 +33,7 @@ const ServiceCard: React.FC<Service> = ({ src, alt, text }) => (
 
 const AllServices: React.FC = () => {
   return (
-    <div className="bg-black p-4 flex items-center justify-center">
+    <div className="dark:bg-black bg-light-purple p-4 flex items-center justify-center">
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
         {services.map((service, index) => (
           <ServiceCard

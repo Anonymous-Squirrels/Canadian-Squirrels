@@ -37,9 +37,9 @@ const technologies: TechnologyCardProps[] = [
 const AppDevelopment = () => {
   return (
     <section className="p-4 lg:w-1/2 col-span-1">
-      <header className="text-xl md:text-4xl font-semibold text-white text-center mb-5 md:mb-10 lg:mb-28">
+      <header className="text-xl md:text-4xl font-semibold text-black dark:text-white text-center mb-5 md:mb-10 lg:mb-28">
         <h1>
-          APP<span className="text-[#9747FF] ml-2">DEVELOPMENT</span>
+          APP<span className=" text-[#5c3095] dark:text-[#9747FF] ml-2">DEVELOPMENT</span>
         </h1>
       </header>
 
@@ -48,7 +48,7 @@ const AppDevelopment = () => {
           {technologies.map((tech, index) => (
             <article
               key={index}
-              className="relative p-5 bg-[#111111] rounded-xl"
+              className="relative p-5 dark:bg-[#111111] bg-white rounded-xl"
             >
               <div className="flex flex-col gap-y-2 max-w-2xl items-center">
                 <Image
@@ -59,8 +59,8 @@ const AppDevelopment = () => {
                   className="mb-4 rounded-xl shadow-valuesContainerShadow"
                   priority={index < 2}
                 />
-                <h2 className="text-white">{tech.alt}</h2>
-                <p className="text-[#969696] text-center">
+                <h2 className="text-black dark:text-white">{tech.alt}</h2>
+                <p className="text-black dark:text-[#969696] text-center">
                   {tech.description.split(' ').map((word, idx) => (
                     <span
                       key={idx}
@@ -71,7 +71,7 @@ const AppDevelopment = () => {
                         word.includes('performance') ||
                         word.includes('maintaining') ||
                         word.includes('quality')
-                          ? 'text-[#c4c2c2] font-extrabold'
+                          ? 'text-black dark:text-[#c4c2c2] font-extrabold'
                           : ''
                       }
                     >
@@ -84,17 +84,17 @@ const AppDevelopment = () => {
           ))}
         </div>
 
-        <p className="text-[#969696] md:text-lg text-center md:text-justify max-w-[550px]">
+        <p className="text-black dark:text-[#969696] md:text-lg text-center md:text-justify max-w-[550px]">
           Our team of skilled developers specializes in crafting{' '}
-          <span className="text-[#c4c2c2] font-extrabold">scalable</span> and{' '}
-          <span className="text-[#c4c2c2] font-extrabold">
+          <span className="text-black dark:text-[#c4c2c2] font-extrabold">scalable</span> and{' '}
+          <span className="text-black dark:text-[#c4c2c2] font-extrabold">
             high-performance apps
           </span>{' '}
           using the latest technologies, including Kotlin, Flutter, and React
           Native. We&apos;ll create a{' '}
-          <span className="text-[#c4c2c2] font-extrabold">mobile solution</span>{' '}
+          <span className="text-black dark:text-[#c4c2c2] font-extrabold">mobile solution</span>{' '}
           that seamlessly integrates with your{' '}
-          <span className="text-[#c4c2c2] font-extrabold">brand</span> and
+          <span className="text-black dark:text-[#c4c2c2] font-extrabold">brand</span> and
           empowers your business to reach new heights.
         </p>
       </div>

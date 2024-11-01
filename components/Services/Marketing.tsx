@@ -4,7 +4,7 @@ import { Tick } from '@/constants/Icons';
 
 function Marketing() {
   return (
-    <div className="w-[100%] py-10 bg-[#F0E9FB] grid md:gap-y-8 place-items-center">
+    <div className="w-[100%] py-10 dark:bg-[#F0E9FB] bg-white text-black grid md:gap-y-8 place-items-center">
       <FAB variant="secondary" className="self-start select-none">
         Marketing
       </FAB>
@@ -12,7 +12,7 @@ function Marketing() {
         <div className="w-full flex flex-col xl:flex-row items-center md:items-stretch justify-around md:gap-14">
           <div className="w-full xl:w-2/5 p-5 xl:p-0">
             <div className="mb-10 w-full text-center">
-              <span className="text-[#5237D8] text-2xl md:text-4xl font-bold">
+              <span className="text-[#5C3095] dark:text-[#5237D8] text-2xl md:text-4xl font-bold">
                 MARKETING
               </span>
               <br />
@@ -20,7 +20,7 @@ function Marketing() {
                 &
               </span>
               <br />
-              <span className="text-[#5237D8] text-2xl md:text-4xl font-bold">
+              <span className="text-[#5C3095] dark:text-[#5237D8] text-2xl md:text-4xl font-bold">
                 ADVERTISING
               </span>
               <br />
@@ -70,7 +70,7 @@ function Marketing() {
 
           <div className="w-full xl:w-2/5 p-5 xl:p-0">
             <div className="mb-10 w-full text-center">
-              <span className="text-[#5237D8] text-2xl md:text-4xl font-bold">
+              <span className="text-[#5C3095] dark:text-[#5237D8] text-2xl md:text-4xl font-bold">
                 CONTENT{' '}
               </span>
               <span className="text-black text-2xl md:text-4xl font-bold">
@@ -80,13 +80,13 @@ function Marketing() {
                 <span className="text-black text-2xl md:text-4xl font-bold">
                   & Brand
                 </span>
-                <span className="text-[#5237D8] text-2xl md:text-4xl font-bold">
+                <span className="text-[#5C3095] dark:text-[#5237D8] text-2xl md:text-4xl font-bold">
                   {' '}
                   STRATEGY
                 </span>
               </div>
             </div>
-            <p className="text-sm font-light mx-auto md:mt-2 md:leading-loose text-center md:text-start">
+            <p className="text-sm font-light text-black mx-auto md:mt-2 md:leading-loose text-center md:text-start">
               We craft{' '}
               <span className="font-extrabold">compelling content</span> that
               resonates with your{' '}

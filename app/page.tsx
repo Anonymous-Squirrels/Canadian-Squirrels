@@ -6,6 +6,7 @@ import React from 'react';
 import { Blob } from '@/constants/Icons';
 import Engage from '@/components/Home/Engage';
 import ContactBackground from '@/components/Contact/ContactBackground';
+import LightContactBackground from '@/components/Contact/LightContactBackground';
 
 function Page() {
   return (
@@ -25,7 +26,13 @@ function Page() {
       </div>
       <BentoBox />
       <Testimonials />
+      <div className='hidden dark:block'>
       <ContactBackground />
+
+      </div>
+      <div className='dark:hidden block'>
+  <LightContactBackground/>
+</div>
     </div>
   );
 }

@@ -14,7 +14,7 @@ function Branding() {
   ];
 
   return (
-    <div className="w-[100%] py-10 bg-black grid md:gap-y-8 place-items-center">
+    <div className="w-[100%] py-10 dark:bg-black bg-light-purple grid md:gap-y-8 place-items-center">
       <FAB variant="secondary" className="h-11 md:h-fit select-none">
         Branding
       </FAB>
@@ -22,10 +22,10 @@ function Branding() {
         <div className="w-full flex flex-col xl:flex-row items-center md:items-stretch justify-around md:gap-14">
           <div className="w-full xl:w-2/5 p-5 xl:p-0">
             <div className="mb-10 flex flex-col gap-3 w-full text-center">
-              <span className="text-[#5237D8] text-2xl md:text-4xl font-bold">
+              <span className="dark:text-[#5237D8] text-[#5c3095] text-2xl md:text-4xl font-bold">
                 BRAND
-              </span>
-              <span className="text-white text-3xl md:text-5xl font-bold">
+              </span> 
+              <span className="dark:text-white text-black text-3xl md:text-5xl font-bold">
                 IDENTITY
               </span>
             </div>
@@ -40,20 +40,20 @@ function Branding() {
               />
             </div>
 
-            <p className="text-sm md:text-lg text-gray-200 font-thin mx-auto my-4 md:leading-loose text-center md:text-start">
+            <p className="text-sm md:text-lg dark:text-gray-200 text-black  font-light mx-auto my-4 md:leading-loose text-center md:text-start">
               From Crafting A{' '}
-              <span className="text-white font-extrabold">Memorable Logo</span>{' '}
+              <span className=" dark:text-white text-black  font-extrabold">Memorable Logo</span>{' '}
               To Developing A Cohesive{' '}
-              <span className="text-white font-extrabold">Brand Message</span>,
+              <span className=" dark:text-white text-black  font-extrabold">Brand Message</span>,
               Our Team Of Experts Will Ensure Your Brand Stands Out In The
               Market. We&apos;ll Create A Visual Identity That Resonates With
               Your
-              <span className="text-white font-extrabold">
+              <span className=" dark:text-white text-black  font-extrabold">
                 {' '}
                 Target Audience{' '}
               </span>{' '}
               And Reflects Your{' '}
-              <span className="text-white font-extrabold">
+              <span className=" dark:text-white text-black  font-extrabold">
                 {' '}
                 Brand&apos;s Unique Personality
               </span>
@@ -77,16 +77,16 @@ function Branding() {
 
           <div className="w-full xl:w-2/5 p-5 xl:p-0">
             <div className="mb-2 md:mb-10 flex flex-col gap-1 md:gap-3 w-full text-center">
-              <span className="text-white text-2xl md:text-4xl font-bold">
+              <span className="dark:text-white text-black  text-2xl md:text-4xl font-bold">
                 PERSONAL
               </span>
-              <span className="text-[#5237D8] text-3xl md:text-5xl font-bold">
+              <span className="text-[#5c3095] dark:text-[#5237D8]  text-3xl md:text-5xl font-bold">
                 BRANDING
               </span>
             </div>
-            <p className="text-sm md:text-lg text-gray-200 font-light mx-auto mb-4 md:leading-loose text-center md:text-start">
+            <p className="text-sm md:text-lg dark:text-gray-200 text-black  font-light mx-auto mb-4 md:leading-loose text-center md:text-start">
               From{' '}
-              <span className="text-white font-extrabold">
+              <span className="dark:text-white text-black font-extrabold">
                 {' '}
                 entrepreneurs to influencers and industry leaders{' '}
               </span>
@@ -94,7 +94,7 @@ function Branding() {
               tailored strategies to enhance your online presence, build a
               strong personal brand, and connect with your target audience. Our
               services include{' '}
-              <span className="text-white font-extrabold">
+              <span className="dark:text-white text-black font-extrabold">
                 social media management, content creation, podcast development,
               </span>{' '}
               and more.
@@ -111,7 +111,13 @@ function Branding() {
                 />
                 <GlassMorphism
                   variant="light"
-                  className="border border-white/25 overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+                  className="border border-white/25 dark:block overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+                >
+                  {' '}
+                </GlassMorphism>
+                <GlassMorphism
+                  variant="dark"
+                  className="border border-white/25 dark:hidden overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
                 >
                   {' '}
                 </GlassMorphism>
@@ -126,7 +132,13 @@ function Branding() {
                 />
                 <GlassMorphism
                   variant="light"
-                  className="border border-white/25 overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+                  className="border border-white/25 dark:block overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+                >
+                  {' '}
+                </GlassMorphism>
+                <GlassMorphism
+                  variant="dark"
+                  className="border border-white/25 dark:hidden overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
                 >
                   {' '}
                 </GlassMorphism>
@@ -139,9 +151,15 @@ function Branding() {
                   alt="Instagram Logo"
                   className="w-[72px] h-[72px] md:w-[170px] md:h-[170px]"
                 />
-                <GlassMorphism
+                   <GlassMorphism
                   variant="light"
-                  className="border border-white/25 overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+                  className="border border-white/25 dark:block overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
+                >
+                  {' '}
+                </GlassMorphism>
+                <GlassMorphism
+                  variant="dark"
+                  className="border border-white/25 dark:hidden overflow-hidden hidden md:flex absolute h-12 w-12 md:h-28 md:w-28 rounded-lg bottom-0 -translate-x-3 translate-y-3 md:-translate-x-8 md:translate-y-8"
                 >
                   {' '}
                 </GlassMorphism>

@@ -59,7 +59,7 @@ function AboutUs() {
   return (
     <div
       id="about-us"
-      className="md:min-h-screen w-full bg-black text-white py-9 md:py-16 flex flex-col items-center relative md:overflow-hidden"
+      className="md:min-h-screen w-full dark:bg-black  bg-light-purple dark:text-white text-black py-9 md:py-16 flex flex-col items-center relative md:overflow-hidden"
       ref={divRef}
     >
       <div className="flex w-full items-center justify-center text-2xl py-9 md:relative">
@@ -104,7 +104,7 @@ function AboutUs() {
             <span>Countries</span>
           </div>
         </div>
-        <div className="md:mx-72 w-full md:px-52 px-6 text-center font-normal text-base text-md md:text-lg">
+        <div className="md:mx-72 w-full md:px-52 px-6 text-center dark:text-white text-[#7B61FF] font-normal text-base text-md md:text-lg">
           {/* We are a Brand Strategy and Content Marketing agency, helping
           companies to brand better with tailored strategies and convey their
           business stories better than ever. */}

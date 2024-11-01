@@ -10,13 +10,15 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: ["class", "class"],
+  darkMode:"class",
   theme: {
   	extend: {
   		colors: {
   			'sq-violet': '#7B61FF',
   			'dim-gray': '#828282',
   			'button-color': '#5237D8',
+			'light-purple':'#EDE7FF', //light mode
+			'dark-purple':"#5C3095",  //light mode
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -81,11 +83,37 @@ const config: Config = {
   					transform: 'translateX(0)',
   					opacity: '1'
   				}
+  			},
+  			'fade-out': {
+  				'0%': { opacity: '1' },
+  				'90%': { opacity: '1' },
+  				'100%': { opacity: '0' },
+  			},
+  			'bounce-slow': {
+  				'0%, 100%': {
+  					transform: 'translateY(0)',
+  					animationTimingFunction: 'cubic-bezier(0.8, 0, 1, 1)',
+  				},
+  				'50%': {
+  					transform: 'translateY(-25%)',
+  					animationTimingFunction: 'cubic-bezier(0, 0, 0.2, 1)',
+  				},
+  			},
+  			'dotted-line': {
+  				'0%': {
+  					strokeDashoffset: '0'
+  				},
+  				'100%': {
+  					strokeDashoffset: '24'
+  				}
   			}
   		},
   		animation: {
   			'dotted-bounce': 'bounce 20s infinite alternate',
-  			slideIn: 'slideIn 0.5s forwards'
+  			slideIn: 'slideIn 0.5s forwards',
+  			'fade-out': 'fade-out 20s ease-in-out forwards',
+  			'bounce-slow': 'bounce-slow 1.5s infinite',
+  			'dotted-line': 'dotted-line 1.5s linear infinite',
   		},
   		boxShadow: {
   			'custom1': '0 20px 100px -15px rgb(123 97 255 / 0.5)',

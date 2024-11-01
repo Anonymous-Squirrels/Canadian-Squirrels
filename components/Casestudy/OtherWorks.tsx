@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const OtherWorks = () => {
   return (
-    <div className="bg-[#DAD9FF] p-4 mx-auto">
-      <h1 className="text-2xl md:text-6xl font-medium text-[#5C3095] mb-5 md:mb-10 text-center">
+    <div className="bg-[#DAD9FF] dark:bg-[#0E0E0E] p-4 mx-auto">
+      <h1 className="text-2xl md:text-6xl font-medium text-[#5C3095] dark:text-[#7B61FF] mb-5 md:mb-10 text-center">
         Our Other Works
       </h1>
       <div className="grid lg:grid-cols-3 grid-cols-2 gap-10">

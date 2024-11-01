@@ -1,18 +1,20 @@
+
+
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link'; // Import the Link component
+import Link from 'next/link'; 
 
 const locations = [
-  { src: '/assets/vmkolkata.jpg', alt: 'Image 2', title: 'KOLKATA' },
-  { src: '/assets/canada.jpg', alt: 'Image 1', title: 'CALGARY' },
-  { src: '/assets/hussain.jpg', alt: 'Image 3', title: 'HYDERABAD' },
+    { src: '/assets/kolkata.png', alt: 'Image 2', title: 'KOLKATA' },
+    { src: '/assets/Lightcalgary.png', alt: 'Image 1', title: 'CALGARY' },
+    { src: '/assets/hyderabad.png', alt: 'Image 3', title: 'HYDERABAD' },    
 ];
 
 const ContactBackground = () => {
   return (
     <div className="relative h[70vh] xl:h-screen w-full overflow-x-hidden">
       {/* Top shadow for 100px height */}
-      <div className="absolute top-0 left-0 w-full h-[100px] bg-gradient-to-b from-black/90 to-transparent z-10 hidden md:flex"></div>
+      <div className="absolute bottom-0 left-0 w-full h-[100px] bg-gradient-to-b from-transparent to-black/90 z-10 hidden md:flex"></div>
       {/* Bottom shadow */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/30 md:from-black/40 to-transparent z-10"></div>
 

@@ -19,8 +19,8 @@ function GlassMorphism({
     case "light":
       glassCss = "bg-white bg-opacity-10";
       break;
-    case "purple-gradient":
-      glassCss = "bg-gradient-to-t from-purple-900 via-white/10 via-white/10 to-transparent";
+      case "purple-gradient":
+      glassCss = "bg-gradient-to-t from-[#DAD9FF] via-[#DAD9FF] to-[#DAD9FF]";
       break;
     default:
       glassCss = "bg-white bg-opacity-10";
