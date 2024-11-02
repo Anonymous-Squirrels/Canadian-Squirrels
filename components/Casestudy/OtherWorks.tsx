@@ -10,7 +10,7 @@ const OtherWorks = () => {
       </h1>
       <div className="grid lg:grid-cols-3 grid-cols-2 gap-10 ">
         {DENTAL.map((i, index) => (
-          <div className="flex flex-col gap-2 items-center text-black dark:text-white" key={index}>
+          <div className="flex flex-col gap-2 items-center text-black dark:text-white " key={index}>
             <Image
               src={i.image}
               alt="logo"
